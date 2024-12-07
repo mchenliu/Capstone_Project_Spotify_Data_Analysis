@@ -24,8 +24,14 @@ try:
     # Convert JSON data to a DataFrame
     df = pd.concat(dataframes, ignore_index=True)
 
+    # Rename columns
+   
+    print(df.columns)
+
     # Convert timestamp column to datetime
     df['ts'] = pd.to_datetime(df['ts'])
+
+
 
     # Extract useful time-related columns
     df['date'] = df['ts'].dt.date
@@ -56,11 +62,11 @@ try:
     podcast_episodes_df = podcast_episodes_df.drop(columns=['ip_addr', 'master_metadata_track_name', 'master_metadata_album_artist_name', 'master_metadata_album_album_name','spotify_track_uri'])
 
     # Save music tracks data to a separate CSV
-    music_tracks_output_path = r'C:\Users\Administrator\Desktop\Streaming_History_Music_Tracks.csv'
+    music_tracks_output_path = r'C:\Users\Administrator\Desktop\Music_Streaming_History.csv'
     music_tracks_df.to_csv(music_tracks_output_path, index=False, encoding='utf-8-sig')
   
     # Save podcast episodes data to a separate CSV
-    podcast_episodes_output_path = r'C:\Users\Administrator\Desktop\Streaming_History_Podcast_Episodes.csv'
+    podcast_episodes_output_path = r'C:\Users\Administrator\Desktop\Podcast_Streaming_History.csv'
     podcast_episodes_df.to_csv(podcast_episodes_output_path, index=False, encoding='utf-8-sig')
 
 except PermissionError as e:
