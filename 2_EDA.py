@@ -65,14 +65,6 @@ plt.tight_layout()
 plt.show()
 
 
-'''
-sns.histplot(music_tracks_df['minutes_played'], bins=30, kde=True)
-plt.title('Distribution of Minutes Played')
-plt.xlabel('Minutes Played')
-plt.ylabel('Frequency')
-plt.show()
-'''
-
 # visualize music listending trends over time
 # group by month_year
 music_month_year_trend = music_tracks_df.groupby('month_year').sum()['minutes_played']
