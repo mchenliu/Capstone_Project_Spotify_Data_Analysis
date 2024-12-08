@@ -2,16 +2,16 @@ import pandas as pd
 
 # list of JSON filr paths
 file_paths = [
-    r'C:\Users\Administrator\Desktop\Streaming_History_Audio_2020-2021_5.json',
-    r'C:\Users\Administrator\Desktop\Streaming_History_Audio_2020_3.json',
-    r'C:\Users\Administrator\Desktop\Streaming_History_Audio_2020_4.json',
-    r'C:\Users\Administrator\Desktop\Streaming_History_Audio_2021-2022_6.json',
-    r'C:\Users\Administrator\Desktop\Streaming_History_Audio_2022-2023_7.json',
-    r'C:\Users\Administrator\Desktop\Streaming_History_Audio_2023_8.json',
-    r'C:\Users\Administrator\Desktop\Streaming_History_Audio_2023-2024_9.json',
-    r'C:\Users\Administrator\Desktop\Streaming_History_Audio_2018-2019_0.json',
-    r'C:\Users\Administrator\Desktop\Streaming_History_Audio_2019-2020_2.json',
-    r'C:\Users\Administrator\Desktop\Streaming_History_Audio_2019_1.json'
+    './Raw Data_Spotify Extended Streaming History/Streaming_History_Audio_2020-2021_5.json',
+    './Raw Data_Spotify Extended Streaming History/Streaming_History_Audio_2020_3.json',
+    './Raw Data_Spotify Extended Streaming History/Streaming_History_Audio_2020_4.json',
+    './Raw Data_Spotify Extended Streaming History/Streaming_History_Audio_2021-2022_6.json',
+    './Raw Data_Spotify Extended Streaming History/Streaming_History_Audio_2022-2023_7.json',
+    './Raw Data_Spotify Extended Streaming History/Streaming_History_Audio_2023_8.json',
+    './Raw Data_Spotify Extended Streaming History/Streaming_History_Audio_2023-2024_9.json',
+    './Raw Data_Spotify Extended Streaming History/Streaming_History_Audio_2018-2019_0.json',
+    './Raw Data_Spotify Extended Streaming History/Streaming_History_Audio_2019-2020_2.json',
+    './Raw Data_Spotify Extended Streaming History/Streaming_History_Audio_2019_1.json'
 ]
 # Load multiple JSON files into a single DataFrame
 dataframes = [pd.read_json(fp, encoding='utf-8') for fp in file_paths]
