@@ -62,8 +62,6 @@ plt.xlabel('Number of Plays')
 plt.ylabel('Show')
 # ensure everything fits properly
 plt.tight_layout()
-
-
 plt.show()
 '''
 sns.histplot(music_tracks_df['minutes_played'], bins=30, kde=True)
