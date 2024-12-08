@@ -16,54 +16,57 @@ file_paths = [
 ]
 
 try: 
-    # Load the JSON data from file using UTF-8 encoding
+    # load the JSON data from file using UTF-8 encoding
     dataframes = [pd.read_json(fp, encoding='utf-8') for fp in file_paths]
 
 
-    #Convert JSON data to a DataFrame
+    # convert JSON data to a DataFrame
     df = pd.concat(dataframes, ignore_index=True)
 
-    # Rename columns
+    # rename columns
     df.rename(columns={'ts': 'date_time', 'master_metadata_track_name': 'track_name', 'conn_country' : 'country', 'master_metadata_album_artist_name': 'artist_name', 'master_metadata_album_album_name': 'album_name','episode_show_name': 'show_name'}, inplace=True)
 
-    # Convert timestamp column to datetime
+    # convert timestamp column to datetime
     df['date_time'] = pd.to_datetime(df['date_time'])
 
-    # Extract useful time-related columns
+    # extract useful time-related columns
     df['date'] = df['date_time'].dt.date
-    #df['hour'] = df['date_time'].dt.hour
+    df['year'] = df['date_time'].dt.year
+    df['month'] = df['date_time'].dt.month
+    df['day'] = df['date_time'].dt.day
 
-    #remove playtime is null
+    # remove playtime is null
     df = df[df['ms_played'] > 0]
 
-    # Add a new column to convert ms_played to minutes played
+    # add a new column to convert ms_played to minutes played
     df['minutes_played'] = df['ms_played'] / 60000
 
-    # Standardize boolean columns (e.g., shuffle)
+    # standardize boolean columns (e.g., shuffle)
     df['shuffle'] = df['shuffle'].astype(bool)
     
-    # Normalize text columns
+    # normalize text columns
     df['track_name'] = df['track_name'].str.strip()
     df['artist_name'] = df['artist_name'].str.strip()
+    df['artist_name'] = df['artist_name'].str.capitalize()
     df['album_name'] = df['album_name'].str.strip()
     df['episode_name'] = df['episode_name'].str.strip()
     df['show_name'] = df['show_name'].str.strip()
 
-    # Filter data into music tracks and podcast episodes
+    # filter data into music tracks and podcast episodes
     music_tracks_df = df[df['track_name'].notna()]
     podcast_episodes_df = df[df['episode_name'].notna()]
     
-    # Drop podcast columns from music tracks data
+    # drop podcast columns from music tracks data
     music_tracks_df = music_tracks_df.drop(columns=['ip_addr', 'spotify_episode_uri', 'episode_name', 'show_name'])
 
-    # Drop music track columns podcast data
+    # drop music track columns podcast data
     podcast_episodes_df = podcast_episodes_df.drop(columns=['ip_addr', 'track_name', 'artist_name', 'album_name','spotify_track_uri'])
 
-    # Save music tracks data to a separate CSV
+    # save music tracks data to a separate CSV
     music_tracks_output_path = './Cleaned_Data/Music_Streaming_History.csv'
     music_tracks_df.to_csv(music_tracks_output_path, index=False, encoding='utf-8-sig')
   
-    # Save podcast episodes data to a separate CSV
+    # save podcast episodes data to a separate CSV
     podcast_episodes_output_path = './Cleaned_Data/Podcast_Streaming_History.csv'
     podcast_episodes_df.to_csv(podcast_episodes_output_path, index=False, encoding='utf-8-sig')
 
