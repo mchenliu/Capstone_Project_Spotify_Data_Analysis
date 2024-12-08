@@ -44,7 +44,7 @@ plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']
 # visualize top 20 most played artists (music)
 top_artists = music_tracks_df['artist_name'].value_counts().head(20)
 sns.barplot(x=top_artists.values, y = top_artists.index, palette='Blues_r')
-plt.title('Top 20 Most Played Artists')
+plt.title('Top 20 Most Played Artists', fontsize = 40)
 plt.xlabel('Number of Plays')
 plt.ylabel(None)
 plt.show()
@@ -55,9 +55,9 @@ top_show = podcast_episodes_df['show_name'].value_counts().head(20)
 # wrap labels inline
 wrapped_labels = [textwrap.fill(show_name, width = 15) for show_name in top_show.index]
 # adjust width and height
-plt.figure(figsize=(10, 8))  
+plt.figure(figsize=(30, 20))  
 sns.barplot(x=top_show.values, y = wrapped_labels, palette='Blues_r')
-plt.title('Top 20 Most Played Shows')
+plt.title('Top 20 Most Played Shows', fontsize = 35)
 plt.xlabel('Number of Plays')
 plt.ylabel(None)
 # ensure everything fits properly
@@ -70,10 +70,10 @@ plt.show()
 music_month_year_trend = music_tracks_df.groupby('month_year').sum()['minutes_played']
 
 # plot
-music_month_year_trend.plot(figsize=(10, 8))
-plt.title('Total Minutes Played Over Time (Music)')
+music_month_year_trend.plot(figsize=(30, 20))
+plt.title('Total Minutes Played Over Time (Music)', fontsize = 40)
 plt.xlabel(None)
-plt.ylabel('Total Minutes Played')
+plt.ylabel('Total Minutes Played', fontsize = 40)
 plt.grid(True)
 plt.show()
 
@@ -82,8 +82,8 @@ plt.show()
 podcast_month_year_trend = podcast_episodes_df.groupby('month_year').sum()['minutes_played']
 
 # plot
-podcast_month_year_trend.plot(figsize=(10, 8))
-plt.title('Total Minutes Played Over Time (Podcast)')
+podcast_month_year_trend.plot(figsize=(30, 20))
+plt.title('Total Minutes Played Over Time (Podcast)', fontsize = 40)
 plt.xlabel(None)
 plt.ylabel('Total Minutes Played')
 plt.grid(True)
