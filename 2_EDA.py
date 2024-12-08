@@ -44,6 +44,6 @@ plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']
 top_artists = music_tracks_df['artist_name'].value_counts().head(20)
 sns.barplot(x=top_artists.values, y = top_artists.index, palette='Blues_r')
 plt.title('Top 20 Most Played Artists')
-plt.xlabel('Artist')
-plt.ylabel('Number of Plays')
+plt.xlabel('Number of Plays')
+plt.ylabel('Artist')
 plt.show()
