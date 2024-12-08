@@ -25,11 +25,10 @@ load_dotenv()
 client_id = os.getenv("SPOTIFY_CLIENT_ID")
 client_secret = os.getenv("SPOTIFY_CLIENT_SECRET")
 
-<<<<<<< HEAD
 # authenticate with spotify
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret= client_secret)
 sp= spotipy.Spotify(client_credentials_manager=client_credentials_manager)
-=======
+
 # set up spotify credentials
 client_id = 'my id'
 client_secret = 'my secret'
@@ -37,7 +36,6 @@ client_secret = 'my secret'
 # authenticate with Spotify
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
->>>>>>> 564ffea7d2b55596521be718591bfa876e617834
 
 # read artist csv
 input_path = './Cleaned_Data/Artist_List.csv'
