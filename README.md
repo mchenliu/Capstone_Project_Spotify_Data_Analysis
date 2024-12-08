@@ -6,11 +6,22 @@
   - [Tools Used](#tools-used)
 - [Steps Taken](#steps-taken)
   - [Data Collection](#data-collection)
+  - [Data Cleaning](#data-cleaning)
   - [ETL with Power Query](#etl-with-power-query)
 - [Conclusion](#conclusion)
 
 # Introduction
 :mega: In this project, I explored my own Spotify streaming history from 2018 - 2023. To find insights on my listening habit and predict my future listening trend. 
+Final Deliverables
+Create Jupyter Notebookss (showcasing core skills in Python).
+Create a summary page (via README.md) to capture my findings.
+Share this project via GitHub & LinkedIn.
+Questions to Answer
+What are the most played tracks and artists? 🎶
+How do listening habits vary by time of day? 🕒
+How diverse are the genres of music artists? 🌟
+Which tracks were frequently skipped?　⏭️
+What are the top podcast episodes 🎙️
 ## Tools Used
 - Excel
 - Python
