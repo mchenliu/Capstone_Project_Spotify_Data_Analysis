@@ -46,7 +46,7 @@ top_artists = music_tracks_df['artist_name'].value_counts().head(20)
 sns.barplot(x=top_artists.values, y = top_artists.index, palette='Blues_r')
 plt.title('Top 20 Most Played Artists')
 plt.xlabel('Number of Plays')
-plt.ylabel('Artist')
+plt.ylabel(None)
 plt.show()
     
 
@@ -59,7 +59,7 @@ plt.figure(figsize=(10, 8))
 sns.barplot(x=top_show.values, y = wrapped_labels, palette='Blues_r')
 plt.title('Top 20 Most Played Shows')
 plt.xlabel('Number of Plays')
-plt.ylabel('Show')
+plt.ylabel(None)
 # ensure everything fits properly
 plt.tight_layout()
 plt.show()
@@ -74,14 +74,25 @@ plt.show()
 '''
 
 # visualize music listending trends over time
-# Group by date
-date_trend = music_tracks_df.groupby('date').sum()['minutes_played']
+# group by month_year
+music_month_year_trend = music_tracks_df.groupby('month_year').sum()['minutes_played']
 
-# Plot
-date_trend.plot(figsize=(10, 8))
-plt.title('Total Minutes Played Over Time')
-plt.xlabel('Date')
+# plot
+music_month_year_trend.plot(figsize=(10, 8))
+plt.title('Total Minutes Played Over Time (Music)')
+plt.xlabel(None)
 plt.ylabel('Total Minutes Played')
 plt.grid(True)
 plt.show()
 
+# visualize podcast listending trends over time
+# group by month_year
+podcast_month_year_trend = podcast_episodes_df.groupby('month_year').sum()['minutes_played']
+
+# plot
+podcast_month_year_trend.plot(figsize=(10, 8))
+plt.title('Total Minutes Played Over Time (Podcast)')
+plt.xlabel(None)
+plt.ylabel('Total Minutes Played')
+plt.grid(True)
+plt.show()

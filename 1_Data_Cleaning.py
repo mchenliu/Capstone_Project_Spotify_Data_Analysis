@@ -34,6 +34,7 @@ try:
     df['year'] = df['date_time'].dt.year
     df['month'] = df['date_time'].dt.month
     df['day'] = df['date_time'].dt.day
+    df['month_year'] = df['date_time'].dt.to_period('M')
 
     # remove playtime is null
     df = df[df['ms_played'] > 0]
@@ -47,7 +48,6 @@ try:
     # normalize text columns
     df['track_name'] = df['track_name'].str.strip()
     df['artist_name'] = df['artist_name'].str.strip()
-    df['artist_name'] = df['artist_name'].str.capitalize()
     df['album_name'] = df['album_name'].str.strip()
     df['episode_name'] = df['episode_name'].str.strip()
     df['show_name'] = df['show_name'].str.strip()
