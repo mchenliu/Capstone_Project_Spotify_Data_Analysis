@@ -47,7 +47,6 @@ try:
     
     # normalize text columns
     df['track_name'] = df['track_name'].str.strip()
-    df['artist_name'] = df['artist_name'].str.strip()
     df['album_name'] = df['album_name'].str.strip()
     df['episode_name'] = df['episode_name'].str.strip()
     df['show_name'] = df['show_name'].str.strip()
