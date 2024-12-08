@@ -47,3 +47,22 @@ plt.title('Top 20 Most Played Artists')
 plt.xlabel('Number of Plays')
 plt.ylabel('Artist')
 plt.show()
+
+sns.histplot(music_tracks_df['minutes_played'], bins=30, kde=True)
+plt.title('Distribution of Minutes Played')
+plt.xlabel('Minutes Played')
+plt.ylabel('Frequency')
+plt.show()
+
+
+# Group by date
+date_trend = music_tracks_df.groupby('date').sum()['minutes_played']
+
+# Plot
+date_trend.plot(figsize=(12, 6))
+plt.title('Total Minutes Played Over Time')
+plt.xlabel('Date')
+plt.ylabel('Total Minutes Played')
+plt.grid(True)
+plt.show()
+
