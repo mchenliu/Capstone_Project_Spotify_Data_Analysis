@@ -36,6 +36,7 @@ Thus the null values are valid.
 import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib import rcParams
+import textwrap
 
 # set font to Microsoft YaHei to show Chinese characters
 plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']
@@ -47,14 +48,22 @@ plt.title('Top 20 Most Played Artists')
 plt.xlabel('Number of Plays')
 plt.ylabel('Artist')
 plt.show()
+    
 
-
-# visualize top 20 most played artists (podcast)
+# visualize top 20 most played shows (podcast)
 top_show = podcast_episodes_df['show_name'].value_counts().head(20)
-sns.barplot(x=top_show.values, y = top_show.index, palette='Blues_r')
+# wrap labels inline
+wrapped_labels = [textwrap.fill(show_name, width = 15) for show_name in top_show.index]
+# adjust width and height
+plt.figure(figsize=(10, 8))  
+sns.barplot(x=top_show.values, y = wrapped_labels, palette='Blues_r')
 plt.title('Top 20 Most Played Shows')
 plt.xlabel('Number of Plays')
 plt.ylabel('Show')
+# ensure everything fits properly
+plt.tight_layout()
+
+
 plt.show()
 '''
 sns.histplot(music_tracks_df['minutes_played'], bins=30, kde=True)
