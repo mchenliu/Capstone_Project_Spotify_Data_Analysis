@@ -55,5 +55,5 @@ for artist_name in artist_names:
 artist_df['genres'] = artist_genre
 
 # save to csv
-updated_path = './Cleaned_Data/Artist_Genre_List_Updated.csv'
+updated_path = './Cleaned_Data/Artist_Genre_List.csv'
 artist_df.to_csv(updated_path, index= False, encoding= 'utf-8-sig')
