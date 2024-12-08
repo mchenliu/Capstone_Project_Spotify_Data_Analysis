@@ -36,7 +36,7 @@ genre_count_sorted = genre_count.sort_values(ascending=False).head(10)
 
 # create bar plot with seaborn
 sns.set(style='darkgrid')
-plt.figure(figsize = (20,10))
+plt.figure(figsize = (30,20))
 sns.barplot(
     x=genre_count_sorted.values,
     y=genre_count_sorted.index,
@@ -53,7 +53,7 @@ plt.show()
 labels = top_genre.index
 sizes = top_genre.values
 
-plt.figure(figsize=(20,10))
+plt.figure(figsize=(30,20))
 plt.pie(
     sizes,
     labels= labels,
