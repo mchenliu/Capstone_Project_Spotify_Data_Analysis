@@ -73,7 +73,7 @@ music_month_year_trend = music_tracks_df.groupby('month_year').sum()['minutes_pl
 music_month_year_trend.plot(figsize=(30, 20))
 plt.title('Total Minutes Played Over Time (Music)', fontsize = 40)
 plt.xlabel(None)
-plt.ylabel('Total Minutes Played', fontsize = 40)
+plt.ylabel('Total Minutes Played')
 plt.grid(True)
 plt.show()
 
