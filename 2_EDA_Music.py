@@ -41,13 +41,14 @@ from matplotlib import rcParams
 plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']
 
 # visualize top 20 most played artists
-top_artists = music_tracks_df['artist_name'].value_counts().head(20)
+top_artists = podcast_episodes_df['episode_show_name'].value_counts().head(20)
 sns.barplot(x=top_artists.values, y = top_artists.index, palette='Blues_r')
 plt.title('Top 20 Most Played Artists')
 plt.xlabel('Number of Plays')
 plt.ylabel('Artist')
 plt.show()
 
+'''
 sns.histplot(music_tracks_df['minutes_played'], bins=30, kde=True)
 plt.title('Distribution of Minutes Played')
 plt.xlabel('Minutes Played')
@@ -66,3 +67,4 @@ plt.ylabel('Total Minutes Played')
 plt.grid(True)
 plt.show()
 
+'''

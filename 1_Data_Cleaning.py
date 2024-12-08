@@ -24,7 +24,7 @@ try:
     df = pd.concat(dataframes, ignore_index=True)
 
     # Rename columns
-    df.rename(columns={'ts': 'date_time', 'master_metadata_track_name': 'track_name', 'conn_country' : 'country', 'master_metadata_album_artist_name': 'artist_name', 'master_metadata_album_album_name': 'album_name'}, inplace=True)
+    df.rename(columns={'ts': 'date_time', 'master_metadata_track_name': 'track_name', 'conn_country' : 'country', 'master_metadata_album_artist_name': 'artist_name', 'master_metadata_album_album_name': 'album_name','episode_show_name': 'show_name'}, inplace=True)
 
     # Convert timestamp column to datetime
     df['date_time'] = pd.to_datetime(df['date_time'])
@@ -47,14 +47,14 @@ try:
     df['artist_name'] = df['artist_name'].str.strip()
     df['album_name'] = df['album_name'].str.strip()
     df['episode_name'] = df['episode_name'].str.strip()
-    df['episode_show_name'] = df['episode_show_name'].str.strip()
+    df['show_name'] = df['show_name'].str.strip()
 
     # Filter data into music tracks and podcast episodes
     music_tracks_df = df[df['track_name'].notna()]
     podcast_episodes_df = df[df['episode_name'].notna()]
     
     # Drop podcast columns from music tracks data
-    music_tracks_df = music_tracks_df.drop(columns=['ip_addr', 'spotify_episode_uri', 'episode_name', 'episode_show_name'])
+    music_tracks_df = music_tracks_df.drop(columns=['ip_addr', 'spotify_episode_uri', 'episode_name', 'show_name'])
 
     # Drop music track columns podcast data
     podcast_episodes_df = podcast_episodes_df.drop(columns=['ip_addr', 'track_name', 'artist_name', 'album_name','spotify_track_uri'])

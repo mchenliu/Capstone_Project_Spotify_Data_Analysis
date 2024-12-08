@@ -1,4 +1,4 @@
-﻿date_time,platform,ms_played,country,episode_name,episode_show_name,spotify_episode_uri,reason_start,reason_end,shuffle,skipped,offline,offline_timestamp,incognito_mode,date,minutes_played
+﻿date_time,platform,ms_played,country,episode_name,show_name,spotify_episode_uri,reason_start,reason_end,shuffle,skipped,offline,offline_timestamp,incognito_mode,date,minutes_played
 2020-11-27 02:06:45+00:00,"iOS 14.2 (iPhone12,1)",47381,NZ,Day 1: How to say one's career in Cantonese,Learn Cantonese Daily,spotify:episode:44Fg23Bw4eZjwFP9wwaq4v,clickrow,endplay,False,False,False,,False,2020-11-27,0.7896833333333333
 2020-11-27 02:07:41+00:00,"iOS 14.2 (iPhone12,1)",56469,NZ,"Day 42:  ""Can you help me"" in Cantonese",Learn Cantonese Daily,spotify:episode:4CSRzvl326QA22ZNyd2wTe,clickrow,trackdone,False,False,False,,False,2020-11-27,0.94115
 2020-11-27 02:08:51+00:00,"iOS 14.2 (iPhone12,1)",69844,NZ,"Day 43: ""I am very hungry"" in Cantonese",Learn Cantonese Daily,spotify:episode:2nDXTj6MIDiN2DkDYw9b6u,trackdone,trackdone,False,False,False,,False,2020-11-27,1.1640666666666666
