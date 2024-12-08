@@ -36,7 +36,7 @@ genre_count_sorted = genre_count.sort_values(ascending=False).head(10)
 
 # create bar plot with seaborn
 sns.set(style='darkgrid')
-plt.figure(figsize = (10,8))
+plt.figure(figsize = (20,10))
 sns.barplot(
     x=genre_count_sorted.values,
     y=genre_count_sorted.index,
@@ -44,7 +44,7 @@ sns.barplot(
 )
 
 # add title and labels
-plt.title('Top 10 Genres')
+plt.title('Top 10 Genres',fontsize = 40)
 plt.xlabel('Number of Artists')
 plt.ylabel(None)
 plt.show()
@@ -53,7 +53,7 @@ plt.show()
 labels = top_genre.index
 sizes = top_genre.values
 
-plt.figure(figsize=(10,8))
+plt.figure(figsize=(20,10))
 plt.pie(
     sizes,
     labels= labels,
@@ -64,6 +64,6 @@ plt.pie(
     colors=sns.color_palette('Blues_r', n_colors=len(labels))
 )
 
-plt.title('Top 10 Genres Distribution')
+plt.title('Top 10 Genres Distribution',fontsize = 40)
 plt.ylabel(None)
 plt.show()
