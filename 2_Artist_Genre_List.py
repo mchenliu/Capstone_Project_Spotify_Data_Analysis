@@ -22,20 +22,12 @@ from dotenv import load_dotenv
 
 # enter spotify credentials
 load_dotenv()
-client_id = os.getenv("SPOTIFY_CLIENT_ID")
-client_secret = os.getenv("SPOTIFY_CLIENT_SECRET")
+client_id = 'd9fcdeb841a84c9c86093bc2b742a18d'
+client_secret = '081b2925bd47442aaa96fc651afe422e'
 
 # authenticate with spotify
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret= client_secret)
 sp= spotipy.Spotify(client_credentials_manager=client_credentials_manager)
-
-# set up spotify credentials
-client_id = 'my id'
-client_secret = 'my secret'
-
-# authenticate with Spotify
-client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
-sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 # read artist csv
 input_path = './Cleaned_Data/Artist_List.csv'
