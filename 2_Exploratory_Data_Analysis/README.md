@@ -71,6 +71,7 @@ Below are the questions I want to answer in my project:
   ``` 
 - **Identify Outliners:**
   ``` python
+  # load data
   music_tracks_df = pd.read_csv('./Cleaned_Data/Music_Streaming_History.csv')
   podcast_episodes_df = pd.read_csv('./Cleaned_Data/Podcast_Streaming_History.csv')
   # create boxplot for minutes_played in music streaming dataset
@@ -81,7 +82,7 @@ Below are the questions I want to answer in my project:
   plt.xlabel('Minutes Played')
   plt.show()
 
-  # create boxplot for minutes_played in postcast streaming dataset
+  # create boxplot for minutes_played in podcast streaming dataset
   plt.figure(figsize=(10,8))
   # use minutes played to create the boxplot
   sns.boxplot(x=podcast_episodes_df['minutes_played'], palette = 'Blues_r')
@@ -91,7 +92,7 @@ Below are the questions I want to answer in my project:
   ```
   ![music_boxplot](/Images/music_boxplot.png)
   ![podcast_boxplot](/Images/podcast_boxplot.png)
-  
+
 
 - **Visulaize Distributions:**  
 
