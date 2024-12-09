@@ -22,7 +22,7 @@
 - :octopus: Git & Github: My go-to for version control and tracking my project progress.
 # Steps Taken
 ## :one: Data Collection
-The raw data used in this project is the streaming history from my Spotify account, provided by Spotify. It spans from October 2018 to November 2024. The raw data is in JSON format. Check out the data :point_right: [here](/Raw%20Data_Spotify%20Extended%20Streaming%20History/).
+The raw data used in this project is the streaming history from my Spotify account, provided by Spotify. It spans from October 2018 to November 2024. The raw data is in JSON format. Check out the data :point_right: [here](/Raw_Data_Spotify_Streaming_History/).
 ## :two: Data Cleaning
 I used **Pyhon Pandas** to clean the data. Below are the stpes I followed:
 1. Combined all JSON files. Since the source data contains Chinese characters, I used `utf-8` encoding.
