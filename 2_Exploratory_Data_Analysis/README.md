@@ -138,15 +138,9 @@ plt.show()
 
 ## EDA on Artist Genres
 ``` python
-# import library
-import pandas as pd
-from matplotlib import pyplot as plt
-import seaborn as sns
-
 # load the cleaned data
 artist_genre_df = pd.read_csv('./Cleaned_Data/Artist_Genre_List.csv')
-```
-``` python
+
 # split multiple-genres
 artist_genre_df['genres_split'] = artist_genre_df['genres'].str.split(', ')
 genre_exploded = artist_genre_df.explode('genres_split').rename(columns={'genres_split':'genre'})
