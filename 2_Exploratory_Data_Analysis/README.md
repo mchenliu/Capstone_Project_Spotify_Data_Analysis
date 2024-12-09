@@ -86,27 +86,25 @@ plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']
 # visualize top 20 most played artists
 top_artists = music_tracks_df['artist_name'].value_counts().head(20)
 sns.barplot(x=top_artists.values, y = top_artists.index, palette='Blues_r')
-plt.title('Top 20 Most Played Artists', fontsize = 40)
+plt.title('Top 20 Most Played Artists', fontsize = 20)
 plt.xlabel('Number of Plays')
-plt.ylabel('Artist')
+plt.ylabel(None)
 plt.show()
 
 # visualize top 20 most played shows (podcast)
 top_show = podcast_episodes_df['show_name'].value_counts().head(20)
-# wrap labels inline
-wrapped_labels = [textwrap.fill(show_name, width = 15) for show_name in top_show.index]
 # adjust width and height
-plt.figure(figsize=(30, 20))  
-sns.barplot(x=top_show.values, y = wrapped_labels, palette='Blues_r')
-plt.title('Top 20 Most Played Shows', fontsize = 35)
+plt.figure(figsize=(10, 8))  
+sns.barplot(x=top_show.values, y = top_show.index, palette='Blues_r')
+plt.title('Top 20 Most Played Shows', fontsize = 20)
 plt.xlabel('Number of Plays')
-plt.ylabel('Show')
+plt.ylabel(None)
 # ensure everything fits properly
 plt.tight_layout()
 plt.show()
 ```
-![top_20_most_played_artists](/Images/Top_20_Artists.jpeg)
-![top_20_most_played_podcasts](/Images/Top_20_Shows.png)
+![top_20_most_played_artists](/Images/top_20_played_artists.png)
+![top_20_most_played_podcasts](/Images/top_20_played_shows.png)
 - **Viusalize Listening Trends Over Time:**
 ``` python
 # music listending trends
@@ -114,8 +112,8 @@ plt.show()
 music_month_year_trend = music_tracks_df.groupby('month_year').sum()['minutes_played']
 
 # plot
-music_month_year_trend.plot(figsize=(30, 20))
-plt.title('Total Minutes Played Over Time (Music)', fontsize = 40)
+music_month_year_trend.plot(figsize=(10, 8))
+plt.title('Total Minutes Played Over Time (Music)', fontsize = 20)
 plt.xlabel(None)
 plt.ylabel('Total Minutes Played')
 plt.grid(True)
@@ -126,8 +124,8 @@ plt.show()
 podcast_month_year_trend = podcast_episodes_df.groupby('month_year').sum()['minutes_played']
 
 # plot
-podcast_month_year_trend.plot(figsize=(30, 20))
-plt.title('Total Minutes Played Over Time (Podcast)', fontsize = 40)
+podcast_month_year_trend.plot(figsize=(10, 8))
+plt.title('Total Minutes Played Over Time (Podcast)', fontsize = 20)
 plt.xlabel(None)
 plt.ylabel('Total Minutes Played')
 plt.grid(True)
@@ -167,7 +165,7 @@ genre_count_sorted = genre_count.sort_values(ascending=False).head(10)
 
 # create bar plot with seaborn
 sns.set(style='darkgrid')
-plt.figure(figsize = (30,20))
+plt.figure(figsize = (10,8))
 sns.barplot(
     x=genre_count_sorted.values,
     y=genre_count_sorted.index,
@@ -175,7 +173,7 @@ sns.barplot(
 )
 
 # add title and labels
-plt.title('Top 10 Genres', fontsize = 40)
+plt.title('Top 10 Genres', fontsize = 20)
 plt.xlabel('Number of Artists')
 plt.ylabel(None)
 plt.show()
@@ -184,7 +182,7 @@ plt.show()
 labels = top_genre.index
 sizes = top_genre.values
 
-plt.figure(figsize=30,20))
+plt.figure(figsize=10,8))
 plt.pie(
     sizes,
     labels= labels,
@@ -195,7 +193,7 @@ plt.pie(
     colors=sns.color_palette('Blues_r', n_colors=len(labels))
 )
 
-plt.title('Top 10 Genres Distribution', fontsize = 40)
+plt.title('Top 10 Genres Distribution', fontsize = 20)
 plt.ylabel(None)
 plt.show()
 ```
