@@ -63,12 +63,11 @@ Below are the questions I want to answer in my project:
 
   # check for null values in podcast data
   print(podcast_episodes_df.isnull().sum())
-
-  '''
-  The null values are associated with `false` in the `offline` column.
+  ```
+  *Interpretation:*  
+  The null values are associated with `false` in the `offline` column.  
   Thus the null values are valid.
-  '''
-  ``` 
+   
 - **Identify Outliners:**
   ``` python
   # load data
@@ -91,8 +90,35 @@ Below are the questions I want to answer in my project:
   plt.show()
   ```
   ![music_boxplot](/Images/music_boxplot.png)
-  ![podcast_boxplot](/Images/podcast_boxplot.png)
+  *Interpretation:*  
+  1. Most tracks are played between **0 -10 minutes**.
+  2. The median playback time is around **4 minutes**. Half of the tracks are played for less than 4 minutes, and half are played for more than 4 minutes.  
+  3. Tracks above the upper whisker are outliers. These tracks are played for an **unusally long duaration**. The potential explanations are:
+       - Tracks being **repeatedly played**.
+       - Tracks that are longer (e.g., live recordings or mixes).
+       - Tracks being played as **background music**.  
 
+  *What's Next:*  
+  I found outlying tracks by filtering out tracks minutes played less than 10 minuets. There are 162 results. Some of them are live tracks while some are tracks by top played artists. Therefore, I believe the data is not unusual.  
+  | track_name | artist_name | minutes_played | reason_start |
+  |------------|-------------|----------------|--------------|
+  | 不為誰而作的歌 | JJ Lin | 13.096067 | fwdbtn |
+  | 心酸+浪費+耳朵+想自由 - Live | Yoga Lin | 10.658817 | fwdbtn |
+  |愛情的模樣 Life Live | Mayday | 10.308067 | fwdbtn | 不煽情 | 許嵩 | 10.352750 | trackdone 
+  | Faded | Alan Walker | 11.337850 | appload |
+  |... | ... | ...| ... | ... |
+  | 牽手 | Julie Sue | 11.593617| trackdone |
+  | 花又開好了  | S.H.E |  10.777100 |  backbtn|
+  | 姐 | Hebe Tien  |    14.522633 | clickrow|
+  | 勁歌金曲2 - 情歌王 - Live  |    Leo Ku  |     12.641317 |   trackdone|
+  | 灵魂伴侣   | Hebe Tien |      13.299400  |  trackdone|
+  ```python
+  outliers = music_tracks_df[music_tracks_df['minutes_played'] > 10]
+  print(outliers[['track_name','artist_name','minutes_played','reason_start']])
+  ```
+  ![podcast_boxplot](/Images/podcast_boxplot.png)  
+
+  
 
 - **Visulaize Distributions:**  
 

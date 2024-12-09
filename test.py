@@ -22,3 +22,6 @@ sns.boxplot(x=podcast_episodes_df['minutes_played'], palette = 'Blues_r')
 plt.title('Boxplot of Minuets Played (Podcast)', fontsize = 20)
 plt.xlabel('Minuetes Played')
 plt.show()
+
+outliers = music_tracks_df[music_tracks_df['minutes_played'] > 10]
+print(outliers[['track_name','artist_name','minutes_played','reason_start']])
