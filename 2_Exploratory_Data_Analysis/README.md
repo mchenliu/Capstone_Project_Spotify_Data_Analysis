@@ -99,7 +99,7 @@ Below are the questions I want to answer in my project:
        - Tracks being played as **background music**.  
 
   *What's Next:*  
-  I found outlying tracks by filtering out tracks minutes played more than 10 minuets. There are 162 results. Some of them are live tracks while some are tracks by top played artists. Therefore, I believe the data is not unusual.  
+  I identified outlying tracks by filtering for tracks with more than 10 minuets of playtime. There are 162 results. Some of them are live tracks while some are tracks by top played artists. Therefore, I conclude that this data is not unusual.  
     ```python
   outliers = music_tracks_df[music_tracks_df['minutes_played'] > 10]
   print(outliers[['track_name','artist_name','minutes_played','reason_start']])
@@ -127,7 +127,7 @@ Below are the questions I want to answer in my project:
        - Podcasts being played as **background music**.  
   
   *What's Next:*  
-  I found outlying tracks by filtering out tracks minutes played more than 50 minuets. There are 2577 results. Most of them are podcasts by top played shows. Therefore, I believe the data is not unusual.  
+  I identified outlying shows by filtering for shows with more than 50 minutes of playtime. This resulted in 2,577 entries, most of which were podcasts from top-played shows. Therefore, I conclude that this data is not unusual.
     ```python
   outliers = podcast_episodes_df[podcast_episodes_df['minutes_played'] > 50]
   print(outliers[['show_name','minutes_played']])
