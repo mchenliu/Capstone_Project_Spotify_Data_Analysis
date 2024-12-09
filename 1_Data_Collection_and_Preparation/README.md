@@ -15,7 +15,8 @@
 ## Tools Used
 - :snake: Python: The backbone of my project, used to perform all tasks. Key libraries include:
   - Pandas: Used for data cleaning and manipulation.
-  - Spotipy:
+  - Spotipy: Used to fetch artist genres.
+  - dotenv: Used to securely manage my Spotify API keys.
 - :notebook: Jupyter Notebooks: Used to run my Python scripts and seemlessly integrate notes and analysis.
 - :computer: Visual Studio Code: My pirmary IDE for executing Python scripts.
 - :octopus: Git & Github: My go-to for version control and tracking my project progress.
