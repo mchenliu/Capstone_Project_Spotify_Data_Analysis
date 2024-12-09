@@ -1,27 +1,41 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from matplotlib import rcParams
+"""
+1.  What are the 20 most played tracks and artists? 🎶
+2.  How do listening habits vary by time of day? 🕒
+3.  How diverse are the genres of music artists? 🌟
+4.  Which tracks were frequently skipped?　⏭️
+5.  What are the top podcast episodes 🎙️  
+6.  Based on the past data, will podcasts occupy most listening time or tracks? :headphones:
+7.  Based on past data, who are the most played artists and tracks for 2025?" :question:  
+"""
 
-music_tracks_df = pd.read_csv('./Cleaned_Data/Music_Streaming_History.csv')
+# import library
+import pandas as pd
+
+# load the data
+music_track_df = pd.read_csv('./Cleaned_Data/Music_Streaming_History.csv')
 podcast_episodes_df = pd.read_csv('./Cleaned_Data/Podcast_Streaming_History.csv')
 
+top_artists = music_track_df['artist_name'].value_counts().head(20)
 
-# create boxplot for minutes_played in music streaming dataset
-plt.figure(figsize=(10,8))
-# use minutes_played to create the boxplot
-sns.boxplot(x=music_tracks_df['minutes_played'], palette='Blues_r')
-plt.title('Boxplot of Minutes Played (Music)', fontsize = 20)
-plt.xlabel('Minutes Played')
-plt.show()
+#format artist counts with thousand seperator
+top_artists = top_artists.apply(lambda x: f'{x:,}')
+# reset the index
+top_artists = top_artists.reset_index()
 
-# create boxplot for minutes_played in postcast streaming dataset
-plt.figure(figsize=(10,8))
-# use minutes played to create the boxplot
-sns.boxplot(x=podcast_episodes_df['minutes_played'], palette = 'Blues_r')
-plt.title('Boxplot of Minuets Played (Podcast)', fontsize = 20)
-plt.xlabel('Minuetes Played')
-plt.show()
 
-outliers = podcast_episodes_df[podcast_episodes_df['minutes_played'] > 50]
-print(outliers[['show_name','minutes_played']])
+print(top_artists.to_string(index=False))
+
+# group by artist name and sum the minutes played
+top_artists_by_minutes = round(music_track_df.groupby('artist_name')['minutes_played'].sum(),2)
+
+# sort the results in descending order and select the top 20
+top_artists_by_minutes = top_artists_by_minutes.sort_values(ascending=False).head(20)
+
+# format minutes with thousand seperator
+top_artists_by_minutes = top_artists_by_minutes.apply(lambda x: f'{x:,}')
+
+# reset the index
+top_artists_by_minutes = top_artists_by_minutes.reset_index()
+
+# print the result without the index
+print(top_artists_by_minutes.to_string(index=False))

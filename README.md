@@ -15,7 +15,7 @@
 
 ## Questions to Answer
 Below are the questions I want to answer in my project:  
-1.  What are the most played tracks and artists? 🎶
+1.  What are the 20 most played tracks and artists? 🎶
 2.  How do listening habits vary by time of day? 🕒
 3.  How diverse are the genres of music artists? 🌟
 4.  Which tracks were frequently skipped?　⏭️
