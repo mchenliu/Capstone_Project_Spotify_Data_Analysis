@@ -31,6 +31,7 @@ What are the top podcast episodes 🎙️
 - Git & Github
 # Steps Taken
 ## Data Collection
+The raw data for this project was provided by Spotify. Spaming from October 2018 to November 2024. The raw data are JSON fomat. Check out the data here :point_right: [Raw_Data](/Raw%20Data_Spotify%20Extended%20Streaming%20History/)
 ## Data Cleaning
 I used Pyhon Pandas to clean data.
 First combined all JSON files. And because the source data contains Chinese characters, I used `utf-8` to encode.
