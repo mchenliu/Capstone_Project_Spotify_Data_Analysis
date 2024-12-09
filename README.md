@@ -3,12 +3,13 @@
 - [:construction: PROJECT UNDER CONSTRUCTION :construction:](#construction-project-under-construction-construction)
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
+  - [Questions to Answer](#questions-to-answer)
 
 # Introduction
 :mega: In this project, I analyzed my Spotify streaming history, covering both music tracks and podcast shows from 2018 to 2024. The goal is to uncover insights into my listening habits and predict future listening trends. This project is split into three parts.
 1. [Data_Collection_and_Preparation](/1_Data_Collection_and_Preparation/)
 2. [Data_Analysis](/2_Data_Analysis/)
-3. [Visualization]
+3. [Visualization](/3_Visualization/)
 
 ## Questions to Answer
 Below are the questions I want to answer in my project:  
