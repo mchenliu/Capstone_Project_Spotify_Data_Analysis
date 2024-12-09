@@ -210,22 +210,31 @@ plt.show()
 ![podcast_over_time](/Images/Podcast_Played_Over_Time.png)
 
 ## EDA on Artist Genres
+:one: **General EDA:** 
+- **Data Cleaning:**
 ``` python
 # load the cleaned data
 artist_genre_df = pd.read_csv('./Cleaned_Data/Artist_Genre_List.csv')
-
 # split multiple-genres
 artist_genre_df['genres_split'] = artist_genre_df['genres'].str.split(', ')
 genre_exploded = artist_genre_df.explode('genres_split').rename(columns={'genres_split':'genre'})
+```
 
+- **Inspected Data:** Looked at the first few rows, column names and data types.
+``` python
 # check the first few rows
 print(artist_genre_df.head())
-
+```
+- **Statistical Summary:**
+``` python
 # check column types, null counts and summary stats of numeric columns 
 # music tracks
 print(artist_genre_df.info()) 
 print(artist_genre_df.describe())
 ```
+
+:two: **Targeted EDA:**
+- **Visualize Top 10 Genres:**
 ``` python
 # count genre occurances
 genre_count = genre_cleaned['genre'].value_counts()

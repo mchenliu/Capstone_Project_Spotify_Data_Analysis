@@ -137,7 +137,10 @@ I used **Python Spotipy** to fetch artist genres from Spotify and **Python doten
 4. Iterated through the artist list extracted from the data.
 5. Created a new list to store genres fetched for each artist.
 6. Added a new column for genres alongside artist names in the dataset.
-7. Saved the updated dataset as a new CSV file. 
+7. Normalized text fields by trimming whitespace and converting all text to lowercase.
+8. Mapped genres names to standardized labels for consistency (e.g., replacing 'mandarin pop' with 'mandopop').
+9. Removed duplicated genre entries for each artist to clean the data.
+10. Saved the updated dataset as a new CSV file. 
 
 ```python
 # find artist genres
@@ -177,16 +180,44 @@ for artist_name in artist_names:
         genres = f'Error: {e}'
     artist_genre.append(genres)
 
-# add genres as a new column
-artist_df['genres'] = artist_genre
+# create DataFrame with the results
+artist_genre_data = pd.DataFrame({
+    'artist_name': artist_names,
+    'genres': artist_genre
+})
 
-# save to csv
-updated_path = './Cleaned_Data/Artist_Genre_List.csv'
-artist_df.to_csv(updated_path, index= False, encoding= 'utf-8-sig')
+# clean the genres
+# normalize genres
+artist_genre_data['genres'] = artist_genre_data['genres'].str.lower()
+artist_genre_data['genres'] = artist_genre_data['genres'].str.strip()
+
+
+# define genre mapping
+# used regular expression \b (word boundaries) for precise genre replacement to avoid partial matches 
+genre_mapping = {
+    r'\bc-pop\b': 'mandopop',
+    r'\bclassic mandopop\b': 'mandopop',
+    r'\bmando pop\b': 'mandopop',
+    r'\bmandarin pop\b': 'mandopop',
+    r'\bchinese pop\b': 'mandopop',
+    r'\btaiwanese pop\b': 'mandopop',
+    r'\bmainland chinese pop\b': 'mandopop',
+    r'\btaiwan pop\b': 'mandopop',
+    r'\bchinese jazz\b': 'jazz',
+    r'\bpop dance\b': 'dance pop'
+}
+# replace substrings in genres
+for old_genre, new_genre in genre_mapping.items():
+    artist_genre_data['genres'] = artist_genre_data['genres'].str.replace(old_genre,new_genre,regex=True) #regex=True ensures \b to function
+
+# remove duplicates in genres
+artist_genre_data['genres'] = artist_genre_data['genres'].str.split(', ').apply(lambda x: ', '.join(sorted(set(x))))
+
+artist_df['genre'] = artist_genre
 ```
 
 # Conclusion
-In this section, I collected raw data directly from Spotify and cleaned it using **Python** and **Pandas**. Additionally, I created two CSV files: an artist list and an artist genre list. To fetch artist genres, I used **Spotipy** and secured my Spotify API keys with **dotenv**.
+In this section, I collected raw data directly from Spotify and cleaned it using **Python** and **Pandas**. Additionally, I created two CSV files: an artist list and an artist genre list. To fetch artist genres, I used **Spotipy** and secured my Spotify API keys with **dotenv**. I cleaned the artist genre list further by standardizing the labels and removed duplicates. 
 
 The data cleaning process included:
 - Transforming file types from JSON to DataFrame,

@@ -1,41 +1,90 @@
-"""
-1.  What are the 20 most played tracks and artists? 🎶
-2.  How do listening habits vary by time of day? 🕒
-3.  How diverse are the genres of music artists? 🌟
-4.  Which tracks were frequently skipped?　⏭️
-5.  What are the top podcast episodes 🎙️  
-6.  Based on the past data, will podcasts occupy most listening time or tracks? :headphones:
-7.  Based on past data, who are the most played artists and tracks for 2025?" :question:  
-"""
-
-# import library
 import pandas as pd
+import time
+from spotipy.oauth2 import SpotifyClientCredentials
+import spotipy
+import os
+from dotenv import load_dotenv
 
-# load the data
-music_track_df = pd.read_csv('./Cleaned_Data/Music_Streaming_History.csv')
-podcast_episodes_df = pd.read_csv('./Cleaned_Data/Podcast_Streaming_History.csv')
+# load the cleaned music tracks data from the VS Code project directory
+file_path = './Cleaned_Data/Music_Streaming_History.csv'
+df = pd.read_csv(file_path)
 
-top_artists = music_track_df['artist_name'].value_counts().head(20)
+# find unique artists
+unique_artists = df['artist_name'].dropna().unique()
 
-#format artist counts with thousand seperator
-top_artists = top_artists.apply(lambda x: f'{x:,}')
-# reset the index
-top_artists = top_artists.reset_index()
+# convert to a DataFrame
+unique_artists_df = pd.DataFrame(unique_artists, columns=['artist_name'])
+
+# save the unique artists to a new CSV
+output_path = './Cleaned_Data/Artist_List.csv'
+unique_artists_df.to_csv(output_path, index=False, encoding='utf-8-sig')
+
+# find artist genres
+
+# enter spotify credentials
+load_dotenv()
+
+# authenticate with Spotify
+client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
+sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+# read artist csv
+input_path = './Cleaned_Data/Artist_List.csv'
+artist_df = pd.read_csv(input_path)
+artist_names = artist_df['artist_name'].tolist()
+
+# create a list to store results
+artist_genre =[]
+
+# find genres for each artist
+for artist_name in artist_names:
+    try:
+        # search for artist on Spotify
+        results = sp.search(q=artist_name,type='artist', limit =1)
+        if results['artists']['items']:
+            artist = results['artists']['items'][0]
+            genres = ', '.join(artist['genres']) if artist['genres'] else 'No genres found'
+        else:
+            genres = 'Not Found'
+    except Exception as e:
+        genres = f'Error: {e}'
+    artist_genre.append(genres)
+
+# create DataFrame with the results
+artist_genre_data = pd.DataFrame({
+    'artist_name': artist_names,
+    'genres': artist_genre
+})
+
+# clean the genres
+# normalize genres
+artist_genre_data['genres'] = artist_genre_data['genres'].str.lower()
+artist_genre_data['genres'] = artist_genre_data['genres'].str.strip()
 
 
-print(top_artists.to_string(index=False))
+# define genre mapping
+# used regular expression \b (word boundaries) for precise genre replacement to avoid partial matches 
+genre_mapping = {
+    r'\bc-pop\b': 'mandopop',
+    r'\bclassic mandopop\b': 'mandopop',
+    r'\bmando pop\b': 'mandopop',
+    r'\bmandarin pop\b': 'mandopop',
+    r'\bchinese pop\b': 'mandopop',
+    r'\btaiwanese pop\b': 'mandopop',
+    r'\bmainland chinese pop\b': 'mandopop',
+    r'\btaiwan pop\b': 'mandopop',
+    r'\bchinese jazz\b': 'jazz',
+    r'\bpop dance\b': 'dance pop'
+}
 
-# group by artist name and sum the minutes played
-top_artists_by_minutes = round(music_track_df.groupby('artist_name')['minutes_played'].sum(),2)
 
-# sort the results in descending order and select the top 20
-top_artists_by_minutes = top_artists_by_minutes.sort_values(ascending=False).head(20)
+# replace substrings in genres
+for old_genre, new_genre in genre_mapping.items():
+    artist_genre_data['genres'] = artist_genre_data['genres'].str.replace(old_genre,new_genre,regex=True) #regex=True ensures \b to function
 
-# format minutes with thousand seperator
-top_artists_by_minutes = top_artists_by_minutes.apply(lambda x: f'{x:,}')
+# remove duplicates in genres
+artist_genre_data['genres'] = artist_genre_data['genres'].str.split(', ').apply(lambda x: ', '.join(sorted(set(x))))
 
-# reset the index
-top_artists_by_minutes = top_artists_by_minutes.reset_index()
-
-# print the result without the index
-print(top_artists_by_minutes.to_string(index=False))
+artist_df['genre'] = artist_genre
+# save to csv
+updated_path = './Cleaned_Data/Artist_Genre_List.csv'
+artist_df.to_csv(updated_path, index= False, encoding= 'utf-8-sig')

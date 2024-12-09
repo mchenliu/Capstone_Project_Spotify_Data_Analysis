@@ -7,7 +7,7 @@
   - [Conclusion](#conclusion)
 
 # Introduction
-:mega: In this project, I analyzed my Spotify streaming history, covering both music tracks and podcast shows from 2018 to 2024. The goal is to uncover insights into my listening habits and predict future listening trends. This project is split into four parts.
+:mega: In this project, I analyzed my Spotify streaming history, covering both music tracks and podcast shows from 2018 to 2024. The goal is to uncover insights into my listening habits and predict future listening trends. This project is split into four parts:
 1. [Data_Collection_and_Preparation](/1_Data_Collection_and_Preparation/)
 2. [Exploratary_Data_Analysis](/2_Exploratary_Data_Analysis/)
 3. [Data_Analysis](/3_Data_Analysis/)
