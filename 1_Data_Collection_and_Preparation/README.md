@@ -131,7 +131,7 @@ unique_artists_df.to_csv(output_path, index=False, encoding='utf-8-sig')
 ```
 ## :four: Prepare Artist Genre List  
 I used **Python Spotipy** to fetch artist genres from Spotify and **Python dotenv** to securely manage my API keys, keeping them out of the source code. Below are the steps I followed:  
-1. Requested Web API credential from [Spotify_for_Developers](https://developer.spotify.com/documentation/web-api/tutorials/getting-started).
+1. Requested Web API credential from [Spotify for Developers](https://developer.spotify.com/documentation/web-api/tutorials/getting-started).
 2. Used the credentials to access Spotify's API via Spotipy library.
 3. Used dotenv to securely manage my API keys.
 4. Iterated through the artist list extracted from the data.
@@ -225,4 +225,4 @@ The data cleaning process included:
 - Converting data types (e.g., timestamps and booleans), and
 - Normalizing the data.  
 
-Finally, I split the dataset into **Music Tracks** and **Podcast Shows** and saved them as separate CSV files. For collecting genres, I obtained a Spotify Web API token from [Spotify_for_Developers](https://developer.spotify.com/documentation/web-api/tutorials/getting-started), used **Spotipy**, and iterated through the artist list to assign genres to their corresponding artists.
+Finally, I split the dataset into **Music Tracks** and **Podcast Shows** and saved them as separate CSV files. For collecting genres, I obtained a Spotify Web API token from [Spotify for Developers](https://developer.spotify.com/documentation/web-api/tutorials/getting-started), used **Spotipy**, and iterated through the artist list to assign genres to their corresponding artists.
