@@ -23,5 +23,5 @@ plt.title('Boxplot of Minuets Played (Podcast)', fontsize = 20)
 plt.xlabel('Minuetes Played')
 plt.show()
 
-outliers = music_tracks_df[music_tracks_df['minutes_played'] > 10]
-print(outliers[['track_name','artist_name','minutes_played','reason_start']])
+outliers = podcast_episodes_df[podcast_episodes_df['minutes_played'] > 50]
+print(outliers[['show_name','minutes_played']])

@@ -91,7 +91,7 @@ Below are the questions I want to answer in my project:
   ```
   ![music_boxplot](/Images/music_boxplot.png)
   *Interpretation:*  
-  1. Most tracks are played between **0 -10 minutes**.
+  1. Most tracks are played between **0 - 10 minutes**.
   2. The median playback time is around **4 minutes**. Half of the tracks are played for less than 4 minutes, and half are played for more than 4 minutes.  
   3. Tracks above the upper whisker are outliers. These tracks are played for an **unusally long duaration**. The potential explanations are:
        - Tracks being **repeatedly played**.
@@ -99,7 +99,12 @@ Below are the questions I want to answer in my project:
        - Tracks being played as **background music**.  
 
   *What's Next:*  
-  I found outlying tracks by filtering out tracks minutes played less than 10 minuets. There are 162 results. Some of them are live tracks while some are tracks by top played artists. Therefore, I believe the data is not unusual.  
+  I found outlying tracks by filtering out tracks minutes played more than 10 minuets. There are 162 results. Some of them are live tracks while some are tracks by top played artists. Therefore, I believe the data is not unusual.  
+    ```python
+  outliers = music_tracks_df[music_tracks_df['minutes_played'] > 10]
+  print(outliers[['track_name','artist_name','minutes_played','reason_start']])
+  ```
+
   | track_name | artist_name | minutes_played | reason_start |
   |------------|-------------|----------------|--------------|
   | 不為誰而作的歌 | JJ Lin | 13.096067 | fwdbtn |
@@ -112,14 +117,35 @@ Below are the questions I want to answer in my project:
   | 姐 | Hebe Tien  |    14.522633 | clickrow|
   | 勁歌金曲2 - 情歌王 - Live  |    Leo Ku  |     12.641317 |   trackdone|
   | 灵魂伴侣   | Hebe Tien |      13.299400  |  trackdone|
-  ```python
-  outliers = music_tracks_df[music_tracks_df['minutes_played'] > 10]
-  print(outliers[['track_name','artist_name','minutes_played','reason_start']])
-  ```
+
   ![podcast_boxplot](/Images/podcast_boxplot.png)  
-
+*Interpretation:*  
+  1. Most podcasts are played between **0 - 50 minutes**.
+  2. The median playback time is around **30 minutes**. Half of the podcasts are played for less than 30 minutes, and half are played for more than 30 minutes.  
+  3. Podcasts above the upper whisker are outliers. These podcasts are played for an **unusally long duaration**. The potential explanations are:
+       - Podcasts are longer.
+       - Podcasts being played as **background music**.  
   
-
+  *What's Next:*  
+  I found outlying tracks by filtering out tracks minutes played more than 50 minuets. There are 2577 results. Most of them are podcasts by top played shows. Therefore, I believe the data is not unusual.  
+    ```python
+  outliers = podcast_episodes_df[podcast_episodes_df['minutes_played'] > 50]
+  print(outliers[['show_name','minutes_played']])
+  ```
+   show_name |  minutes_played |
+  |----|---|
+  | 腦闆想什麼？   |    50.655633 |
+  |腦闆想什麼？   |    77.188250 |
+  |腦闆想什麼？   |    53.257400 |
+  | 劉軒的How to人生學 |      60.853683|
+  |劉軒的How to人生學  |     60.512700|
+  |...    |         ...    |     ...|
+  | 我在案發現場     |  64.543600 |
+  |童話裡都是騙人的   |   166.049717|
+  | 時間的女兒：八卦歷史   |    77.487683|
+  | 時間的女兒：八卦歷史   |    85.699383|
+  | 時間的女兒：八卦歷史   |    53.468050|  
+  
 - **Visulaize Distributions:**  
 
 :two: **Targeted EDA:**
