@@ -5,14 +5,17 @@
 - [Steps Taken](#steps-taken)
   - [:one: Data Collection](#one-data-collection)
   - [:two: Data Cleaning](#two-data-cleaning)
+  - [:three: Prepare Artist List](#three-prepare-artist-list)
+  - [:four: Prepare Artist Genre List](#four-prepare-artist-genre-list)
 - [Conclusion](#conclusion)
 
 # Introduction
-:mega: This is the first part of the project. In this section, I will collect raw data from Spotify and clean it to prepare for Part 2: [Data_Analysis](/2_Data_Analysis/).
+:mega: This is the first part of the project. In this section, I collected raw data from Spotify and cleaned it with **Python Pandas** to prepare for Part 2: [Data_Analysis](/2_Data_Analysis/). Additionally, I used the cleaned data to create a list of unique artists and employed **Python Spotipy** to fetch the genres associated with each artist.
 
 ## Tools Used
 - :snake: Python: The backbone of my project, used to perform all tasks. Key libraries include:
   - Pandas: Used for data cleaning and manipulation.
+  - Spotipy:
 - :notebook: Jupyter Notebooks: Used to run my Python scripts and seemlessly integrate notes and analysis.
 - :computer: Visual Studio Code: My pirmary IDE for executing Python scripts.
 - :octopus: Git & Github: My go-to for version control and tracking my project progress.
@@ -103,7 +106,91 @@ music_tracks_df.to_csv(music_tracks_output_path, index=False, encoding='utf-8-si
 podcast_episodes_output_path = './Cleaned_Data/Podcast_Streaming_History.csv'
 podcast_episodes_df.to_csv(podcast_episodes_output_path, index=False, encoding='utf-8-sig')
 ```  
+## :three: Prepare Artist List
+I used **Pyhon Pandas** to clean the data further. Below are the stpes I followed:  
+1. Loaded the cleaned music track data.
+2. Find unique artists.
+3. Converted file to DataFrame and saved as CSV file.
+```python
+import pandas as pd
 
+# load the cleaned music tracks data from the VS Code project directory
+file_path = './Cleaned_Data/Music_Streaming_History.csv'
+df = pd.read_csv(file_path)
+
+# find unique artists
+unique_artists = df['artist_name'].dropna().unique()
+
+# convert to a DataFrame
+unique_artists_df = pd.DataFrame(unique_artists, columns=['artist_name'])
+
+# save the unique artists to a new CSV
+output_path = './Cleaned_Data/Artist_List.csv'
+unique_artists_df.to_csv(output_path, index=False, encoding='utf-8-sig')
+```
+## :four: Prepare Artist Genre List  
+I used **Python Spotipy** to fetch artist genres from Spotify and **Python dotenv** to securely manage my API keys, keeping them out of the source code. Below are the steps I followed:  
+1. Requested Web API credential from [Spotify_for_Developers](https://developer.spotify.com/documentation/web-api/tutorials/getting-started).
+2. Used the credentials to access Spotify's API via Spotipy library.
+3. Used dotenv to securely manage my API keys.
+4. Iterated through the artist list extracted from the data.
+5. Created a new list to store genres fetched for each artist.
+6. Added a new column for genres alongside artist names in the dataset.
+7. Saved the updated dataset as a new CSV file. 
+
+```python
+# find artist genres
+from spotipy.oauth2 import SpotifyClientCredentials
+import spotipy
+import os
+from dotenv import load_dotenv
+
+# enter spotify credentials
+load_dotenv()
+client_id = os.getenv("SPOTIFY_CLIENT_ID")
+client_secret = os.getenv("SPOTIFY_CLIENT_SECRET")
+
+# authenticate with spotify
+client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret= client_secret)
+sp= spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+
+# read artist csv
+input_path = './Cleaned_Data/Artist_List.csv'
+artist_df = pd.read_csv(input_path)
+artist_names = artist_df['artist_name'].tolist()
+
+# create a list to store results
+artist_genre =[]
+
+# find genres for each artist
+for artist_name in artist_names:
+    try:
+        # search for artist on Spotify
+        results = sp.search(q=artist_name,type='artist', limit =1)
+        if results['artists']['items']:
+            artist = results['artists']['items'][0]
+            genres = ', '.join(artist['genres']) if artist['genres'] else 'No genres found'
+        else:
+            genres = 'Not Found'
+    except Exception as e:
+        genres = f'Error: {e}'
+    artist_genre.append(genres)
+
+# add genres as a new column
+artist_df['genres'] = artist_genre
+
+# save to csv
+updated_path = './Cleaned_Data/Artist_Genre_List.csv'
+artist_df.to_csv(updated_path, index= False, encoding= 'utf-8-sig')
+```
 
 # Conclusion
-In this section, I collected raw data directly from Spotify and cleaned the data using Python and Pandas. The process incluided transforming file types from JSON to DataFrame, renaming columns, converting data types (e.g., timestamps and booleans), and normalizing the data. Finally, I split the dataset into **Music Tracks** and **Podcast Shows** and saved them separately as CSV files.
+In this section, I collected raw data directly from Spotify and cleaned it using **Python** and **Pandas**. Additionally, I created two CSV files: an artist list and an artist genre list. To fetch artist genres, I used **Spotipy** and secured my Spotify API keys with **dotenv**.
+
+The data cleaning process included:
+- Transforming file types from JSON to DataFrame,
+- Renaming columns,
+- Converting data types (e.g., timestamps and booleans), and
+- Normalizing the data.  
+
+Finally, I split the dataset into **Music Tracks** and **Podcast Shows** and saved them as separate CSV files. For collecting genres, I obtained a Spotify Web API token from [Spotify_for_Developers](https://developer.spotify.com/documentation/web-api/tutorials/getting-started), used **Spotipy**, and iterated through the artist list to assign genres to their corresponding artists.
