@@ -10,7 +10,7 @@
 - [Conclusion](#conclusion)
 
 # Introduction
-:mega: This is the first part of the project. In this section, I collected raw data from Spotify and cleaned it with **Python Pandas** to prepare for Part 2: [Exploratory_Data_Analysis](/2_Exploratory_Data_Analysis/). Additionally, I used the cleaned data to create a list of unique artists and employed **Python Spotipy** to fetch the genres associated with each artist.
+:mega: This is the first part of the project. In this section, I collected raw data from Spotify and cleaned it with **Python Pandas** to prepare for Part 2: [Exploratory Data Analysis](/2_Exploratory_Data_Analysis/). Additionally, I used the cleaned data to create a list of unique artists and employed **Python Spotipy** to fetch the genres associated with each artist.
 
 ## Tools Used
 - :snake: Python: The backbone of my project, used to perform all tasks. Key libraries include:
