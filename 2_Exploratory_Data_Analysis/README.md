@@ -33,7 +33,7 @@ Below are the questions I want to answer in my project:
 
 # Exploratory Data Analysis (EDA)  
 ## EDA on Music and Podcast Streaming History
-** :one: General EDA:**  
+:one: **General EDA:**  
 - **Inspected Data:** Looked at the first few rows, column names and data types.
   ``` python
   # import libraries
@@ -73,7 +73,7 @@ Below are the questions I want to answer in my project:
 
 - **Visulaize Distributions:**  
 
-** :two: Targeted EDA:**
+:two: **Targeted EDA:**
 - **Visualize Top 20 Most Played Music Artists & Podcast Shows:**
 ``` python
 import matplotlib.pyplot as plt
