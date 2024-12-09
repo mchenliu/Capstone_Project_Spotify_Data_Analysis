@@ -1,0 +1,109 @@
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+  - [Tools Used](#tools-used)
+- [Steps Taken](#steps-taken)
+  - [:one: Data Collection](#one-data-collection)
+  - [:two: Data Cleaning](#two-data-cleaning)
+- [Conclusion](#conclusion)
+
+# Introduction
+:mega: This is the first part of the project. In this section, I will collect raw data from Spotify and clean it to prepare for Part 2: [Data_Analysis](/2_Data_Analysis/).
+
+## Tools Used
+- :snake: Python: The backbone of my project, used to perform all tasks. Key libraries include:
+  - Pandas: Used for data cleaning and manipulation.
+- :notebook: Jupyter Notebooks: Used to run my Python scripts and seemlessly integrate notes and analysis.
+- :computer: Visual Studio Code: My pirmary IDE for executing Python scripts.
+- :octopus: Git & Github: My go-to for version control and tracking my project progress.
+# Steps Taken
+## :one: Data Collection
+The raw data used in this project is the streaming history from my Spotify account, provided by Spotify. It spans from October 2018 to November 2024. The raw data is in JSON format. Check out the data :point_right: [here](/Raw%20Data_Spotify%20Extended%20Streaming%20History/).
+## :two: Data Cleaning
+I used **Pyhon Pandas** to clean the data. Below are the stpes I followed:
+1. Combined all JSON files. Since the source data contains Chinese characters, I used `utf-8` encoding.
+2. Converted data format from JSON to DataFrame.
+3. Renamed columns to meaningful names.
+4. Fixed data types (e.g., timestamps and boolean columns).
+5. Removed rows with `Null` playtime.
+6. Normalized text fields (e.g., trimmed whitespace).
+7. Added new columns for time-based analysis and other futher work.
+8. Split the data into **Music** and **Podcasts**, then saved them as separate CSV files.
+
+**Code Implementation**
+
+```python
+# import libraries
+import json
+import pandas as pd
+
+# list of JSON file paths
+file_paths = [
+    './Raw_Data_Spotify_Streaming_History/Streaming_History_Audio_2020-2021_5.json',
+    './Raw_Data_Spotify_Streaming_History/Streaming_History_Audio_2020_3.json',
+    './Raw_Data_Spotify_Streaming_History/Streaming_History_Audio_2020_4.json',
+    './Raw_Data_Spotify_Streaming_History/Streaming_History_Audio_2021-2022_6.json',
+    './Raw_Data_Spotify_Streaming_History/Streaming_History_Audio_2022-2023_7.json',
+    './Raw_Data_Spotify_Streaming_History/Streaming_History_Audio_2023_8.json',
+    './Raw_Data_Spotify_Streaming_History/Streaming_History_Audio_2023-2024_9.json',
+    './Raw_Data_Spotify_Streaming_History/Streaming_History_Audio_2018-2019_0.json',
+    './Raw_Data_Spotify_Streaming_History/Streaming_History_Audio_2019-2020_2.json',
+    './Raw_Data_Spotify_Streaming_History/Streaming_History_Audio_2019_1.json'
+]
+# load the JSON data from file using UTF-8 encoding
+dataframes = [pd.read_json(fp, encoding='utf-8') for fp in file_paths]
+
+
+# convert JSON data to a DataFrame
+df = pd.concat(dataframes, ignore_index=True)
+
+# rename columns
+df.rename(columns={'ts': 'date_time', 'master_metadata_track_name': 'track_name', 'conn_country' : 'country', 'master_metadata_album_artist_name': 'artist_name', 'master_metadata_album_album_name': 'album_name','episode_show_name': 'show_name'}, inplace=True)
+
+# convert timestamp column to datetime
+df['date_time'] = pd.to_datetime(df['date_time'])
+# standardize boolean columns (e.g., shuffle)
+df['shuffle'] = df['shuffle'].astype(bool)
+
+# remove playtime is null
+df = df[df['ms_played'] > 0]
+
+# normalize text columns
+df['track_name'] = df['track_name'].str.strip()
+df['album_name'] = df['album_name'].str.strip()
+df['episode_name'] = df['episode_name'].str.strip()
+df['show_name'] = df['show_name'].str.strip()
+
+# extract useful time-related columns
+df['date'] = df['date_time'].dt.date
+df['date'] = df['date_time'].dt.date
+df['year'] = df['date_time'].dt.year
+df['month'] = df['date_time'].dt.month
+df['day'] = df['date_time'].dt.day
+df['month_year'] = df['date_time'].dt.to_period('M')
+
+# add a new column to convert ms_played to minutes played
+df['minutes_played'] = df['ms_played'] / 60000
+
+# filter data into music tracks and podcast episodes
+music_tracks_df = df[df['track_name'].notna()]
+podcast_episodes_df = df[df['episode_name'].notna()]
+
+# drop podcast columns from music tracks data
+music_tracks_df = music_tracks_df.drop(columns=['ip_addr', 'spotify_episode_uri', 'episode_name', 'show_name'])
+
+# drop music track columns podcast data
+podcast_episodes_df = podcast_episodes_df.drop(columns=['ip_addr', 'track_name', 'artist_name', 'album_name','spotify_track_uri'])
+
+# save music tracks data to a separate CSV
+music_tracks_output_path = './Cleaned_Data/Music_Streaming_History.csv'
+music_tracks_df.to_csv(music_tracks_output_path, index=False, encoding='utf-8-sig')
+
+# save podcast episodes data to a separate CSV
+podcast_episodes_output_path = './Cleaned_Data/Podcast_Streaming_History.csv'
+podcast_episodes_df.to_csv(podcast_episodes_output_path, index=False, encoding='utf-8-sig')
+```  
+
+
+# Conclusion
+In this section, I collected raw data directly from Spotify and cleaned the data using Python and Pandas. The process incluided transforming file types from JSON to DataFrame, renaming columns, converting data types (e.g., timestamps and booleans), and normalizing the data. Finally, I split the dataset into **Music Tracks** and **Podcast Shows** and saved them separately as CSV files.
