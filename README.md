@@ -21,6 +21,6 @@ Below are the questions I want to answer in my project:
 4.  Which tracks were frequently skipped?　⏭️
 5.  What are the top podcast episodes 🎙️  
 6.  Based on the past data, will podcasts occupy most listening time or tracks? :headphones:
-7.  Based on past data, who are the most played artists and tracks for 2025?" :question:  
+7.  Based on the past data, who are the most played artists and tracks for 2025?" :question:  
 
 ## Conclusion

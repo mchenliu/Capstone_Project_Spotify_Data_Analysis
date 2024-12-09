@@ -10,7 +10,7 @@
     - [Which tracks were frequently skipped?　⏭️](#which-tracks-were-frequently-skipped️)
     - [What are the top podcast episodes 🎙️](#what-are-the-top-podcast-episodes-️)
     - [Based on the past data, will podcasts occupy most listening time or tracks? :headphones:](#based-on-the-past-data-will-podcasts-occupy-most-listening-time-or-tracks-headphones)
-    - [Based on past data, who are the most played artists and tracks for 2025?" :question:](#based-on-past-data-who-are-the-most-played-artists-and-tracks-for-2025-question)
+    - [Based on the past data, who are the most played artists and tracks for 2025?" :question:](#based-on-the-past-data-who-are-the-most-played-artists-and-tracks-for-2025-question)
 - [Conclusion](#conclusion)
 
 # Introducation
@@ -22,7 +22,7 @@ Below are the questions I want to answer in my project:
 4.  Which tracks were frequently skipped?　⏭️
 5.  What are the top podcast episodes 🎙️  
 6.  Based on the past data, will podcasts occupy most listening time or tracks? :headphones:
-7.  Based on past data, who are the most played artists and tracks for 2025?" :question:  
+7.  Based on the past data, who are the most played artists and tracks for 2025?" :question:  
 ## Tools Used
 - :snake: Python: The backbone of my project, used to perform all tasks. Key libraries include:
   - Pandas: Used for data cleaning and manipulation.
@@ -121,5 +121,5 @@ print(top_artists_by_minutes.to_string(index=False))
 ###  Which tracks were frequently skipped?　⏭️
 ### What are the top podcast episodes 🎙️  
 ###  Based on the past data, will podcasts occupy most listening time or tracks? :headphones:
-###  Based on past data, who are the most played artists and tracks for 2025?" :question:  
+###  Based on the past data, who are the most played artists and tracks for 2025?" :question:  
 # Conclusion
