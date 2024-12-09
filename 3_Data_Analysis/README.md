@@ -51,7 +51,7 @@ top_artists = top_artists.reset_index()
 # remove index in result
 print(top_artists.to_string(index=False))
 ```
-*Result:*
+*Top 20 Artists by Counts:*
 | artist_name | count |
 |-------------|-------|
 |Hebe Tien| 14,441|
@@ -92,7 +92,7 @@ top_artists_by_minutes = top_artists_by_minutes.reset_index()
 print(top_artists_by_minutes.to_string(index=False))
 ```
 
-*Result:*
+*Top 20 Artists by Minutes Played:*
 |artist_name |minutes_played|
 |------------|--------------|
 | Hebe Tien     | 36,692.95|
