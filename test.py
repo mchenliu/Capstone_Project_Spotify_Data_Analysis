@@ -1,20 +1,19 @@
-import spotipy
-from spotipy.oauth2 import SpotifyClientCredentials
+# import libraries
+import pandas as pd
 
-# Your Spotify Credentials
-client_id = 'd9fcdeb841a84c9c86093bc2b742a18d'
-client_secret = '081b2925bd47442aaa96fc651afe422e'
+# load the cleaned data
+music_tracks_df = pd.read_csv('./Cleaned_Data/Music_Streaming_History.csv')
+podcast_episodes_df = pd.read_csv('./Cleaned_Data/Podcast_Streaming_History.csv')
+# check the first few rows
+print(music_tracks_df.head())
+print(podcast_episodes_df.head())
 
-# Authenticate with Spotify
-client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
-sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
-# Artist Spotify ID
-artist_id = '3hhUgkTf3fFYGogFMbV5Wv'
+# get statistical summary 
+# music tracks
+print(music_tracks_df.info()) 
+print(music_tracks_df.describe())  
 
-# Fetch artist information
-artist = sp.artist(artist_id)
-
-# Display artist name and genres
-print(f"Artist: {artist['name']}")
-print("Genres:", ", ".join(artist['genres']) if artist['genres'] else "No genres found")
+# podcast episodes
+print(podcast_episodes_df.info())
+print(podcast_episodes_df.describe())
