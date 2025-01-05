@@ -12,8 +12,6 @@
 # Introduction
 :mega: This is the first part of the project. In this section, I collected raw data from Spotify and cleaned it with **Python Pandas** to prepare for Part 2: [Exploratory Data Analysis](/2_Exploratory_Data_Analysis/). Additionally, I used the cleaned data to create a list of unique artists and employed **Python Spotipy** to fetch the genres associated with each artist.
 
-View my notebook with detailed steps here: [1_Data_Cleaning.ipynb](/1_Data_Collection_and_Preparation/1_Data_Cleaning.ipynb)
-
 ## Tools Used
 - :snake: Python: The backbone of my project, used to perform all tasks. Key libraries include:
   - Pandas: Used for data cleaning and manipulation.
@@ -35,6 +33,8 @@ I used **Pyhon Pandas** to clean the data. Below are the stpes I followed:
 6. Normalized text fields (e.g., trimmed whitespace).
 7. Added new columns for time-based analysis and other futher work.
 8. Split the data into **Music** and **Podcasts**, then saved them as separate CSV files.
+
+View my notebook with detailed steps here :point_right: [1_Data_Cleaning.ipynb](/1_Data_Collection_and_Preparation/1_Data_Cleaning.ipynb)
 
 **Code Implementation**
 
@@ -65,6 +65,10 @@ I used **Pyhon Pandas** to clean the data further. Below are the stpes I followe
 2. Find unique artists.
 3. Converted file to DataFrame and saved as CSV file.
 
+View my notebook with detailed steps here :point_right: [2_Artist_List.ipynb](/1_Data_Collection_and_Preparation/2_Artist_List.ipynb)
+
+**Code Implementation**
+
 ```python
 import pandas as pd
 # find unique artists
@@ -83,22 +87,23 @@ I used **Python Spotipy** to fetch artist genres from Spotify and **Python doten
 9. Removed duplicated genre entries for each artist to clean the data.
 10. Saved the updated dataset as a new CSV file. 
 
+View my notebook with detailed steps here :point_right: [3_Artist_Genre_List.ipynb](/1_Data_Collection_and_Preparation/3_Artist_Genre_List.ipynb)
+
+**Code Implementation**
+
 ```python
 # find artist genres
 from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy
 import os
 from dotenv import load_dotenv
-
 # enter spotify credentials
 load_dotenv()
 client_id = os.getenv("SPOTIFY_CLIENT_ID")
 client_secret = os.getenv("SPOTIFY_CLIENT_SECRET")
-
 # authenticate with spotify
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret= client_secret)
 sp= spotipy.Spotify(client_credentials_manager=client_credentials_manager)
-
 # read artist csv
 input_path = './Cleaned_Data/Artist_List.csv'
 artist_df = pd.read_csv(input_path)
@@ -120,41 +125,6 @@ for artist_name in artist_names:
     except Exception as e:
         genres = f'Error: {e}'
     artist_genre.append(genres)
-
-# create DataFrame with the results
-artist_genre_data = pd.DataFrame({
-    'artist_name': artist_names,
-    'genres': artist_genre
-})
-
-# clean the genres
-# normalize genres
-artist_genre_data['genres'] = artist_genre_data['genres'].str.lower()
-artist_genre_data['genres'] = artist_genre_data['genres'].str.strip()
-
-
-# define genre mapping
-# used regular expression \b (word boundaries) for precise genre replacement to avoid partial matches 
-genre_mapping = {
-    r'\bc-pop\b': 'mandopop',
-    r'\bclassic mandopop\b': 'mandopop',
-    r'\bmando pop\b': 'mandopop',
-    r'\bmandarin pop\b': 'mandopop',
-    r'\bchinese pop\b': 'mandopop',
-    r'\btaiwanese pop\b': 'mandopop',
-    r'\bmainland chinese pop\b': 'mandopop',
-    r'\btaiwan pop\b': 'mandopop',
-    r'\bchinese jazz\b': 'jazz',
-    r'\bpop dance\b': 'dance pop'
-}
-# replace substrings in genres
-for old_genre, new_genre in genre_mapping.items():
-    artist_genre_data['genres'] = artist_genre_data['genres'].str.replace(old_genre,new_genre,regex=True) #regex=True ensures \b to function
-
-# remove duplicates in genres
-artist_genre_data['genres'] = artist_genre_data['genres'].str.split(', ').apply(lambda x: ', '.join(sorted(set(x))))
-
-artist_df['genre'] = artist_genre
 ```
 
 # Conclusion
