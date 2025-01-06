@@ -198,7 +198,7 @@ plt.title('Top 10 Genres Distribution', fontsize = 20)
 plt.ylabel(None)
 plt.show()
 ```
-![top_10_genre_bar_chart](/Images/Top_Genre_Bar_1.png)
-![top_10_genre_pie_chart](/Images/Top_genre_Pie.jpeg)
+![top_10_genre_bar_chart](/Images/top10_genres.png)
+![top_10_genre_pie_chart](/Images/top10_genres_distribution.png)
 
 # Conclusion
