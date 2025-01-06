@@ -202,3 +202,4 @@ plt.show()
 ![top_10_genre_pie_chart](/Images/top10_genres_distribution.png)
 
 # Conclusion
+In this section, I conducted EDA on 
