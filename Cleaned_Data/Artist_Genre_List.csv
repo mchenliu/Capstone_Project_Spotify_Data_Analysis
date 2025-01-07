@@ -18,12 +18,11 @@ Joker Xue,mandopop
 Andrew Tan,mandopop
 Imagine Dragons,pop
 Imagine Dragons,rock
-Imagine Dragons,modern rock
+Imagine Dragons,rock
 Hebe Tien,mandopop
 S.H.E,mandopop girl group
 S.H.E,taiwan idol pop
 S.H.E,mandopop
-Fall Out Boy,modern rock
 Fall Out Boy,pop
 Fall Out Boy,rock
 Fall Out Boy,emo
@@ -39,13 +38,10 @@ Eason Chan,cantopop
 Jay Chou,mandopop
 MAGIC!,reggae
 MAGIC!,pop
-Foster The People,modern alternative rock
-Foster The People,modern rock
 Foster The People,rock
-Foster The People,indietronica
+Foster The People,indie
 Calvin Harris,edm
 Calvin Harris,pop
-Calvin Harris,progressive edm
 Calvin Harris,uk dance
 Calvin Harris,pop
 One Direction,pop
@@ -64,7 +60,7 @@ French Montana,rap
 French Montana,hip hop
 Khalid,r&b
 Khalid,pop
-Daft Punk,filter edm
+Daft Punk,edm
 Daft Punk,rock
 Daft Punk,electro
 Kesha,pop
@@ -75,8 +71,7 @@ George Ezra,folk-pop
 Dillon Francis,edm
 Dillon Francis,moombahton
 Dillon Francis,pop
-Dillon Francis,progressive edm
-Dillon Francis,brostep
+Dillon Francis,edm
 Fifth Harmony,pop
 Fifth Harmony,talent show
 Fifth Harmony,girl group
@@ -88,13 +83,11 @@ Zara Larsson,swedish pop
 Zara Larsson,pop
 Train,neo mellow
 Train,pop
-Train,pop rock
+Train,rock
 Train,pop
-WALK THE MOON,modern alternative rock
-WALK THE MOON,modern rock
 WALK THE MOON,neo mellow
-WALK THE MOON,pop rock
-WALK THE MOON,dance rock
+WALK THE MOON,rock
+WALK THE MOON,rock
 Paloma Faith,talent show
 Paloma Faith,uk pop
 Paloma Faith,british soul
@@ -139,26 +132,25 @@ Alan Walker,edm
 Ronghao Li,mandopop
 Ronghao Li,chinese singer-songwriter
 Steve Chou,mandopop
+Astro Bunny,indie
 Astro Bunny,mandopop
-Astro Bunny,taiwan indie
 Astro Bunny,chinese electropop
 Maroon 5,pop
 Eric Chou,mandopop
 The Vamps,pop
 The Vamps,boy band
 Wiz Khalifa,hip hop
-Wiz Khalifa,pittsburgh rap
 Wiz Khalifa,rap
 Wiz Khalifa,hip hop
 倪安東,no genres found
 Angela Chang,mandopop
-Rod Wave,florida rap
+Rod Wave,rap
 Rihanna,pop
 Rihanna,urban contemporary
 Rihanna,barbadian pop
 MKTO,pop
 MKTO,pop
-Elle King,modern blues rock
+Elle King,rock
 Katy Perry,pop
 G.R.L.,pop
 G.R.L.,talent show
@@ -168,13 +160,13 @@ Lewis Capaldi,pop
 Ella Henderson,talent show
 Ella Henderson,uk pop
 Ella Henderson,pop
-Hozier,modern rock
+Hozier,indie
 Hozier,pop
-Hozier,pov: indie
+Hozier,rock
 Hozier,irish singer-songwriter
 OMI,reggae
 The Script,pop
-The Script,celtic rock
+The Script,rock
 Rag'n'Bone Man,neo soul
 DJ Khaled,rap
 DJ Khaled,hip hop
@@ -209,7 +201,7 @@ Jason Derulo,pop
 FKP,no genres found
 Sam Hunt,country
 Sam Hunt,country pop
-Sam Hunt,modern country rock
+Sam Hunt,rock
 Sam Hunt,contemporary country
 Sean Kingston,hip hop
 Sean Kingston,pop
@@ -239,24 +231,22 @@ WeiBird,mandopop
 WeiBird,r&b
 G.E.M.,mandopop
 Jeff Chang,mandopop
-Ozuna,hip hop latino
+Ozuna,hip hop
 Ozuna,reggae
 Ozuna,urbano latino
 Ozuna,puerto rican pop
-Lunay,hip hop latino
+Lunay,hip hop
 Lunay,reggae
 Lunay,urbano latino
 Lunay,reggae
-Mike Perry,swedish tropical edm
+Mike Perry,swedish edm
 Mike Perry,pop
 J.Williams,pacific islands pop
 Disciples,edm
 Disciples,uk dance
 Disciples,pop
-Nelly,gangster rap
 Nelly,hip hop
 Nelly,rap
-Nelly,st louis rap
 Nelly,urban contemporary
 Nelly,pop
 Taio Cruz,pop
@@ -270,7 +260,6 @@ USHER,hip hop
 USHER,pop
 USHER,r&b
 USHER,rap
-USHER,south carolina hip hop
 USHER,urban contemporary
 USHER,r&b
 Ne-Yo,pop
@@ -279,7 +268,7 @@ Ne-Yo,urban contemporary
 Ne-Yo,pop
 Hannah Montana,pop
 Hannah Montana,pop
-Sammy Adams,indie rap
+Sammy Adams,indie
 Cher Lloyd,pop
 Cher Lloyd,talent show
 Cher Lloyd,pop
@@ -288,7 +277,6 @@ Far East Movement,rap
 Far East Movement,pop
 Gym Class Heroes,rap
 Gym Class Heroes,pop
-T-Pain,gangster rap
 T-Pain,hip hop
 T-Pain,r&b
 T-Pain,rap
@@ -319,30 +307,30 @@ Offset,rap
 Offset,hip hop
 YG,hip hop
 YG,rap
-YG,cali rap
+YG,rap
 Migos,hip hop
 Migos,rap
 Migos,hip hop
 Tory Lanez,hip hop
 Tory Lanez,r&b
 Tory Lanez,rap
-Tory Lanez,canadian hip hop
+Tory Lanez,hip hop
 Aitch,hip hop
 Tyllionaire,no genres found
-Veronica Vega,hip hop queen
-Veronica Vega,rap latina
+Veronica Vega,hip hop
+Veronica Vega,rap
 Lil Baby,hip hop
 Lil Baby,rap
-Lil Baby,atl hip hop
+Lil Baby,hip hop
 Luniz,hip hop
-Luniz,west coast rap
+Luniz,rap
 Luniz,g funk
 Tyga,hip hop
 Tyga,rap
 Tyga,hip hop
 Mustard,hip hop
 Mustard,rap
-Mustard,cali rap
+Mustard,rap
 Starr Lyfe,no genres found
 Christine Fan,mandopop
 A-Lin,mandopop
@@ -358,10 +346,9 @@ Rachel Liang,mandopop
 Jolin Tsai,mandopop
 LaLa Hsu,mandopop
 Karen Mok,mandopop
-Young Thug,gangster rap
 Young Thug,hip hop
 Young Thug,rap
-Young Thug,atl hip hop
+Young Thug,hip hop
 Eric IV,afroswing
 Day Sulan,no genres found
 Doja Cat,pop
@@ -397,7 +384,7 @@ Destiny's Child,urban contemporary
 Destiny's Child,pop
 Hunter Hayes,country
 Hunter Hayes,country road
-Hunter Hayes,modern country rock
+Hunter Hayes,rock
 Hunter Hayes,contemporary country
 Pets Tseng,mandopop
 Janice Yan,mandopop
@@ -422,10 +409,10 @@ Valen Hsu,mandopop
 Nicky Lee,mandopop
 Jason Zhang,mandopop
 Nine Chen,mandopop
-Yoyo Sham,hong kong indie
+Yoyo Sham,indie
 Yoyo Sham,cantopop
 Vicky Chen,mandopop
-Crowd Lu,taiwan indie
+Crowd Lu,indie
 Crowd Lu,taiwan singer-songwriter
 Crowd Lu,mandopop
 Kelly Yu,mandopop
@@ -455,7 +442,7 @@ Tim McGraw,country
 Tim McGraw,country road
 Tim McGraw,contemporary country
 OneRepublic,pop
-OneRepublic,piano rock
+OneRepublic,rock
 Ricky Hsiao,mandopop
 許光漢,no genres found
 黃齡,mandopop
@@ -464,12 +451,12 @@ J.Sheon,mandopop
 Jia Jia,mandopop
 Zhang Zhen Yue,mandopop
 Leo Ku,cantopop
+Waa Wei,indie
 Waa Wei,mandopop
-Waa Wei,taiwan indie
 Waa Wei,taiwan singer-songwriter
-Waa Wei,chinese indie
-Beyond,hong kong rock
+Waa Wei,indie
 Beyond,mandopop
+Beyond,rock
 Beyond,cantopop
 Tangerine Wong,mandopop
 Zhou Shen,mandopop
@@ -492,8 +479,8 @@ Boon Hui Lu,mandopop
 陳粒,chinese singer-songwriter
 陳粒,chinese minyao
 Chilam,cantopop
+Xu Wei,indie
 Xu Wei,mandopop
-Xu Wei,northwest china indie
 Xu Wei,chinese singer-songwriter
 A-do,singaporean pop
 A-do,mandopop
@@ -550,8 +537,8 @@ NCT 127,k-pop
 ONEUS,k-pop
 ATEEZ,k-pop
 The Rose,k-pop
-Jay Park,k-rap
 Jay Park,r&b
+Jay Park,rap
 Jay Park,k-pop
 Moon Chew,mandopop
 Jung Yong Hwa,k-pop
@@ -564,10 +551,10 @@ Moux,focus
 Tosh Møller,background piano
 Eric Badanti,background piano
 Jef Martens,no genres found
-SYML,modern indie pop
+SYML,indie
 Sigrid Vass,background piano
 Rosie Carney,irish singer-songwriter
-Rosie Carney,indie folk
+Rosie Carney,indie
 Mewael Yemane,background piano
 Jacob David,neo-classical
 Rich Music LTD,urbano latino
@@ -598,25 +585,19 @@ Coldplay,pop
 Coldplay,permanent wave
 Parsa Sirjani,no genres found
 CADMIUM,no genres found
-Adon,tropical edm
+Adon,edm
 Adon,chill edm
 Jonas Brothers,pop
 Jonas Brothers,boy band
 Kygo,edm
 Kygo,pop
-Kygo,tropical edm
 Kygo,pop
-Tiësto,brostep
-Tiësto,dutch edm
 Tiësto,edm
 Tiësto,pop
-Tiësto,progressive edm
 Tiësto,trance
 Tiësto,big room
-Martin Garrix,dutch edm
 Martin Garrix,edm
 Martin Garrix,pop
-Martin Garrix,progressive edm
 Martin Garrix,pop
 Fly By Midnight,singer-songwriter pop
 Mark Mendy,no genres found
@@ -627,18 +608,17 @@ Major Lazer,pop
 Ariana Grande,pop
 SHAED,electropop
 Lizzo,hip hop
-Lizzo,hip hop queen
 Lizzo,pop
 Lizzo,escape room
 2 Man Embassy,no genres found
 Mabel,uk pop
 Mabel,pop
+Anuel AA,hip hop
 Anuel AA,hip hop boricua
-Anuel AA,hip hop latino
 Anuel AA,reggae
 Anuel AA,urbano latino
 Anuel AA,reggae
-G-Eazy,indie rap
+G-Eazy,indie
 G-Eazy,rap
 G-Eazy,hip hop
 Peder B. Helland,no genres found
@@ -664,8 +644,8 @@ Teresa Teng,mandopop
 Teresa Teng,kayokyoku
 羅鈾霞,not found
 黃蜀娟,mandopop
-Dou Wei,chinese indie rock
-Dou Wei,chinese post-rock
+Dou Wei,indie rock
+Dou Wei,rock
 Dou Wei,chinese experimental
 邰正宵,mandopop
 谭艳,chinese audiophile
@@ -698,7 +678,7 @@ Dan + Shay,country road
 Dan + Shay,contemporary country
 Kanye West,hip hop
 Kanye West,rap
-Kanye West,chicago rap
+Kanye West,rap
 Travis Scott,rap
 Travis Scott,edm
 KAROL G,reggae
@@ -709,7 +689,7 @@ Black Eyed Peas,rap
 Black Eyed Peas,pop
 Post Malone,pop
 Post Malone,rap
-Post Malone,dfw rap
+Post Malone,rap
 Christina Perri,pop
 Kelly Clarkson,pop
 Kelly Clarkson,talent show
@@ -758,73 +738,67 @@ Billie Eilish,pop
 Billie Eilish,art pop
 Selena Gomez,pop
 Selena Gomez,pop
-Y2K,viral rap
+Y2K,rap
 Y2K,rap
 The Game,hip hop
 The Game,rap
-The Game,gangster rap
+The Game,rap
 Dua Lipa,pop
 Dua Lipa,uk pop
 Dua Lipa,pop
 Camo Columbo,no genres found
 Johnning,pop edm
-Johnning,gaming edm
+Johnning,edm
 Halsey,etherpop
-Halsey,indie poptimism
+Halsey,indie
 Halsey,pop
 Halsey,electropop
 Rival,no genres found
 Tanjent,no genres found
 Lauv,pop
 Ant Saunders,r&b
-DVBBS,dutch edm
 DVBBS,edm
 DVBBS,pop
-DVBBS,progressive edm
 DVBBS,canadian electronic
 blackbear,pop
 blackbear,alt z
-Flux Pavilion,classic dubstep
 Flux Pavilion,complextro
 Flux Pavilion,edm
-Flux Pavilion,brostep
-Snoop Dogg,gangster rap
+Flux Pavilion,edm
 Snoop Dogg,hip hop
 Snoop Dogg,rap
-Snoop Dogg,west coast rap
 Snoop Dogg,g funk
 Sam Feldt,edm
-Sam Feldt,tropical edm
 Sam Feldt,pop
-Megan Thee Stallion,hip hop queen
+Megan Thee Stallion,hip hop
 Megan Thee Stallion,pop
 Megan Thee Stallion,rap
-Megan Thee Stallion,houston rap
+Megan Thee Stallion,rap
 Cheat Codes,edm
 Cheat Codes,pop
 Cheat Codes,pop
 Clean Bandit,uk dance
 Clean Bandit,uk funky
 Clean Bandit,pop
-J Balvin,hip hop latino
+J Balvin,hip hop
 J Balvin,reggae
 J Balvin,urbano latino
 J Balvin,reggae
 DJ Snake,edm
-DJ Snake,electronic hip hop
+DJ Snake,hip hop
 DJ Snake,pop
 DJ Snake,pop
 SIX60,reggae
 SIX60,nz pop
 Peking Duk,australian electropop
-Peking Duk,australian indie
 Peking Duk,edm
+Peking Duk,indie
 Peking Duk,aussietronica
 "Tyler, The Creator",rap
 "Tyler, The Creator",hip hop
 Nicole Millar,gauze pop
 Nicole Millar,australian pop
-M.I.A.,indietronica
+M.I.A.,indie
 M.I.A.,new rave
 M.I.A.,escape room
 DJ Katch,basshall
@@ -833,24 +807,21 @@ Wale,r&b
 Wale,rap
 Wale,hip hop
 HAIM,metropopolis
-HAIM,indietronica
+HAIM,indie
 BROODS,etherpop
-BROODS,indietronica
+BROODS,indie
 BROODS,metropopolis
 BROODS,nz pop
-BROODS,auckland indie
+BROODS,indie
 Lucy Rose,british singer-songwriter
 Lucy Rose,ambient folk
 Vicetone,edm
-Vicetone,progressive edm
 Vicetone,pop
 Morgan Sulele,russelater
 Morgan Sulele,norwegian pop
-Syn Cole,deep tropical edm
+Syn Cole,deep edm
 Syn Cole,edm
 Syn Cole,pop edm
-Syn Cole,progressive edm
-Syn Cole,tropical edm
 Syn Cole,pop
 Rascal Flatts,country
 Rascal Flatts,country road
@@ -862,16 +833,14 @@ Shania Twain,country dawn
 Shania Twain,canadian country
 N.E.R.D,hip hop
 Arizona Zervas,rap
-Arizona Zervas,rhode island rap
-Arizona Zervas,indie rap
+Arizona Zervas,indie
 Roddy Ricch,hip hop
 Roddy Ricch,rap
 Roddy Ricch,rap
-Mac Miller,pittsburgh rap
 Mac Miller,rap
 Mac Miller,hip hop
 Labrinth,pop
-Labrinth,indie poptimism
+Labrinth,indie
 Shakira,latin pop
 Shakira,pop
 Shakira,colombian pop
@@ -891,8 +860,7 @@ Bazzi,pop
 Ava Max,pop
 Marshmello,edm
 Marshmello,pop
-Marshmello,progressive edm
-Marshmello,brostep
+Marshmello,edm
 Lady Gaga,pop
 Lady Gaga,art pop
 LEFT.,no genres found
@@ -900,9 +868,9 @@ Youngn Lipz,aussie drill
 Fabolous,hip hop
 Fabolous,rap
 Fabolous,urban contemporary
-Fabolous,gangster rap
+Fabolous,rap
 B Young,hip hop
-B Young,london rap
+B Young,rap
 B Young,afroswing
 Future,hip hop
 Future,rap
@@ -916,7 +884,6 @@ Russ,hip hop
 Eminem,rap
 Eminem,hip hop
 Meek Mill,hip hop
-Meek Mill,philly rap
 Meek Mill,rap
 Meek Mill,hip hop
 Ray J,urban contemporary
@@ -924,29 +891,29 @@ Ray J,rap
 Drake,hip hop
 Drake,rap
 Drake,canadian pop
-DaniLeigh,rap latina
+DaniLeigh,rap
 DaniLeigh,r&b
+Conan Gray,indie
 Conan Gray,pop
-Conan Gray,pov: indie
 Conan Gray,bedroom pop
 Noah Cyrus,pop
 Noah Cyrus,alt z
 Jorja Smith,r&b
 Jorja Smith,r&b
-Alex Skrindo,gaming edm
+Alex Skrindo,edm
 Rebecca Leonard,background piano
 Patrizio Pisani,background piano
 SAINt JHN,rap
 SAINt JHN,edm
 Brantley Gilbert,country
 Brantley Gilbert,country road
-Brantley Gilbert,modern country rock
+Brantley Gilbert,rock
 Brantley Gilbert,contemporary country
-DripReport,viral rap
+DripReport,rap
 D-Slugga,no genres found
 Chance the Rapper,hip hop
 Chance the Rapper,rap
-Chance the Rapper,chicago rap
+Chance the Rapper,rap
 Kranium,dancehall
 Kranium,basshall
 Cardi B,rap
@@ -962,17 +929,15 @@ Troye Sivan,australian pop
 Fergie,pop
 Fergie,pop
 Duke Dumont,edm
-Duke Dumont,progressive edm
 Duke Dumont,uk dance
 Duke Dumont,pop
 Black Caviar,pop
 Kendrick Lamar,rap
-Kendrick Lamar,west coast rap
 Kendrick Lamar,hip hop
 Valentino Khan,edm
-Valentino Khan,electronic hip hop
+Valentino Khan,hip hop
 Valentino Khan,moombahton
-Valentino Khan,brostep
+Valentino Khan,edm
 Era Istrefi,hip hop
 Era Istrefi,kosovan pop
 Era Istrefi,albanian pop
@@ -988,11 +953,10 @@ Missy Elliott,r&b
 Missy Elliott,rap
 Missy Elliott,urban contemporary
 Missy Elliott,pop
-Trill Ryan,viral rap
+Trill Ryan,rap
 Massari,lebanese pop
 Massari,canadian pop
 Ty Dolla $ign,hip hop
-Ty Dolla $ign,hip hop soul
 Ty Dolla $ign,r&b
 Ty Dolla $ign,rap
 Ty Dolla $ign,hip hop
@@ -1001,7 +965,7 @@ Steve Void,edm
 Riton,edm
 Riton,uk dance
 Riton,pop
-A.CHAL,hip hop soul
+A.CHAL,hip hop
 A.CHAL,hip hop
 The Carters,no genres found
 Mr Eazi,afropop
@@ -1023,35 +987,31 @@ Tove Lo,pop
 Snakehips,uk dance
 Snakehips,vapor soul
 Snakehips,electropop
+Jonas Blue,edm
 Jonas Blue,pop
-Jonas Blue,tropical edm
 Jonas Blue,uk dance
 Jonas Blue,pop
 Skrillex,complextro
 Skrillex,edm
 Skrillex,electro
 Skrillex,pop
-Skrillex,brostep
+Skrillex,edm
 CamelPhat,edm
-CamelPhat,progressive edm
 CamelPhat,uk dance
-CamelPhat,deep tech edm
+CamelPhat,deep edm
 Lil Uzi Vert,hip hop
-Lil Uzi Vert,philly rap
-Lil Uzi Vert,rage rap
 Lil Uzi Vert,rap
 Lil Uzi Vert,hip hop
 Bag Raiders,australian dance
-Bag Raiders,indietronica
+Bag Raiders,indie
 Bag Raiders,nu disco
 Bag Raiders,alternative dance
 MK,chinese rap
 Pitbull,hip hop
 Pitbull,pop
 Pitbull,pop
-A Great Big World,piano rock
 A Great Big World,pop
-A Great Big World,pop rock
+A Great Big World,rock
 A Great Big World,neo mellow
 Carly Rae Jepsen,pop
 Carly Rae Jepsen,canadian pop
@@ -1074,25 +1034,20 @@ Lorde,art pop
 Ismuki,solomon islands pop
 Ismuki,melanesian pop
 San Holo,edm
-San Holo,electronic hip hop
 San Holo,future bass
+San Holo,hip hop
 San Holo,pop
-San Holo,brostep
+San Holo,edm
 Jax Jones,edm
 Jax Jones,uk dance
 Jax Jones,pop
-Dimitri Vegas & Like Mike,belgian edm
 Dimitri Vegas & Like Mike,big room
-Dimitri Vegas & Like Mike,dutch edm
 Dimitri Vegas & Like Mike,edm
 Dimitri Vegas & Like Mike,pop
-Dimitri Vegas & Like Mike,progressive edm
 Dimitri Vegas & Like Mike,belgian dance
-Thomas Gold,dutch edm
 Thomas Gold,edm
 Thomas Gold,german techno
 Thomas Gold,pop
-Thomas Gold,progressive edm
 Thomas Gold,big room
 SZA,r&b
 SZA,rap
@@ -1107,9 +1062,9 @@ Adeena,no genres found
 Ellie Goulding,metropopolis
 Ellie Goulding,pop
 Ellie Goulding,uk pop
-Ellie Goulding,indietronica
-PUBLIC,indie rockism
-Nicky Jam,hip hop latino
+Ellie Goulding,indie
+PUBLIC,indie
+Nicky Jam,hip hop
 Nicky Jam,reggae
 Nicky Jam,urbano latino
 Nicky Jam,hip hop
@@ -1123,11 +1078,11 @@ Sean Paul,rap
 Sean Paul,pop
 Ali Gatie,hip hop
 Tate McRae,pop
-Felly,indie rap
-Bad Bunny,hip hop latino
+Felly,indie
+Bad Bunny,hip hop
 Bad Bunny,urbano latino
 Bad Bunny,reggae
-Powfu,sad rap
+Powfu,rap
 Powfu,sad lo-fi
 Ashe,no genres found
 Baby Keem,rap
@@ -1136,14 +1091,14 @@ Lil Keed,hip hop
 Lil Keed,rap
 Day1,hip hop
 Day1,aussie drill
-J.I the Prince of N.Y,nyc rap
+J.I the Prince of N.Y,rap
 Orezi,afropop
 Orezi,nigerian pop
 Orezi,afrobeats
 $tupid Young,hip hop
-$tupid Young,cali rap
+$tupid Young,rap
 深藍,chinese singer-songwriter
-深藍,chinese indie
+深藍,indie
 Julie Sue,mandopop
 Julie Sue,hokkien pop
 康然,denpa-kei
@@ -1171,17 +1126,16 @@ Kyran Martin,background piano
 Olivia Belli,neo-classical
 Francine Leblanc,no genres found
 Giggs,hip hop
-Giggs,london rap
+Giggs,rap
 Giggs,grime
 Kevin Gates,hip hop
 Kevin Gates,rap
-Kevin Gates,baton rouge rap
+Kevin Gates,rap
 Joyner Lucas,rap
 Joyner Lucas,hip hop
 Tee Grizzley,hip hop
 Tee Grizzley,rap
-Tee Grizzley,detroit hip hop
-Lil Tjay,nyc rap
+Tee Grizzley,hip hop
 Lil Tjay,rap
 Lil Tjay,brooklyn drill
 Lil Tecca,pluggnb
@@ -1192,17 +1146,17 @@ Jeremih,hip hop
 Jeremih,r&b
 Jeremih,rap
 Jeremih,urban contemporary
-Jeremih,chicago rap
+Jeremih,rap
 Juice WRLD,rap
-Juice WRLD,chicago rap
-ZaeHD & CEO,viral rap
+Juice WRLD,rap
+ZaeHD & CEO,rap
 ZaeHD & CEO,hip hop
 Stan Walker,nz christian
 Stan Walker,nz pop
 Stan Walker,australian talent show
 Blueface,hip hop
 Blueface,rap
-Blueface,cali rap
+Blueface,rap
 Trippie Redd,hip hop
 Trippie Redd,rap
 Trippie Redd,rap
@@ -1211,15 +1165,15 @@ William Singe,r&b
 Aminé,rap
 Aminé,hip hop
 Polo G,rap
-Polo G,chicago rap
+Polo G,rap
 Kehlani,r&b
 Kehlani,rap
 Kehlani,pop
 Metro Boomin,rap
 YoungBoy Never Broke Again,rap
-YoungBoy Never Broke Again,baton rouge rap
-Jovem Dex,hip hop brasileiro
-Jovem Dex,hip hop baiano
+YoungBoy Never Broke Again,rap
+Jovem Dex,hip hop
+Jovem Dex,hip hop
 Paty Cantú,latin arena pop
 Paty Cantú,latin pop
 Paty Cantú,mexican pop
@@ -1227,12 +1181,12 @@ Paty Cantú,cantautora mexicana
 Río Roma,latin pop
 Río Roma,mexican pop
 Río Roma,latin arena pop
-Gloria Estefan,soft rock
+Gloria Estefan,rock
 Gloria Estefan,new wave pop
 Ximena Sariñana,latin alternative
 Ximena Sariñana,latin pop
 Ximena Sariñana,mexican pop
-Ximena Sariñana,mexican rock
+Ximena Sariñana,rock
 Ximena Sariñana,cantautora mexicana
 Barney,children's music
 Barney,cartoon
@@ -1241,7 +1195,7 @@ Mau y Ricky,reggae
 Mau y Ricky,urbano latino
 Mau y Ricky,latin pop
 24kGoldn,rap
-24kGoldn,cali rap
+24kGoldn,rap
 Gooney Jib,no genres found
 Rebour,focus
 Kari Bin,focus
@@ -1261,19 +1215,19 @@ David Guetta,edm
 David Guetta,pop
 David Guetta,big room
 Loveboi,no genres found
-Chimbala,rap dominicano
+Chimbala,rap
 Chimbala,dembow
 mgk,rap
 mgk,hip hop
 Trunk Boiz,hip hop
 Trunk Boiz,hyphy
-Trunk Boiz,cali rap
-Silkk The Shocker,new orleans rap
-Silkk The Shocker,dirty south rap
+Trunk Boiz,rap
+Silkk The Shocker,rap
+Silkk The Shocker,rap
 NLE Choppa,rap
 NLE Choppa,hip hop
 D Smoke,hip hop
-Hooligan Hefs,australian hip hop
+Hooligan Hefs,hip hop
 Hooligan Hefs,aussie drill
 Jhené Aiko,r&b
 Big Sean,hip hop
@@ -1291,9 +1245,9 @@ JayDaYoungan,florida drill
 MarMar Oso,r&b
 Dennis Lloyd,israeli pop
 Aqua,j-poprock
-Aqua,j-rock
+Aqua,rock
 Aqua,j-pop
-Luh Kel,st louis rap
+Luh Kel,rap
 Luh Kel,r&b
 Summer Walker,rap
 Summer Walker,r&b
@@ -1315,18 +1269,18 @@ Camilo,colombian pop
 Elva Hsiao,mandopop
 卓文萱,mandopop
 Lara Liang,mandopop
-Fahrenheit,thai rock
+Fahrenheit,rock
 THE SCOTTS,no genres found
 Da Mouth,mandopop
 Gucci Mane,hip hop
 Gucci Mane,rap
-Gucci Mane,dirty south rap
+Gucci Mane,rap
 NAV,hip hop
 NAV,rap
-NAV,canadian hip hop
+NAV,hip hop
 88GLAM,hip hop
 88GLAM,rap
-88GLAM,canadian hip hop
+88GLAM,hip hop
 Quando Rondo,hip hop
 Quando Rondo,rap
 Keyshia Cole,r&b
@@ -1341,13 +1295,13 @@ A Boogie Wit da Hoodie,hip hop
 A Boogie Wit da Hoodie,rap
 A Boogie Wit da Hoodie,rap
 KDM on the Track,aussie drill
-Lil Mosey,rap conscient
+Lil Mosey,rap
 Lil Mosey,rap
 Power Station,mandopop
 Xian Zi,mandopop
 Brandz,r&drill
 Vivian Hsu,mandopop
-NoCap,atl hip hop
+NoCap,hip hop
 NoCap,alabama rap
 嚴藝丹,mandopop
 Various Artists,arrocha
@@ -1360,21 +1314,18 @@ Winnie Hsin,mandopop
 張艾嘉,mandopop
 Zhao Chuan,mandopop
 林依晨,mandopop
-Florian Picasso,dutch edm
 Florian Picasso,edm
 Florian Picasso,pop edm
-Florian Picasso,progressive edm
 Florian Picasso,sky room
 Florian Picasso,pop
 HOBIN ROOD,no genres found
 MICAH,no genres found
 Felix Jaehn,edm
 Felix Jaehn,german dance
-Felix Jaehn,tropical edm
 Felix Jaehn,uk dance
 Felix Jaehn,pop
 Kesh,r&b
-Mike Hawkins,progressive edm
+Mike Hawkins,edm
 Mike Hawkins,sky room
 Mike Hawkins,danish electronic
 Zack Martino,pop edm
@@ -1383,10 +1334,9 @@ Kia Love,no genres found
 FLAMEBORN,no genres found
 LAYRZ,no genres found
 Dave Ramone,no genres found
-T.I.,gangster rap
 T.I.,hip hop
 T.I.,rap
-T.I.,dirty south rap
+T.I.,rap
 will.i.am,pop
 will.i.am,pop
 Demi Lovato,pop
@@ -1400,16 +1350,16 @@ Avril Lavigne,canadian pop
 LMFAO,pop
 LMFAO,rap
 LMFAO,pop
+Neon Trees,indie
 Neon Trees,neo mellow
-Neon Trees,pop rock
-Neon Trees,pov: indie
-Neon Trees,modern rock
-6ix9ine,emo rap
+Neon Trees,rock
+Neon Trees,rock
+6ix9ine,rap
 Selena Gomez & The Scene,pop
 Bridgit Mendler,pop
 Bridgit Mendler,pop
-Bastille,modern rock
 Bastille,pop
+Bastille,rock
 Bastille,metropopolis
 Zendaya,pop
 Zendaya,pop
@@ -1420,7 +1370,7 @@ Meghan Trainor,hip pop
 fun.,metropopolis
 fun.,neo mellow
 fun.,baroque pop
-Vance Joy,modern rock
+Vance Joy,rock
 Vance Joy,folk-pop
 Passenger,neo mellow
 Passenger,folk-pop
@@ -1442,13 +1392,12 @@ SXTEEN,dutch rap pop
 2 Chainz,rap
 2 Chainz,hip hop
 Major Nine,hip hop
-Major Nine,florida rap
-KYLE,indie rap
-KYLE,meme rap
-KYLE,rap
-KYLE,viral hip hop
+Major Nine,rap
 KYLE,hip hop
-Marc E. Bassy,indie rap
+KYLE,indie
+KYLE,rap
+KYLE,hip hop
+Marc E. Bassy,indie
 Cash Cash,edm
 Cash Cash,electropowerpop
 Cash Cash,pop
@@ -1462,7 +1411,7 @@ Burna Boy,dancehall
 Burna Boy,hip hop
 Burna Boy,nigerian pop
 Burna Boy,afrobeats
-Kurupt,west coast rap
+Kurupt,rap
 Kurupt,g funk
 飛輪海,taiwan idol pop
 飛輪海,mandopop
@@ -1495,12 +1444,12 @@ August Alsina,rap
 August Alsina,urban contemporary
 August Alsina,hip hop
 Tyla Yaweh,rap
-Tyla Yaweh,cali rap
+Tyla Yaweh,rap
 Besomorph,edm
 Besomorph,r&b
 Besomorph,traprun
 Besomorph,alt z
-Lil Loaded,dfw rap
+Lil Loaded,rap
 Swae Lee,hip hop
 Swae Lee,rap
 Swae Lee,rap
@@ -1513,12 +1462,12 @@ Andy Angel,piano cover
 David Schultz,classify
 RPM (Relaxing Piano Music),pianissimo
 Flying Fingers,piano cover
-KBFR,viral rap
+KBFR,rap
 Leonid Rose,russian edm
 Leonid Rose,russian pop
 The Kid LAROI,hip hop
 JKING,pacific islands pop
-YNG Martyr,meme rap
+YNG Martyr,rap
 Siente,no genres found
 Milwin,deep pop edm
 Melanie Martinez,electropop
@@ -1538,14 +1487,13 @@ Hooks,aussie drill
 Brothers,no genres found
 No Money Enterprise,hip hop
 No Money Enterprise,aussie drill
-ONEFOUR,australian hip hop
 ONEFOUR,hip hop
 ONEFOUR,aussie drill
 The 046,aussie drill
 BENEE,nz pop
 BENEE,alt z
-Dominic Fike,pov: indie
-Dominic Fike,alternative pop rock
+Dominic Fike,indie
+Dominic Fike,alternative rock
 Don Toliver,rap
 Sofía Reyes,latin pop
 Sofía Reyes,mexican pop
@@ -1555,13 +1503,13 @@ Eric Bellinger,r&b
 Dany Neville,no genres found
 Gemaine,r&b
 RMR,no genres found
-Mala Rodríguez,rap latina
+Mala Rodríguez,rap
 Mala Rodríguez,hip hop
-Ladonsyl,igbo rap
+Ladonsyl,rap
 Zhang Yu Sheng,mandopop
 StaySolidRocky,rap
 Calboy,rap
-Calboy,chicago rap
+Calboy,rap
 Rich The Kid,hip hop
 Rich The Kid,plugg
 Rich The Kid,rap
@@ -1574,11 +1522,11 @@ Lil Yachty,hip hop
 Lil Yachty,rap
 Lil Yachty,hip hop
 Alex Sensation,reggae
-Serhat Durmus,turkish hip hop
-Serhat Durmus,arab hip hop
+Serhat Durmus,hip hop
+Serhat Durmus,hip hop
 阿冗,mandopop
 Koffee,no genres found
-Hotboii,florida rap
+Hotboii,rap
 Hotboii,florida drill
 Moneybagg Yo,hip hop
 Moneybagg Yo,rap
@@ -1595,7 +1543,7 @@ Mike Posner,rap
 Mike Posner,pop
 Hot Chelle Rae,neon pop punk
 Hot Chelle Rae,pop
-Hot Chelle Rae,dance rock
+Hot Chelle Rae,rock
 Bow Wow,hip hop
 Bow Wow,hip pop
 Bow Wow,r&b
@@ -1605,18 +1553,17 @@ Bow Wow,pop
 Big Time Rush,pop
 Big Time Rush,boy band
 Plies,hip hop
-Plies,dirty south rap
+Plies,rap
 Travis Porter,futuristic swag
 Travis Porter,hip hop
-Travis Porter,dirty south rap
+Travis Porter,rap
 Young Money,hip hop
 Young Money,rap
-Young Money,dirty south rap
+Young Money,rap
 Baby Bash,hip hop
 Baby Bash,rap
-Baby Bash,texas latin rap
 Baby Bash,urban contemporary
-Baby Bash,chicano rap
+Baby Bash,rap
 Omarion,hip hop
 Omarion,hip pop
 Omarion,r&b
@@ -1633,22 +1580,21 @@ The Pussycat Dolls,girl group
 The Pussycat Dolls,pop
 The Pussycat Dolls,pop
 Fetty Wap,hip hop
-Fetty Wap,new jersey rap
 Fetty Wap,rap
 Fetty Wap,hip hop
 Natasha Bedingfield,pop
 Natasha Bedingfield,pop
-Tainy,hip hop latino
+Tainy,hip hop
 Tainy,reggae
 Tainy,urbano latino
 Tainy,pop reggae
-Sech,hip hop latino
+Sech,hip hop
 Sech,reggae
 Sech,urbano latino
 Sech,panamanian pop
 Party Favor,edm
-Party Favor,electronic hip hop
-Party Favor,brostep
+Party Favor,hip hop
+Party Favor,edm
 David Archuleta,lds youth
 David Archuleta,pop
 David Archuleta,idol
@@ -1659,13 +1605,13 @@ The Saturdays,girl group
 The Saturdays,pop
 The Saturdays,talent show
 The Saturdays,pop
-Gavin DeGraw,pop rock
+Gavin DeGraw,rock
 Gavin DeGraw,neo mellow
 Cody Simpson,pop
 Cody Simpson,australian pop
 Pika Chiu,mandopop
 宋冬野,chinese minyao
-宋冬野,chinese indie
+宋冬野,indie
 梦然,mandopop
 Jony J,hip hop
 G22,hip hop
@@ -1673,9 +1619,9 @@ G22,hip hop
 婁峻碩,hip hop
 David Lui,mandopop
 David Lui,cantopop
-The Neighbourhood,modern rock
 The Neighbourhood,pop
-The Neighbourhood,modern alternative rock
+The Neighbourhood,rock
+The Neighbourhood,rock
 JS,mandopop
 Cindy Yen,mandopop
 許慧欣,mandopop
@@ -1690,16 +1636,15 @@ Sweety,mandopop
 Fang Wu,mandopop
 Niko Sun,mandopop
 Princess Ai,mandopop
-万能青年旅店,northwest china indie
-万能青年旅店,chinese indie rock
-告五人,taiwan indie
+万能青年旅店,indie
+万能青年旅店,indie rock
+告五人,indie
 告五人,mandopop
-EggPlantEgg,taiwan indie
-EggPlantEgg,taiwanese indie
+EggPlantEgg,indie
 EggPlantEgg,mandopop
 艾薇,mandopop
 Yo Lee,mandopop
-Chih Siou,taiwan indie
+Chih Siou,indie
 Chih Siou,taiwan singer-songwriter
 Chih Siou,mandopop
 颜人中,taiwan singer-songwriter
@@ -1729,9 +1674,8 @@ IBE,belgian singer-songwriter
 主唱,swahili gospel
 Luis Fonsi,puerto rican pop
 Luis Fonsi,latin pop
-Zooey Wonder,chinese indie
+Zooey Wonder,indie
 Zooey Wonder,mandopop
-Zooey Wonder,taiwan indie
 Zooey Wonder,chinese electropop
 Tank,mandopop
 Drax Project,nz pop
@@ -1739,38 +1683,36 @@ TEEKS,nz pop
 Russ Millions,uk drill
 Russ Millions,melodic drill
 Olivia Rodrigo,pop
+Kings,indie
 Kings,melancholia
-Kings,norwegian indie
-Kings,bergen indie
-AJR,pov: indie
+Kings,indie
+AJR,indie
 LLusion,lo-fi beats
 Liv Grace Blue,no genres found
 Julia Michaels,pop
 Andi,alt z
-salem ilese,modern indie pop
+salem ilese,indie
 salem ilese,alt z
 Salty,no genres found
-Glades,indie poptimism
+Glades,indie
 Glades,metropopolis
-Glades,indie electropop
+Glades,indie
 Adam Turley,no genres found
 Maia Wright,vocal trance
-Thomston,indie electropop
-Thomston,indie poptimism
+Thomston,indie
 Thomston,etherpop
 ROSÉ,k-pop
 Loi,no genres found
 Chloe George,no genres found
 Rina Sawayama,electropop
 Rina Sawayama,escape room
-Rina Sawayama,indie pop
+Rina Sawayama,indie
 Rina Sawayama,art pop
 carolesdaughter,alt z
 PRINS,no genres found
 Elton John,mellow gold
-Elton John,piano rock
 Elton John,rock
-Elton John,glam rock
+Elton John,rock
 鄭容和,k-pop
 Wolfgang Amadeus Mozart,classical era
 Wolfgang Amadeus Mozart,classical
@@ -1783,10 +1725,10 @@ George Frideric Handel,early music
 George Frideric Handel,english baroque
 George Frideric Handel,german baroque
 George Frideric Handel,baroque
-小男孩樂團,taiwan indie
+小男孩樂團,indie
 小男孩樂團,mandopop
 Soo Wincci,mandopop
-Soo Wincci,malaysian hip hop
+Soo Wincci,hip hop
 潘裕文,mandopop
 GJ,mandopop
 GJ,r&b
@@ -1935,21 +1877,14 @@ Frédéric Chopin,classical
 Kezia Amelia,pop violin
 Robert Mendoza,classify
 Jeremy Green,pop violin
-Tom Petty and the Heartbreakers,classic rock
-Tom Petty and the Heartbreakers,hard rock
-Tom Petty and the Heartbreakers,heartland rock
 Tom Petty and the Heartbreakers,mellow gold
 Tom Petty and the Heartbreakers,rock
 Tom Petty and the Heartbreakers,singer-songwriter
-Tom Petty and the Heartbreakers,soft rock
-Tom Petty and the Heartbreakers,album rock
-Bob Dylan,country rock
+Tom Petty and the Heartbreakers,rock
 Bob Dylan,folk
-Bob Dylan,folk rock
 Bob Dylan,rock
-Bob Dylan,roots rock
 Bob Dylan,singer-songwriter
-Bob Dylan,classic rock
+Bob Dylan,rock
 Dizzy Dizzo,hip hop
 Marz23,mandopop
 Marz23,hip hop
@@ -1961,21 +1896,21 @@ Phil Lam,cantopop
 玖壹壹,hip hop
 Juno Mak,cantopop
 Fan Yi Chen,mandopop
-理想混蛋,taiwan indie
+理想混蛋,indie
 理想混蛋,mandopop
 Adam Cheng,mandopop
 Adam Cheng,cantopop
 許昊珂,chinese soundtrack
 Gentle Bones,singaporean pop
+WONFU,indie
 WONFU,mandopop
-WONFU,taiwanese indie
 WONFU,lo star
 Naiwen Yang,mandopop
 Katncandix2,mandopop
 Mavis Fan,mandopop
-Mavis Fan,chinese indie
+Mavis Fan,indie
 Wu Bai,mandopop
-陳建年,taiwan indie
+陳建年,indie
 陳建年,taiwan singer-songwriter
 陳建年,taiwanese indigenous music
 陳建年,mandopop
@@ -1984,30 +1919,30 @@ Matzka,taiwanese indigenous music
 Matzka,reggae
 Soft Lipa,mandopop
 Soft Lipa,hip hop
-Deserts Chang,taiwan indie
+Deserts Chang,indie
 Deserts Chang,taiwan singer-songwriter
 Deserts Chang,mandopop
-Fire EX.,taiwan indie
+Fire EX.,indie
 Fire EX.,taiwan punk
 Fire EX.,mandopop
-那我懂你意思了,taiwan indie
-Misi Ke,taiwan indie
+那我懂你意思了,indie
+Misi Ke,indie
 Misi Ke,taiwan singer-songwriter
-Misi Ke,chinese indie
+Misi Ke,indie
 Flesh Juicer,mandopop
 Flesh Juicer,taiwan metal
 Flesh Juicer,chinese metalcore
-魚丁糸,chinese indie
+魚丁糸,indie
 Miss Ko,hip hop
 SS501,k-pop
 Someday,no genres found
 张远,mandopop
 鄧福如 AFÜ,mandopop
 OHMYMEITING,mandopop
-守夜人,taiwan indie
+守夜人,indie
 守夜人,mandopop
+A Si,indie
 A Si,mandopop
-A Si,taiwan indie
 A Si,chinese minyao
 信樂團,mandopop
 Whyte,mandopop
@@ -2018,7 +1953,7 @@ Julia Wu,chinese electropop
 Anni Hung,mandopop
 龔鈺祺,no genres found
 Carpenters,mellow gold
-Carpenters,soft rock
+Carpenters,rock
 Carpenters,adult standards
 路嘉欣,mandopop
 張國穎,no genres found
@@ -2027,7 +1962,7 @@ Sigrid,electropop
 ABBA,swedish pop
 ABBA,europop
 蔡詩蕓,mandopop
-Enno Cheng,taiwan indie
+Enno Cheng,indie
 Enno Cheng,taiwan singer-songwriter
 Enno Cheng,mandopop
 Chunho,no genres found
@@ -2042,19 +1977,19 @@ Meeia Foo,mandopop
 陳建騏,chinese soundtrack
 Alberto Guillermo Lavorano,no genres found
 Paraskevas Grekis,bouzouki
-Moods,indie soul
+Moods,indie
 Moods,chillhop
 Queen Wei,mandopop
 方雅賢,mandopop
-櫻桃幫,taiwan indie
+櫻桃幫,indie
 櫻桃幫,mandopop
 小球(莊鵑瑛),mandopop
 Soler,mandopop
 Soler,macau pop
-廖文強,taiwan indie
+廖文強,indie
 廖文強,mandopop
 慢慢說,mandopop
-Anniedora,taiwan indie
+Anniedora,indie
 萧萧,no genres found
 趙之璧,mandopop
 亦帆,mandopop
@@ -2063,7 +1998,7 @@ ERIKA,mandopop
 雅立,no genres found
 邵雨薇,mandopop
 Ruth Kueo,mandopop
-Denise Ho,hong kong indie
+Denise Ho,indie
 Denise Ho,cantopop
 林嘉欣,cantopop
 The Sam Willows,singaporean pop
@@ -2080,8 +2015,8 @@ Sam Tsui,pop
 Sam Tsui,pop
 Alex Goot,pop
 Calculasian,no genres found
-逃跑计划EscapePlan,chinese indie pop
-逃跑计划EscapePlan,chinese indie
+逃跑计划EscapePlan,indie
+逃跑计划EscapePlan,indie
 Anna Kendrick,movie tunes
 Anna Kendrick,hollywood
 光头华夏,no genres found
@@ -2091,14 +2026,14 @@ Jody Chiang,mandopop
 Jody Chiang,hokkien pop
 王建傑,hokkien pop
 余佩真,mandopop
-余佩真,chinese indie
+余佩真,indie
 宇珩,mandopop
 小霞,no genres found
-HUSH,taiwan indie
+HUSH,indie
 HUSH,taiwan singer-songwriter
 HUSH,mandopop
-Buddha Jump,taiwan indie
-Buddha Jump,chinese indie
+Buddha Jump,indie
+Buddha Jump,indie
 胡家誠,taiwan singer-songwriter
 七朵组合,mandopop girl group
 七朵组合,mandopop
@@ -2114,7 +2049,7 @@ Ginga金甲,no genres found
 Shadia,classic arab pop
 Shadia,arab pop
 回音哥,mandopop
-牛奶@咖啡,chinese indie pop
+牛奶@咖啡,indie
 好妹妹,chinese minyao
 痞客四,no genres found
 利綺,no genres found
@@ -2148,15 +2083,15 @@ Billie Holiday,adult standards
 硬糖少女303,mandopop girl group
 W.M.L,mandopop
 W.M.L,hip hop
-理想混蛋 雞丁,taiwan indie
+理想混蛋 雞丁,indie
 理想混蛋 雞丁,mandopop
-Crispy脆樂團,taiwan indie
+Crispy脆樂團,indie
 Crispy脆樂團,mandopop
 Jocelyn 9.4.0,r&b
+Sandee Chan,indie
 Sandee Chan,mandopop
-Sandee Chan,taiwan indie
 Sandee Chan,taiwan singer-songwriter
-Sandee Chan,chinese indie
+Sandee Chan,indie
 南方二重唱,taiwan campus folk
 南方二重唱,mandopop
 赖冰霞,mandopop
@@ -2173,23 +2108,23 @@ Jeryl Lee,mandopop
 羅美玲,no genres found
 莫非定律乐团,no genres found
 賴慈泓,mandopop
-南瓜妮歌迷俱樂部,taiwan rock
-南瓜妮歌迷俱樂部,taiwan indie
+南瓜妮歌迷俱樂部,rock
+南瓜妮歌迷俱樂部,indie
 蜜雪薇琪,taiwan idol pop
 蜜雪薇琪,mandopop
 輕鬆玩樂團,mandopop
 接個吻,mandopop
 郭顶,taiwan singer-songwriter
-郭顶,taiwan indie
+郭顶,indie
 A-Sun,taiwan singer-songwriter
 焦邁奇,mandopop
 焦邁奇,chinese singer-songwriter
 林倛玉,no genres found
 苏运莹,no genres found
 戴廷翰,taiwan graduation song
-Our Shame,taiwan indie
+Our Shame,indie
 同恩,mandopop
-柯智棠,taiwan indie
+柯智棠,indie
 柯智棠,taiwan singer-songwriter
 柯智棠,mandopop
 田一龙,no genres found
@@ -2212,16 +2147,15 @@ Jane Zhang,mandopop
 Jin Hai Xin,chinese singer-songwriter
 碧欣,no genres found
 Good Band,mandopop
-Mixer,taiwan indie
+Mixer,indie
 Mixer,mandopop
-The Life Journey,chinese indie pop
-The Life Journey,southern china indie
-The Life Journey,chinese indie
+The Life Journey,indie
+The Life Journey,indie
 joysaaaa,mandopop
 Daven Wu,mandopop
 蒋小呢,mandopop
 蒋小呢,chinese rap
-MC 張天賦,hk-pop
+MC 張天賦,cantopop
 MC 張天賦,cantopop
 LBI利比,mandopop
 程响,mandopop
@@ -2233,10 +2167,10 @@ BLACKPINK,pop
 BLACKPINK,k-pop
 人力飛行劇團,no genres found
 安溥,mandopop
-安溥,chinese indie
+安溥,indie
 壞特 ?te,mandopop
 The Chairs,mandopop
-The Chairs,chinese indie
+The Chairs,indie
 冰球樂團,mandopop
 詹雯婷,taiwan singer-songwriter
 米莎,taiwan instrumental
@@ -2244,7 +2178,7 @@ The Chairs,chinese indie
 Red Velvet,k-pop
 鄭興,mandopop
 瑞瑪席丹Rima Zeidan,mandopop
-Quarterback,taiwan indie
+Quarterback,indie
 Quarterback,mandopop
 Sharon Kwan,mandopop
 Company - Into the Woods (Motion Picture Cast),movie tunes
@@ -2278,7 +2212,7 @@ Cole Thompson,broadway
 Sara Bareilles,lilith
 Sara Bareilles,neo mellow
 Sara Bareilles,pop
-Sara Bareilles,pop rock
+Sara Bareilles,rock
 Sara Bareilles,acoustic pop
 Julia Lester,movie tunes
 Patina Miller,no genres found
@@ -2302,18 +2236,17 @@ Amanda Seyfried,hollywood
 Keira Knightley,hollywood
 李灌晏,no genres found
 小賤,no genres found
-依錚依靜,taiwan indie
+依錚依靜,indie
 川島茉樹代Makiyo,mandopop
 林昱東,no genres found
 阿桑,mandopop
 湯薇恩,xinyao
 湯薇恩,mandopop
-Tauren Wells,christian alternative rock
 Tauren Wells,christian music
+Tauren Wells,rock
 Tauren Wells,ccm
-Glass Animals,indietronica
-Glass Animals,modern rock
-Glass Animals,pov: indie
+Glass Animals,indie
+Glass Animals,rock
 Glass Animals,shiver pop
 Glass Animals,gauze pop
 Pong Nan,cantopop
@@ -2338,7 +2271,7 @@ Andy Hui,mandopop
 Andy Hui,cantopop
 E-Jun Lee,mandopop
 许飞,chinese singer-songwriter
-Byejack,hk-pop
+Byejack,cantopop
 Niño Prodigio,no genres found
 Cast Of Rent,hollywood
 Stephen Schwartz,show tunes
@@ -2368,7 +2301,7 @@ Jerry Goldsmith,classic soundtrack
 Christina Aguilera,pop
 Christina Aguilera,pop
 Savage Garden,pop
-Savage Garden,pop rock
+Savage Garden,rock
 Savage Garden,boy band
 Quongrui,no genres found
 Evan Rachel Wood,movie tunes
@@ -2402,13 +2335,13 @@ Against The Current,pop punk
 Against The Current,neon pop punk
 The Freshman,mandopop
 Noah Kahan,singer-songwriter pop
-Noah Kahan,pov: indie
+Noah Kahan,indie
 Cordae,hip hop
 Cordae,rap
 Cordae,hip hop
 XXXTENTACION,hip hop
 XXXTENTACION,rap
-XXXTENTACION,emo rap
+XXXTENTACION,rap
 Macklemore,rap
 Macklemore,hip hop
 Jeremy Zucker,electropop
@@ -2420,10 +2353,10 @@ Dean Lewis,australian pop
 88rising,hip hop
 JAY-Z,hip hop
 JAY-Z,rap
-JAY-Z,gangster rap
+JAY-Z,rap
 Joji,pop
 Chri$tian Gate$,singer-songwriter pop
-Chri$tian Gate$,sad rap
+Chri$tian Gate$,rap
 6LACK,pop
 6LACK,k-pop
 Ski Mask The Slump God,hip hop
@@ -2441,24 +2374,24 @@ Miguel,urban contemporary
 Miguel,r&b
 Mura Masa,escape room
 Mura Masa,hyperpop
-Mura Masa,indie soul
+Mura Masa,indie
 Mura Masa,vapor soul
-Mura Masa,channel islands indie
+Mura Masa,indie
 benny blanco,pop
-Sleepy Hallow,nyc rap
+Sleepy Hallow,rap
 Sleepy Hallow,brooklyn drill
 Ryan Mack,singer-songwriter pop
 Ryan Mack,irish pop
 bbno$,hip hop
-bbno$,meme rap
-bbno$,dark hip hop
+bbno$,rap
+bbno$,hip hop
 Connor Price,singer-songwriter pop
 iamnotshane,singer-songwriter pop
 Saint Chaos,r&b
 Saint Chaos,bossbeat
 Stellar,social media pop
 Jake Daniels,r&b
-Yung Gravy,meme rap
+Yung Gravy,rap
 Yung Gravy,hip hop
 Ragged Insomnia,no genres found
 Confetti,la pop
@@ -2490,42 +2423,30 @@ Kelly Rowland,pop
 112,r&b
 112,urban contemporary
 112,boy band
-Naughty By Nature,new jersey rap
+Naughty By Nature,rap
 Naughty By Nature,hip hop
 Bob Marley & The Wailers,reggae
 Acoustic Vibe,no genres found
 Cali Dubs,no genres found
-Journey,classic rock
-Journey,hard rock
 Journey,mellow gold
 Journey,rock
-Journey,soft rock
-Journey,album rock
-Billy Joel,classic rock
+Journey,rock
 Billy Joel,mellow gold
-Billy Joel,piano rock
 Billy Joel,rock
 Billy Joel,singer-songwriter
-Billy Joel,soft rock
-Billy Joel,album rock
-Fleetwood Mac,classic rock
+Billy Joel,rock
 Fleetwood Mac,rock
-Fleetwood Mac,soft rock
-Fleetwood Mac,yacht rock
-Fleetwood Mac,album rock
+Fleetwood Mac,rock
 Billy Ocean,mellow gold
 Billy Ocean,new romantic
 Billy Ocean,new wave pop
-Billy Ocean,soft rock
-Billy Ocean,yacht rock
+Billy Ocean,rock
 Billy Ocean,disco
-Kenny Loggins,classic rock
 Kenny Loggins,mellow gold
 Kenny Loggins,new wave pop
+Kenny Loggins,rock
 Kenny Loggins,singer-songwriter
-Kenny Loggins,soft rock
-Kenny Loggins,yacht rock
-Kenny Loggins,album rock
+Kenny Loggins,rock
 "Earth, Wind & Fire",funk
 "Earth, Wind & Fire",jazz funk
 "Earth, Wind & Fire",motown
@@ -2533,10 +2454,8 @@ Kenny Loggins,album rock
 "Earth, Wind & Fire",disco
 Bon Jovi,rock
 Bon Jovi,glam metal
-Van Halen,classic rock
-Van Halen,hard rock
 Van Halen,rock
-Van Halen,album rock
+Van Halen,rock
 The Wailers,ska
 The Wailers,reggae
 Lenny B,no genres found
@@ -2545,7 +2464,7 @@ Danny Wilson,scottish new wave
 Danny Wilson,sophisti-pop
 Danny Wilson,new wave pop
 Bette Midler,new wave pop
-Bette Midler,soft rock
+Bette Midler,rock
 Bette Midler,adult standards
 Socrab,no genres found
 Robin Thicke,neo soul
@@ -2578,30 +2497,26 @@ Timmy Trumpet,melbourne bounce international
 Timmy Trumpet,pop
 Timmy Trumpet,australian dance
 Lil Wayne,hip hop
-Lil Wayne,new orleans rap
 Lil Wayne,rap
 Lil Wayne,hip hop
-Muse,modern rock
 Muse,permanent wave
 Muse,rock
 Muse,alternative rock
 Galantis,edm
 Galantis,pop
-Galantis,progressive edm
 Galantis,pop
 Gryffin,edm
 Gryffin,pop
 Travie McCoy,rap
 K-391,nordic edm
-K-391,gaming edm
+K-391,edm
 Rudimental,uk dance
 Rudimental,uk funky
 Rudimental,pop
+Twenty One Pilots,indie
 Twenty One Pilots,pop
-Twenty One Pilots,pov: indie
 Twenty One Pilots,rock
-Twenty One Pilots,modern rock
-Paramore,modern rock
+Twenty One Pilots,rock
 Paramore,pixie
 Paramore,pop
 Paramore,pop emo
@@ -2611,11 +2526,11 @@ Paramore,candy pop
 Morgan Wallen,contemporary country
 FIFTY FIFTY,k-pop
 Teddy Swims,no genres found
-Mumford & Sons,modern rock
 Mumford & Sons,neo mellow
+Mumford & Sons,rock
 Mumford & Sons,stomp and holler
 Mumford & Sons,uk americana
-Mumford & Sons,modern folk rock
+Mumford & Sons,modern rock
 Libianca,afrobeats
 Lana Del Rey,pop
 Lana Del Rey,art pop
@@ -2628,39 +2543,36 @@ Lily Allen,pop
 Sunny Daze,no genres found
 David Kushner,singer-songwriter pop
 David Kushner,gen z singer-songwriter
-Toploader,british alternative rock
+Toploader,rock
 Red Hot Chili Peppers,funk metal
-Red Hot Chili Peppers,funk rock
 Red Hot Chili Peppers,permanent wave
 Red Hot Chili Peppers,rock
 Red Hot Chili Peppers,alternative rock
 DJ Paul,crunk
-DJ Paul,dirty south rap
 DJ Paul,hip hop
+DJ Paul,rap
 DJ Paul,bounce
-JVKE,pov: indie
+JVKE,indie
 JVKE,singer-songwriter pop
-JVKE,modern indie pop
-Justina Valentine,hip hop queen
-Coi Leray,hip hop queen
-Coi Leray,new jersey underground rap
-Lindasson,canadian hip hop
-Chris Webby,indie rap
+JVKE,indie
+Justina Valentine,hip hop
+Coi Leray,hip hop
+Coi Leray,rap
+Lindasson,hip hop
+Chris Webby,indie
 Blackillac,hip hop
 Paul Russell,r&b
-Echosmith,indie poptimism
+Echosmith,indie
 Echosmith,pop
 Echosmith,electropop
 Isla-Maria,no genres found
-Portugal. The Man,indietronica
-Portugal. The Man,modern alternative rock
-Portugal. The Man,modern rock
+Portugal. The Man,indie
+Portugal. The Man,rock
 Portugal. The Man,indie rock
 Queen Nu,no genres found
 Vanessa Carlton,neo mellow
-Vanessa Carlton,piano rock
 Vanessa Carlton,pop
-Vanessa Carlton,pop rock
+Vanessa Carlton,rock
 Vanessa Carlton,lilith
 A!MS,hip hop
 Earthquake Lights,no genres found
@@ -2679,7 +2591,7 @@ Fourfive,no genres found
 CeeLo Green,rap
 CeeLo Green,hip hop
 The Scandalous Playaz,no genres found
-Flight,texas latin rap
+Flight,rap
 Millyz,hip hop
 Gwen Stefani,pop
 Gwen Stefani,pop
@@ -2701,7 +2613,6 @@ Nico Santos,german pop
 Glockenbach,no genres found
 Lena,k-pop
 Stacey Ryan,no genres found
-AFROJACK,dutch edm
 AFROJACK,edm
 AFROJACK,pop
 AFROJACK,big room
@@ -2722,16 +2633,15 @@ Florentina,frauenrap
 Rêve,no genres found
 Tom Santa,stutter edm
 Ghost,metal
-Ghost,hard rock
+Ghost,rock
 Liaze,no genres found
-ACRAZE,tech edm
+ACRAZE,edm
 ACRAZE,pop
 Benzz,no genres found
 Swedish House Mafia,edm
-Swedish House Mafia,progressive edm
 Swedish House Mafia,pop
 Nathan Evans,no genres found
-BoyWithUke,sad rap
+BoyWithUke,rap
 Michael Schulte,talentschau
 Michael Schulte,german pop
 Sabrina Carpenter,pop
@@ -2749,30 +2659,29 @@ Kings Elliot,no genres found
 Berre,no genres found
 Frederico,no genres found
 Michele Morrone,no genres found
-Sam Fender,north east england indie
-Sam Fender,modern rock
+Sam Fender,indie
+Sam Fender,rock
 Finn Askew,no genres found
-Sophie and the Giants,sheffield indie
+Sophie and the Giants,indie
 Elbow,britpop
 Eddie Vedder,grunge
 Eddie Vedder,permanent wave
-Eddie Vedder,acoustic rock
-Nathaniel Rateliff & The Night Sweats,modern blues rock
+Eddie Vedder,rock
 Nathaniel Rateliff & The Night Sweats,new americana
+Nathaniel Rateliff & The Night Sweats,rock
 Nathaniel Rateliff & The Night Sweats,stomp and holler
-Nathaniel Rateliff & The Night Sweats,indie folk
+Nathaniel Rateliff & The Night Sweats,indie
 Michael Aldag,no genres found
 WizTheMc,rap
 WizTheMc,r&b
 Clara Mae,swedish pop
 Clara Mae,alt z
-The National,indie folk
+The National,indie
 The National,indie rock
-The National,indietronica
-The National,modern rock
+The National,rock
 The National,chamber pop
 KAWALA,uk pop
-Holly Humberstone,indie pop
+Holly Humberstone,indie
 Holly Humberstone,modern alternative pop
 Holly Humberstone,uk pop
 Holly Humberstone,alt z
@@ -2783,8 +2692,7 @@ Loopey,no genres found
 Homson,no genres found
 Lost Frequencies,edm
 Lost Frequencies,pop
-Lost Frequencies,tropical edm
-Lost Frequencies,belgian edm
+Lost Frequencies,edm
 Calum Scott,pop
 KCee,afropop
 KCee,igbo pop
@@ -2793,8 +2701,6 @@ KCee,afrobeats
 Sophie Ellis-Bextor,europop
 Sophie Ellis-Bextor,new wave pop
 Sophie Ellis-Bextor,pop
-The Killers,dance rock
-The Killers,modern rock
 The Killers,permanent wave
 The Killers,rock
 The Killers,alternative rock
@@ -2810,10 +2716,9 @@ Nelly Furtado,pop
 Nelly Furtado,canadian latin
 Outkast,hip hop
 Outkast,rap
-Outkast,dirty south rap
+Outkast,rap
 Frank Ocean,neo soul
 Frank Ocean,lgbtq+ hip hop
-blink-182,modern rock
 blink-182,pop punk
 blink-182,punk
 blink-182,rock
@@ -2822,13 +2727,11 @@ blink-182,alternative metal
 Macklemore & Ryan Lewis,rap
 Macklemore & Ryan Lewis,hip hop
 Axwell /\ Ingrosso,edm
-Axwell /\ Ingrosso,progressive edm
 Axwell /\ Ingrosso,pop
 Benson Boone,singer-songwriter pop
 Loreen,europop
 Alesso,edm
 Alesso,pop
-Alesso,progressive edm
 Alesso,pop
 Myles Smith,singer-songwriter pop
 Reggae Stars,no genres found
@@ -2836,19 +2739,18 @@ Inner Circle,reggae
 Sublime,reggae
 Sublime,ska mexicano
 Sublime,ska punk
-Sublime,rap rock
+Sublime,rap
 Hypaton,no genres found
 Nadia Ali,vocal trance
 Zac Brown Band,country
 Zac Brown Band,country road
-Zac Brown Band,modern country rock
+Zac Brown Band,rock
 Zac Brown Band,contemporary country
 Otto Knows,edm
-Otto Knows,progressive edm
 Otto Knows,pop
 Kim Kwang Seok,k-pop
 Kim Kwang Seok,korean singer-songwriter
-Kim Kwang Seok,classic k-pop
+Kim Kwang Seok,k-pop
 K6劉家凱,no genres found
 Jike Junyi,mandopop
 Supper Moment,cantopop
@@ -2927,7 +2829,8 @@ Thomas Lizzara,german edm
 六哲,mandopop
 潘越雲,mandopop
 張鎬哲,mandopop
-"黃明志, G.E.M.鄧紫棋",mandopop
+黃明志,mandopop
+G.E.M.鄧紫棋,mandopop
 王野,no genres found
 Fan Yuanyuan,chinese audiophile
 羅綺,no genres found
@@ -2992,7 +2895,7 @@ Koala Liu,mandopop
 Asil Türkmen,no genres found
 李振源,mandopop
 Pu Shu,chinese singer-songwriter
-Pu Shu,chinese indie
+Pu Shu,indie
 葉啟田,mandopop
 葉啟田,hokkien pop
 David Huang,mandopop
@@ -3013,7 +2916,7 @@ Lisa Ono,bossa nova
 Jack Ü,edm
 Jack Ü,pop
 Dawin,nyc pop
-Different Heaven,gaming edm
+Different Heaven,edm
 Alfons,melbourne bounce international
 Lady A,country
 Lady A,country dawn
@@ -3021,7 +2924,7 @@ Lady A,country pop
 Lady A,country road
 Lady A,contemporary country
 Jake Miller,teen pop
-Jake Miller,indie rap
+Jake Miller,indie
 Carrie Underwood,contemporary country
 Carrie Underwood,country
 Carrie Underwood,country dawn
@@ -3032,21 +2935,18 @@ Lonestar,country road
 Lonestar,contemporary country
 Cole Swindell,country
 Cole Swindell,country road
-Cole Swindell,modern country rock
+Cole Swindell,rock
 Cole Swindell,contemporary country
 劉惜君,mandopop
-Hedley,canadian rock
 Hedley,pop quebecois
+Hedley,rock
 Hedley,canadian pop
-Heart,classic rock
 Heart,glam metal
-Heart,hard rock
 Heart,mellow gold
 Heart,new wave pop
 Heart,rock
 Heart,singer-songwriter
-Heart,soft rock
-Heart,album rock
+Heart,rock
 Michael Kiwanuka,neo soul
 Michael Kiwanuka,psychedelic soul
 Michael Kiwanuka,soul
@@ -3063,14 +2963,12 @@ Blake Shelton,country road
 Blake Shelton,classic oklahoma country
 Benny Tipene,nz pop
 Guy Sebastian,australian pop
-Ginny Blackmore,kiwi rock
+Ginny Blackmore,rock
 Hassan El Shafei,egyptian alternative
 Hassan El Shafei,egyptian pop
 Hassan El Shafei,arab pop
-DubVision,dutch edm
 DubVision,edm
 DubVision,pop
-DubVision,progressive edm
 DubVision,big room
 Smokepurpp,hip hop
 Smokepurpp,rap
@@ -3098,18 +2996,18 @@ AJ Mitchell,alt z
 Ben Rector,indiecoustica
 Ben Rector,lds youth
 Ben Rector,neo mellow
-Ben Rector,piano rock
+Ben Rector,rock
 Ben Rector,acoustic pop
-Timeflies,indie rap
+Timeflies,indie
 Aerica Gabriella,no genres found
 Owl City,pop
-Owl City,indietronica
-Jace Alexander Casey,taiwan indie
+Owl City,indie
+Jace Alexander Casey,indie
 Russell Dickerson,country
 Russell Dickerson,country road
-Russell Dickerson,modern country rock
+Russell Dickerson,rock
 Russell Dickerson,contemporary country
-Lil Dicky,indie rap
+Lil Dicky,indie
 Lil Dicky,rap
 Lil Dicky,comedy rap
 Faith Hill,country
@@ -3117,8 +3015,8 @@ Faith Hill,country dawn
 Faith Hill,country road
 Faith Hill,contemporary country
 Cassadee Pope,country road
-Cassadee Pope,modern country rock
 Cassadee Pope,pop emo
+Cassadee Pope,rock
 Cassadee Pope,contemporary country
 Don Li,cantopop
 Sigala,edm
@@ -3139,7 +3037,7 @@ The Providers,jazz rap
 John Travolta,hollywood
 DMX,hip hop
 DMX,rap
-DMX,gangster rap
+DMX,rap
 Hanson,boy band
 The Offspring,permanent wave
 The Offspring,post-grunge
@@ -3148,46 +3046,36 @@ The Offspring,rock
 The Offspring,skate punk
 The Offspring,socal pop punk
 The Offspring,alternative metal
-Tame Impala,modern rock
 Tame Impala,neo-psychedelic
 Tame Impala,rock
 Tame Impala,australian psych
-Creedence Clearwater Revival,classic rock
-Creedence Clearwater Revival,country rock
 Creedence Clearwater Revival,mellow gold
 Creedence Clearwater Revival,rock
-Creedence Clearwater Revival,southern rock
-Creedence Clearwater Revival,swamp rock
-Creedence Clearwater Revival,album rock
+Creedence Clearwater Revival,rock
 Plain White T's,neo mellow
 Plain White T's,neon pop punk
 Plain White T's,pop punk
-Plain White T's,pop rock
-Plain White T's,modern rock
+Plain White T's,rock
+Plain White T's,rock
 The Verve,permanent wave
 The Verve,rock
 The Verve,shoegaze
 The Verve,britpop
 Disclosure,edm
-Disclosure,indietronica
+Disclosure,indie
 Disclosure,uk dance
 Disclosure,edm
 Derek & The Dominos,blues rock
 Derek & The Dominos,british blues
-Derek & The Dominos,classic rock
-Derek & The Dominos,country rock
 Derek & The Dominos,electric blues
-Derek & The Dominos,folk rock
-Derek & The Dominos,hard rock
 Derek & The Dominos,mellow gold
-Derek & The Dominos,psychedelic rock
 Derek & The Dominos,rock
 Derek & The Dominos,singer-songwriter
-Derek & The Dominos,album rock
+Derek & The Dominos,rock
 Florida Georgia Line,country
 Florida Georgia Line,country pop
 Florida Georgia Line,country road
-Florida Georgia Line,modern country rock
+Florida Georgia Line,rock
 Florida Georgia Line,contemporary country
 MAX,pop
 MAX,teen pop
@@ -3198,8 +3086,8 @@ Diplo,pop
 NF,rap
 NF,hip hop
 Panic! At The Disco,pop
-Walk off the Earth,pop rock
-Walk off the Earth,canadian rock
+Walk off the Earth,rock
+Walk off the Earth,rock
 ILLENIUM,edm
 ILLENIUM,pop
 Havelin,canadian folk
@@ -3207,8 +3095,8 @@ Delaney Jane,canadian electropop
 Delaney Jane,alt z
 Tyler Shaw,singer-songwriter pop
 Tyler Shaw,pop quebecois
+Alec Benjamin,indie
 Alec Benjamin,pop
-Alec Benjamin,pov: indie
 Alec Benjamin,alt z
 Bea Miller,pop
 Bea Miller,talent show
@@ -3216,9 +3104,9 @@ Bea Miller,alt z
 Young Bombs,pop edm
 Kelsea Ballerini,country
 Kelsea Ballerini,contemporary country
-GRAE,modern indie pop
-Loco,k-rap
+GRAE,indie
 Loco,r&b
+Loco,rap
 Loco,k-pop
 Sam Kim,r&b
 Sam Kim,k-pop
@@ -3232,15 +3120,12 @@ Ciara,pop
 Chantel Jeffries,la pop
 Chantel Jeffries,hip hop
 Starley,aussietronica
-The Beach Boys,classic rock
-The Beach Boys,folk rock
 The Beach Boys,mellow gold
-The Beach Boys,psychedelic rock
 The Beach Boys,rock
 The Beach Boys,singer-songwriter
 The Beach Boys,sunshine pop
 The Beach Boys,baroque pop
-Stromae,g-edm
+Stromae,edm
 Stromae,belgian pop
 Spice Girls,girl group
 Spice Girls,pop
@@ -3259,13 +3144,10 @@ Justin Morelli,no genres found
 STORME,no genres found
 Stormzy,hip hop
 Stormzy,grime
-Hardwell,dutch edm
 Hardwell,edm
 Hardwell,pop
-Hardwell,progressive edm
 Hardwell,big room
 Kaskade,edm
-Kaskade,progressive edm
 Kaskade,vocal edm
 Kaskade,pop
 程琳 Cheng Lin,no genres found
@@ -3286,7 +3168,7 @@ Lowell Lo,cantopop
 上山安娜,no genres found
 Shane Cao,mandopop
 Hanz 郭文翰,mandopop
-Yue Chun Giu,hk-pop
+Yue Chun Giu,cantopop
 過又嘉,mandopop
 Yuan Wei Ren,taiwan singer-songwriter
 葉柔,no genres found
@@ -3306,7 +3188,7 @@ The Hit Crew,no genres found
 Green Day,permanent wave
 Green Day,punk
 Green Day,rock
-Green Day,modern rock
+Green Day,rock
 Hugh Grant,hollywood
 M2M,girl group
 M2M,norwegian pop
@@ -3323,17 +3205,17 @@ Ronald Cheng,mandopop
 Ronald Cheng,cantopop
 Sarah Geronimo,opm
 Daryl Ong,opm
-Michael Learns To Rock,danish pop rock
+Michael Learns To Rock,danish rock
 Michael Learns To Rock,boy band
 Shane Filan,irish pop
-Kerispatih,indonesian pop rock
+Kerispatih,indonesian rock
 Kerispatih,indonesian pop
 Amy Shark,australian pop
 Jess Glynne,pop
 Jess Glynne,uk pop
 Jess Glynne,pop
 Thelma Plum,australian indigenous music
-Thelma Plum,australian indie
+Thelma Plum,indie
 Charli xcx,candy pop
 Charli xcx,metropopolis
 Charli xcx,pop
@@ -3349,8 +3231,8 @@ CXLOE,alt z
 Andy Grammer,pop
 Andy Grammer,neo mellow
 G Flip,australian alternative pop
-Kodaline,modern rock
 Kodaline,neo mellow
+Kodaline,rock
 Kodaline,irish pop
 Birdy,pop
 Birdy,uk pop
@@ -3358,25 +3240,23 @@ Birdy,neo mellow
 JP Cooper,uk pop
 Nipsey Hussle,hip hop
 Nipsey Hussle,rap
-Nipsey Hussle,gangster rap
-Kodak Black,florida rap
+Nipsey Hussle,rap
 Kodak Black,hip hop
-Kodak Black,hip hop latino
 Kodak Black,rap
 Kodak Black,florida drill
-Dice Soho,viral hip hop
-Dice Soho,houston rap
+Dice Soho,hip hop
+Dice Soho,rap
 Sheck Wes,hip hop
 Sheck Wes,rap
 Sheck Wes,rap
-Joey Trap,viral rap
-Joey Trap,san diego rap
-Sada Baby,scam rap
-Sada Baby,detroit hip hop
-Wicca Phase Springs Eternal,emo rap
-Wicca Phase Springs Eternal,cloud rap
+Joey Trap,rap
+Joey Trap,rap
+Sada Baby,rap
+Sada Baby,hip hop
+Wicca Phase Springs Eternal,rap
+Wicca Phase Springs Eternal,rap
 Yung Gleesh,plugg
-Yung Gleesh,dmv rap
+Yung Gleesh,rap
 Braaten & Chrit Leaf,covertronica
 Jennifer Hudson,r&b
 Jennifer Hudson,urban contemporary
