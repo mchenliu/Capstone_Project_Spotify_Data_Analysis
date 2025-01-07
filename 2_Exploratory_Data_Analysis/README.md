@@ -161,7 +161,7 @@ ax[0].set_xticklabels(desired_labels, rotation=45, ha='right') #rotate and right
 ax[0].yaxis.set_major_formatter(FuncFormatter(lambda y,_: f'{int(y/60)}'))
 ```
 ![hours_over_time](/Images/hours_played_over_time.png)
-*Hours played over time for music tracks and podcash shows*
+*Hours played over time for music tracks and podcast shows*
 
 ## EDA on Artist Genres  
 View my notebook with detailed steps here :point_right: [3_Genre_General_EDA.ipynb](/2_Exploratory_Data_Analysis/3_Genre_General_EDA.ipynb)  
