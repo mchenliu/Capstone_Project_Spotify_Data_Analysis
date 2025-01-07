@@ -19,9 +19,11 @@
 - :snake: Python: The backbone of my project, used to perform all tasks. Key libraries include:
   - Pandas: Used for data cleaning and manipulation.
   - Spotipy: Used to fetch artist genres.
-  - Matplotlib:
-  - Seaborn:
+  - dotenv: Used to securely manage my Spotify API keys.
+  - matplotlib
+  - seaborn
 - :notebook: Jupyter Notebooks: Used to run my Python scripts and seemlessly integrate notes and analysis.
+- :crystal_ball: ChatGPT & search engine: 
 - :computer: Visual Studio Code: My pirmary IDE for executing Python scripts.
 - :octopus: Git & Github: My go-to for version control and tracking my project progress.
 

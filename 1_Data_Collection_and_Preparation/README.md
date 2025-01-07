@@ -1,25 +1,17 @@
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
-  - [Tools Used](#tools-used)
 - [Steps Taken](#steps-taken)
   - [:one: Data Collection](#one-data-collection)
   - [:two: Data Cleaning](#two-data-cleaning)
   - [:three: Prepare Artist List](#three-prepare-artist-list)
   - [:four: Prepare Artist Genre List](#four-prepare-artist-genre-list)
+  - [:five: Fill rows with no genres](#five-fill-rows-with-no-genres)
 - [Conclusion](#conclusion)
 
 # Introduction
 :mega: This is the first part of the project. In this section, I collected raw data from Spotify and cleaned it with **Python Pandas** to prepare for Part 2: [Exploratory Data Analysis](/2_Exploratory_Data_Analysis/). Additionally, I used the cleaned data to create a list of unique artists and employed **Python Spotipy** to fetch the genres associated with each artist.
 
-## Tools Used
-- :snake: Python: The backbone of my project, used to perform all tasks. Key libraries include:
-  - Pandas: Used for data cleaning and manipulation.
-  - Spotipy: Used to fetch artist genres.
-  - dotenv: Used to securely manage my Spotify API keys.
-- :notebook: Jupyter Notebooks: Used to run my Python scripts and seemlessly integrate notes and analysis.
-- :computer: Visual Studio Code: My pirmary IDE for executing Python scripts.
-- :octopus: Git & Github: My go-to for version control and tracking my project progress.
 # Steps Taken
 ## :one: Data Collection
 The raw data used in this project is the streaming history from my Spotify account, provided by Spotify. It spans from October 2018 to November 2024. The raw data is in JSON format. Check out the data :point_right: [here](/Raw_Data_Spotify_Streaming_History/).
@@ -108,10 +100,8 @@ sp= spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 input_path = './Cleaned_Data/Artist_List.csv'
 artist_df = pd.read_csv(input_path)
 artist_names = artist_df['artist_name'].tolist()
-
 # create a list to store results
 artist_genre =[]
-
 # find genres for each artist
 for artist_name in artist_names:
     try:
@@ -126,9 +116,32 @@ for artist_name in artist_names:
         genres = f'Error: {e}'
     artist_genre.append(genres)
 ```
+## :five: Fill rows with no genres 
+Due to the limitation of Spotipy package, there are artists with no genres after above step. I decided to manually map genres to artists with help from ChatGPT and Google. Below are the steps I followed:  
+1. Fill genres and saved the file as 'Empty_Genres_Filled.csv'.
+2. Drop rows with `no genres found` in the genres column from the original file.
+3. Append the filled data and save as 'Completed_Artist_Genre_List.csv'.
+
+View my notebook with detailed steps here :point_right: [4_Fill_Empty_Genres.ipynb](/1_Data_Collection_and_Preparation/4_Fill_Empty_Genre.ipynb)
+
+**Code Implementation**
+
+```python
+# drop rows where genre is 'no genres found'
+filter_genre_df = artist_genre_df[artist_genre_df['genres'] != 'no genres found']
+# append filled genres
+# file paths
+genres_filled_file_path = '../Cleaned_Data/Empty_Genres_Filled.csv'
+# load dataframes
+genre_filled_df = pd.read_csv(genres_filled_file_path)
+# combine both DataFrames
+combined_df = pd.concat([filter_genre_df,genre_filled_df], ignore_index=True)
+# remove duplicates based on artist_name and genres
+combined_df=combined_df.drop_duplicates(subset=['artist_name','genres']).reset_index(drop=True)
+```
 
 # Conclusion
-In this section, I collected raw data directly from Spotify and cleaned it using **Python** and **Pandas**. Additionally, I created two CSV files: an artist list and an artist genre list. To fetch artist genres, I used **Spotipy** and secured my Spotify API keys with **dotenv**. I cleaned the artist genre list further by standardizing the labels and removed duplicates. 
+In this section, I collected raw data directly from Spotify and cleaned it using **Python** and **Pandas**. Additionally, I created two CSV files: an artist list and an artist genre list. To fetch artist genres, I used **Spotipy** and secured my Spotify API keys with **dotenv**. I cleaned the artist genre list further by standardizing the labels and removed duplicates. Due to Spotipy limitation, I manually mapped artists without genres and updated the genre list.
 
 The data cleaning process included:
 - Transforming file types from JSON to DataFrame,
