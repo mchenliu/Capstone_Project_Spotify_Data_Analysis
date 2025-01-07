@@ -7,13 +7,16 @@
 - [Conclusion](#conclusion)
 
 # Introducation
-:mega: This is the second part of the project. In this section, I performed **Exploratory Data Analysis (EDA)** on the cleaned datasets from Part 1 [Data Collection and Preparation](/1_Data_Collection_and_Preparation/). EDA is an essential step to understand the cleaned data, identify potential issues, and determine which columns are most relevant for further analysis. It also serves as a guide for answering questions I want to answer through this project.  
+:mega: This is the second part of the project. In this section, I performed **Exploratory Data Analysis (EDA)** on the cleaned datasets from Part 1 [Data Collection and Preparation](/1_Data_Collection_and_Preparation/). EDA is an essential step to understand the cleaned data, identify potential issues, and determine which columns are most relevant for further analysis. It also serves as a guide for answering questions I want to answer in this project.  
 
 
 # Exploratory Data Analysis (EDA)  
 ## EDA on Music and Podcast Streaming History
+Performed general EDA on datasets Music_Stremaing_History and Podcast_Streaming_History, including checked for missing values and identified outliers.
 
-View my notebook with detailed steps here :point_right: [1_1_Streaming_Hisotry_General_EDA.ipynb](/2_Exploratory_Data_Analysis/1_Streaming_Hisotry_General_EDA.ipynb)
+View my notebook with detailed steps here :point_right: [1_Streaming_Hisotry_General_EDA.ipynb](/2_Exploratory_Data_Analysis/1_Streaming_Hisotry_General_EDA.ipynb)
+
+**Code Implementation**
 
 :one: **General EDA:**  
 - **Inspected Data:** Looked at the first few rows, column names and data types.
@@ -33,12 +36,12 @@ View my notebook with detailed steps here :point_right: [1_1_Streaming_Hisotry_G
   # check for null values in music data
   print(music_tracks_df.isnull().sum())
   ```
-**Interpretation:**  
+- **Interpretation:**  
   The null values are associated with `false` in the `offline` column.
-  Thus the null values are valid.
+  Thus the null values are valid.  
 
-   
-- **Identify Outliners with BoxPlot:**
+
+- **Identify Music Played Outliers with BoxPlot:**
   ``` python
   # use minutes_played to create the boxplot
   sns.boxplot(x=music_tracks_df['minutes_played'], palette='Blues_r')
@@ -46,7 +49,9 @@ View my notebook with detailed steps here :point_right: [1_1_Streaming_Hisotry_G
   plt.xlabel('Minutes Played')
   plt.show()
   ```
-  ![music_boxplot](/Images/music_boxplot.png)
+  ![music_boxplot](/Images/boxplot_music_played.png)
+  *Boxplot of Music Minutes Played*  
+
   **Interpretation:**  
   1. Most tracks are played between **0 - 10 minutes**.
   2. The median playback time is around **4 minutes**. Half of the tracks are played for less than 4 minutes, and half are played for more than 4 minutes.  
@@ -74,8 +79,17 @@ View my notebook with detailed steps here :point_right: [1_1_Streaming_Hisotry_G
   | 姐 | Hebe Tien  |    14.522633 | clickrow|
   | 勁歌金曲2 - 情歌王 - Live  |    Leo Ku  |     12.641317 |   trackdone|
   | 灵魂伴侣   | Hebe Tien |      13.299400  |  trackdone|
-
-  ![podcast_boxplot](/Images/podcast_boxplot.png)  
+- **Identify Podcast Played Outliers with BoxPlot:**
+  ```python
+  plt.figure(figsize=(10,8))
+  # use minutes played to create the boxplot
+  sns.boxplot(x=podcast_episodes_df['minutes_played'], palette = 'Blues_r')
+  plt.title('Boxplot of Minutes Played (Podcast)', fontsize = 20)
+  plt.xlabel('Minuetes Played')
+  plt.show()
+  ```
+  ![podcast_boxplot](/Images/boxplot_podcast_played.png)  
+  *Boxplot of Podcast Minutes Played* 
 **Interpretation:**  
   1. Most podcasts are played between **0 - 50 minutes**.
   2. The median playback time is around **30 minutes**. Half of the podcasts are played for less than 30 minutes, and half are played for more than 30 minutes.  
@@ -102,36 +116,52 @@ View my notebook with detailed steps here :point_right: [1_1_Streaming_Hisotry_G
   | 時間的女兒：八卦歷史   |    77.487683|
   | 時間的女兒：八卦歷史   |    85.699383|
   | 時間的女兒：八卦歷史   |    53.468050|  
-  
-- **Visulaize Distributions:**  
+ 
 
 :two: **Targeted EDA:**
 
+Performed targeted EDA to find top 10 most played artists/shows and listening trend over time.
+
 View my notebook with detailed steps here :point_right: [2_Streaming_Hisotry_Targeted_EDA.ipynb](/2_Exploratory_Data_Analysis/2_Streaming_History_Targeted_EDA.ipynb)
 
-- **Visualize Top 20 Most Played Music Artists & Podcast Shows:**
+**Code Implementation**
+
+- **Visualize Top 10 Most Played Music Artists & Podcast Shows:**
 ``` python
-# visualize top 20 most played artists
-top_artists = music_tracks_df['artist_name'].value_counts().head(20)
-sns.barplot(x=top_artists.values, y = top_artists.index, palette='Blues_r')
-plt.title('Top 20 Most Played Artists', fontsize = 20)
-plt.xlabel('Number of Plays')
-plt.ylabel(None)
-plt.show()
+fig, ax = plt.subplots(2,1)
+# visualize top 10 most played artists
+top_artists = music_tracks_df['artist_name'].value_counts().head(10)
+sns.barplot(
+    x=top_artists.values,
+    y = top_artists.index,
+    ax=ax[0],
+    palette='Blues_r'
+)
+ax[0].legend().remove()
+ax[0].set_title('Top 10 Most Played Artists')
+ax[0].set_ylabel('')
+ax[0].set_xlabel('')
+ax[0].xaxis.set_major_formatter(FuncFormatter(lambda x,_: f'{int(x/1000)}K'))
 ```
-![top_20_most_played_artists](/Images/top_20_played_artists.png)
-![top_20_most_played_podcasts](/Images/top_20_played_shows.png)
+![top_10_most_played](/Images/top_bars.png)
+*Top 10 Most Played Shows and Artists*  
+
 - **Viusalize Listening Trends Over Time:**
 ``` python
-podcast_month_year_trend.plot(figsize=(10, 8))
-plt.title('Total Minutes Played Over Time (Podcast)', fontsize = 20)
-plt.xlabel(None)
-plt.ylabel('Total Minutes Played')
-plt.grid(True)
-plt.show()
+sns.lineplot(
+    data=music_month_year_trend,
+    ax=ax[0]
+)
+ax[0].legend().remove()
+ax[0].set_title('Total Hours Played Over Time', fontsize=14)
+ax[0].set_ylabel('Music Trakcs (hrs)', fontsize=12)
+ax[0].set_xlabel('Date', fontsize=12)
+ax[0].set_xticks(desired_dates)
+ax[0].set_xticklabels(desired_labels, rotation=45, ha='right') #rotate and right edge is aligned with anchor point
+ax[0].yaxis.set_major_formatter(FuncFormatter(lambda y,_: f'{int(y/60)}'))
 ```
-![music_over_time](/Images/Music_Played_Over_Time.png)
-![podcast_over_time](/Images/Podcast_Played_Over_Time.png)
+![hours_over_time](/Images/hours_played_over_time.png)
+*Hours played over time for music tracks and podcash shows*
 
 ## EDA on Artist Genres  
 View my notebook with detailed steps here :point_right: [3_Genre_General_EDA.ipynb](/2_Exploratory_Data_Analysis/3_Genre_General_EDA.ipynb)  
