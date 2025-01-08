@@ -10,7 +10,7 @@
 - [Conclusion](#conclusion)
 
 # Introducation
-Part 2[2_Exploratory_Data_Analysis](/2_Exploratory_Data_Analysis/)
+Part 2 [Exploratory_Data_Analysis](/2_Exploratory_Data_Analysis/)
 # Questions to Answer
 Below are the questions I want to answer in my project:  
 1.  Who are the top 10 most played artists and podcast shows? 🎶
