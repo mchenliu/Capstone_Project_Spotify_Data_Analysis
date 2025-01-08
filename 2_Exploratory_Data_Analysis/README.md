@@ -50,7 +50,7 @@ View my notebook with detailed steps here :point_right: [1_Streaming_Hisotry_Gen
   plt.show()
   ```
   ![music_boxplot](/Images/boxplot_music_played.png)
-  *Boxplot of Music Minutes Played*  
+  *Boxplot of music minutes played*  
 
   **Interpretation:**  
   1. Most tracks are played between **0 - 10 minutes**.
@@ -89,7 +89,7 @@ View my notebook with detailed steps here :point_right: [1_Streaming_Hisotry_Gen
   plt.show()
   ```
   ![podcast_boxplot](/Images/boxplot_podcast_played.png)  
-  *Boxplot of Podcast Minutes Played* 
+  *Boxplot of podcast minutes played* 
 **Interpretation:**  
   1. Most podcasts are played between **0 - 50 minutes**.
   2. The median playback time is around **30 minutes**. Half of the podcasts are played for less than 30 minutes, and half are played for more than 30 minutes.  
@@ -137,14 +137,13 @@ sns.barplot(
     ax=ax[0],
     palette='Blues_r'
 )
-ax[0].legend().remove()
 ax[0].set_title('Top 10 Most Played Artists')
 ax[0].set_ylabel('')
 ax[0].set_xlabel('')
 ax[0].xaxis.set_major_formatter(FuncFormatter(lambda x,_: f'{int(x/1000)}K'))
 ```
-![top_10_most_played](/Images/top_bars.png)
-*Top 10 Most Played Shows and Artists*  
+![top_10_most_played](/Images/top_artists_and_shows.png)  
+*Top 10 most played artists and shows*  
 
 - **Viusalize Listening Trends Over Time:**
 ``` python
@@ -152,7 +151,6 @@ sns.lineplot(
     data=music_month_year_trend,
     ax=ax[0]
 )
-ax[0].legend().remove()
 ax[0].set_title('Total Hours Played Over Time', fontsize=14)
 ax[0].set_ylabel('Music Trakcs (hrs)', fontsize=12)
 ax[0].set_xlabel('Date', fontsize=12)
@@ -164,9 +162,11 @@ ax[0].yaxis.set_major_formatter(FuncFormatter(lambda y,_: f'{int(y/60)}'))
 *Hours played over time for music tracks and podcast shows*
 
 ## EDA on Artist Genres  
-View my notebook with detailed steps here :point_right: [3_Genre_General_EDA.ipynb](/2_Exploratory_Data_Analysis/3_Genre_General_EDA.ipynb)  
 
-:one: **General EDA:** 
+:one: **General EDA:**  
+
+View my notebook with detailed steps here :point_right: [3_Genre_General_EDA.ipynb](/2_Exploratory_Data_Analysis/3_Genre_General_EDA.ipynb)    
+
 - **Inspected Data:** Looked at the first few rows, column names and data types.
 ``` python
 # check the first few rows
@@ -180,56 +180,43 @@ print(artist_genre_df.info())
 print(artist_genre_df.describe())
 ```
 
-:two: **Targeted EDA:**
+:two: **Targeted EDA:**  
+
+View my notebook with detailed steps here :point_right: [4_Genre_Targeted_EDA.ipynb](/2_Exploratory_Data_Analysis/4_Genre_Targeted_EDA.ipynb) 
 - **Visualize Top 10 Genres:**
 ``` python
-# count genre occurances
-genre_count = genre_cleaned['genre'].value_counts()
-print(genre_count)
-
-# identify top 10 genres
-top_genre = genre_count.head(10)
-print(top_genre)
-
-# select top 10 genres and sort in descending order
-genre_count_sorted = genre_count.sort_values(ascending=False).head(10)
-
+fig, ax = plt.subplots(2,1,figsize=(12,8))
 # create bar plot with seaborn
 sns.set(style='darkgrid')
-plt.figure(figsize = (10,8))
 sns.barplot(
     x=genre_count_sorted.values,
     y=genre_count_sorted.index,
-    palette= 'Blues_r'
+    ax=ax[1]
 )
-
 # add title and labels
-plt.title('Top 10 Genres', fontsize = 20)
-plt.xlabel('Number of Artists')
-plt.ylabel(None)
-plt.show()
-
-# create bar chart
+ax[1].set_title('Top 10 Genres', fontsize=14)
+ax[1].set_ylabel('')
+ax[1].set_xlabel('Number of Artists',fontsize=12)
+# create pie chart with matplotlib
 labels = top_genre.index
-sizes = top_genre.values
-
-plt.figure(figsize=10,8))
-plt.pie(
-    sizes,
-    labels= labels,
-    # format percentages with 1 decimal place
-    autopct='%1.1f%%',
-    # rotate the first slice to start at 140 degrees for better visuals
-    startangle=140,
-    colors=sns.color_palette('Blues_r', n_colors=len(labels))
-)
-
-plt.title('Top 10 Genres Distribution', fontsize = 20)
-plt.ylabel(None)
-plt.show()
+sizes=top_genre.values
 ```
-![top_10_genre_bar_chart](/Images/top10_genres.png)
-![top_10_genre_pie_chart](/Images/top10_genres_distribution.png)
+![top_genres](/Images/top_genres.png)
 
 # Conclusion
-In this section, I conducted EDA on 
+In this section, I conducted EDA on in-depth EDA on the cleaned stremaing history and genre datasets. Key insights include:
+
+**Music and Podcast Streaming History:**
+
+Most music tracks are played within 10 minutes, with a median playback time of **4 minutes**. Outliers in playback duration were analyzed and found to include live tracks, extended mixes or background music.
+Podcasts generally have a higher playback duration with most episodes played within 50 minutes and a median of **30 minutes**. Outliers largely consisted of popular, longer-format shows.
+
+The top 10 most played artists and shows were identified, showcasing my preferences and trends over time.
+
+**Artist Genres:**
+
+A general analysis of the genres revealed the top 10 most frequent genres, highlighting the dominance of specific musical styles (mandopop and pop) in my listening history.
+
+Visualization of genre distributions through bar plots and pie charts provided a clearer understanding of my genre preferences.
+
+Overall, the EDA provided valuable insights into streaming patterns, my preferences, and key data features. These findings will guide the next steps in the project.
