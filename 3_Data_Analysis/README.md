@@ -43,9 +43,18 @@ ax[0].xaxis.set_major_formatter(FuncFormatter(lambda x,_: f'{int(x/1000)}K'))
 ![top_10_artists](/Images/top_10_artist_bar.png)  
 *Top 10 most played artists by play count and by play time*  
 
- 
 
 **Insight**  
+- **Hebe Tien**:
+  Leads in both play count and playtime, showing she is the most versatile artist with frequent and extended engagement.
+- **S.H.E** and **JJ Lin**:
+  While S.H.E has a higher play count, JJ Lin has a higher total playtime. This might due to JJ Lin's songs.
+
+- **許嵩** and **G.E.M.**
+  Artists like 許嵩 and G.E.M. show longer playtime relative to their play  count, likely indicating longer average track durations.
+
+- **Jay Chou**, **Sodagreen**, and **Joker Xue**
+  These artists rank lower but appear on both charts, showing steady and loyal engagement.
 
 **Result**  
 
@@ -83,8 +92,13 @@ plt.show()
 **Insight**
 ### :three: Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:
 ### :four:  Based on past data, who will be the most played artist and podcast for 2025?" :question:  
-View my notebook with detailed steps here :point_right: [4_Predict_Future_Most_Played.ipynb](/3_Data_Analysis/4_Predict_Future_Most_Played.ipynb) 
-**Code Implementation**
+
+To predict most played artist for 2025, I calculated total play time for all artists in each year. Then picked out the top 10 artists based on the total play time across all years and plot them as a line chart. Vise versa for the podcast dataset.
+
+View my notebook with detailed steps here :point_right: [4_Predict_Future_Most_Played.ipynb](/3_Data_Analysis/4_Predict_Future_Most_Played.ipynb)  
+
+**Code Implementation**  
+
 ```python
 sns.lineplot(
     data=filtered_data,
@@ -102,11 +116,24 @@ plt.title('Top 10 Most Played Artists Over Years', fontsize=16)
 plt.tight_layout()
 plt.show()
 ```
-**Result**  
+**Results**  
 ![top_10_artists_over_time](/Images/top_10_artist_over_time.png)  
 *Top 10 most played artists over years*   
 
+
+
+**Insight**  
+- Artists with Peaked Popularity:
+  - JJ Lin peaked significantly in 2020 and declined sharply afterward.
+  - Artists like Hebe Tien and S.H.E also peaked early (2019-2020) and declined gradually.
+- Consistent Performers:
+  - Artists like Jay Chou and Sodagreen showed relatively consistent playtime across the years, with no extreme peaks or drops.
+- Declining Artists:
+  All artists show a steady decline, indicating diminishing interest except for One Repulic. 
+- Inclining Artists:
+  **OneRepublic** has shown consistent growth since 2022, with a steady upward trend that accelerated significantly in 2023. By 2024, they surpassed all other artists to become the most played. Based on this trajectory, OneRepublic is likely to maintain this momentum and emerge as the most played artist in 2025.  
+
 ![top_10_shows_over_time](/Images/top_10_podcast_over_time.png)  
-*Top 10 most played podcast shows over years* 
-**Insight**
+*Top 10 most played podcast shows over years*   
+
 # Conclusion
