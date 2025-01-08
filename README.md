@@ -28,7 +28,7 @@ Below are my findings through this project:
 :one:  Who are the top 10 most played artists and podcast shows? 🎶
   - 🎨 Artists:
     - **Hebe Tien** leads in both play count and playtime.
-    - **S.H.E** and **JJ Lin** follow closely, with S.H.E leading in play count while JJ Lin surpasses in total playtime 
+    - **S.H.E** and **JJ Lin** follow closely, with S.H.E leading in play count while JJ Lin surpasses in total playtime. 
   - 🎙️ Podcasts:
       - **童話裡都是騙人的** and **時間的女兒** are the most streamed show, excelling in both frequency and total play time.
       - **我在案發現場** and **善嵐慶女** follow, with moderate play count and high play times.  
