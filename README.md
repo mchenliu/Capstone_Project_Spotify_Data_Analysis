@@ -31,7 +31,7 @@
 Below are the questions I want to answer in my project:  
 1.  Who are the top 10 most played artists and podcast shows? 🎶
 2.  How diverse are the genres of music artists? 🌟
-3.  Based on the past data, will podcasts occupy most listening time or tracks? :headphones:
-4.  Based on past data, who are the most played artists and podcast for 2025?" :question:  
+3.  Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:
+4.  Based on past data, who will be the most played artist and podcast for 2025?" :question:  
 
 ## Conclusion
