@@ -25,18 +25,20 @@
 
 # My Findings
 Below are my findings through this project:  
-:one:  Who are the top 10 most played artists and podcast shows? 🎶  
-    - Artists:
-      - **Hebe Tien** leads in both play count and playtime.
-      - **S.H.E** and **JJ Lin** follow closely, with S.H.E leading in play count while JJ Lin surpasses in total playtime
-      - **Jay Chou**, **Sodagreen**, and **Joker Xue** secure lower ranks but demonstrate consistent and steady engagement.  
-    - Podcasts:
+:one:  Who are the top 10 most played artists and podcast shows? 🎶
+  - 🎨 Artists:
+    - **Hebe Tien** leads in both play count and playtime.
+    - **S.H.E** and **JJ Lin** follow closely, with S.H.E leading in play count while JJ Lin surpasses in total playtime
+    - **Jay Chou**, **Sodagreen**, and **Joker Xue** secure lower ranks but demonstrate consistent and steady engagement.  
+  - 🎙️ Podcasts:
       - **童話裡都是騙人的** and **時間的女兒** are the most popular, excelling in both frequency and total play time.
       - **我在案發現場** and **善嵐慶女** follow, with moderate play count and high play times.  
   
-:two:  How diverse are the genres of music artists? 🌟
-:three:  Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:
+:two:  How diverse are the genres of music artists? 🌟  
+
+:three:  Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:  
+
 :four:  Based on past data, who will be the most played artist and podcast for 2025?" :question:  
-    - Artists:
-      - **OneRepublic** has shown consistent growth since 2022. By 2024, they surpassed all other artists to become the most played. Based on this trajectory, OneRepublic is likely to maintain this momentum and emerge as the most played artist in 2025.  
-    - Podcasts
+  - 🎨 Artists:
+    - **OneRepublic** has shown consistent growth since 2022. By 2024, they surpassed all other artists to become the most played. Based on this trajectory, OneRepublic is likely to maintain this momentum and emerge as the most played artist in 2025.  
+  - 🎙️ Podcasts:
