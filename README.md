@@ -5,7 +5,7 @@
 - [My Findings](#my-findings)
 
 # Introduction
-:mega: In this project, I analyzed my Spotify streaming history, covering both music tracks and podcast shows from 2018 to 2024. The goal is to uncover insights into my listening habits and predict future listening trends. This project is split into five parts:
+:mega: In this project, I analyzed my Spotify streaming history, covering both music tracks and podcast shows from 2018 to 2024. The goal is to uncover insights into my listening habits and predict future listening trends. This project is split into four parts:
 1. [Data Collection and Preparation](/1_Data_Collection_and_Preparation/)
 2. [Exploratary Data Analysis](/2_Exploratary_Data_Analysis/)
 3. [Data Analysis](/3_Data_Analysis/)
@@ -31,10 +31,13 @@ Below are my findings through this project:
     - **S.H.E** and **JJ Lin** follow closely, with S.H.E leading in play count while JJ Lin surpasses in total playtime
     - **Jay Chou**, **Sodagreen**, and **Joker Xue** secure lower ranks but demonstrate consistent and steady engagement.  
   - 🎙️ Podcasts:
-      - **童話裡都是騙人的** and **時間的女兒** are the most popular, excelling in both frequency and total play time.
+      - **童話裡都是騙人的** and **時間的女兒** are the most streamed show, excelling in both frequency and total play time.
       - **我在案發現場** and **善嵐慶女** follow, with moderate play count and high play times.  
   
 :two:  How diverse are the genres of music artists? 🌟  
+- **Mandopop** dominates at 27.2%, reflecting my strong preference for pop music.
+- **Hip Hop** and **Rap** each hold over 10%, showcasing my appreciation for contemporary rhythmic styles.
+- My interest in **Rock**, **Indie**, and **EDM** further highlights the diversity in my musical tastes. 
 
 :three:  Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:  
 
@@ -42,3 +45,4 @@ Below are my findings through this project:
   - 🎨 Artists:
     - **OneRepublic** has shown consistent growth since 2022. By 2024, they surpassed all other artists to become the most played. Based on this trajectory, OneRepublic is likely to maintain this momentum and emerge as the most played artist in 2025.  
   - 🎙️ Podcasts:
+    - **童話裡都是騙人的** demonstrated consistent growth since 2022, with a sharp acceleration into 2024. This show has now outperformed all others and is likely to dominate 2025 if this trajectory continues.

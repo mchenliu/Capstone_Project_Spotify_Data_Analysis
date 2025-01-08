@@ -77,7 +77,10 @@ ax[0].xaxis.set_major_formatter(FuncFormatter(lambda x,_: f'{int(x/1000)}K'))
 
 
 ### :two: How diverse are the genres of music artists? 🌟  
+To identify the top genres, I started by splitting the `genre` column on commas and exploding it to ensure each genre occupies its own row. I then counted the occurrences of each genre and extracted the top ten. Using this data, I created a pie chart with Matplotlib and added labels for clarity.  
+
 View my notebook with detailed steps here :point_right: [2_Genre_Analysis.ipynb](/3_Data_Analysis/2_Genre_Analysis.ipynb)  
+
 **Code Implementation**  
 ```python
 # select top 10 genres and sort in descending order
@@ -99,9 +102,22 @@ plt.title('Genre Distribuion', fontsize=14)
 plt.tight_layout()
 plt.show()
 ```  
-**Result**
+**Results**  
+![genre_pie](/Images/genre_pie.png)  
+
+**Insight**  
+- **Pop** Domination:
+  - Pop genres account for over 50% of the total distribution, with **Mandopop** leading at 27.2%, highlighting my strong preference for these genres.
+- **Hip Hop** and **Rap**'s Rising Appeal:
+  - With over 10% share each, they hold significant importance. Shows I also have a taste for contemporary rhythmic music. 
+- Diversity:
+  - While smaller genres like **Rock**, **Indie**, and **EDM** have less representation, their inclusion highlights the diversity in my musical tastes.  
+
+### :three: Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:  
+
+View my notebook with detailed steps here :point_right: [4_Predict_Future_Most_Played.ipynb](/3_Data_Analysis/4_Predict_Future_Most_Played.ipynb)  
+**Results**
 **Insight**
-### :three: Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:
 ### :four:  Based on past data, who will be the most played artist and podcast for 2025?" :question:  
 
 To predict most played artist for 2025, I calculated total play time for all artists in each year. Then picked out the top 10 artists based on the total play time across all years and plot them as a line chart. Vise versa for the podcast dataset.
@@ -135,16 +151,31 @@ plt.show()
 
 **Insight**  
 - Artists with Peaked Popularity:
-  - JJ Lin peaked significantly in 2020 and declined sharply afterward.
-  - Artists like Hebe Tien and S.H.E also peaked early (2019-2020) and declined gradually.
+  - **JJ Lin** peaked significantly in 2020 and declined sharply afterward.
+  - Artists like **Hebe Tien** and **S.H.E** also peaked early (2019-2020) and declined gradually.
 - Consistent Performers:
-  - Artists like Jay Chou and Sodagreen showed relatively consistent playtime across the years, with no extreme peaks or drops.
+  - Artists like **Jay Chou** and **Sodagreen** showed relatively consistent playtime across the years, with no extreme peaks or drops.
 - Declining Artists:
-  All artists show a steady decline, indicating diminishing interest except for One Repulic. 
+  - All artists show a steady decline, indicating diminishing interest except for One Republic. 
 - Inclining Artists:
-  **OneRepublic** has shown consistent growth since 2022, with a steady upward trend that accelerated significantly in 2023. By 2024, they surpassed all other artists to become the most played. Based on this trajectory, OneRepublic is likely to maintain this momentum and emerge as the most played artist in 2025.  
+  - **OneRepublic** has shown consistent growth since 2022, with a steady upward trend that accelerated significantly in 2023. By 2024, they surpassed all other artists to become the most played. Based on this trajectory, OneRepublic is likely to maintain this momentum and emerge as the most played artist in 2025.  
+
+**Results** 
 
 ![top_10_shows_over_time](/Images/top_10_podcast_over_time.png)  
 *Top 10 most played podcast shows over years*   
+
+**Insight**  
+
+- Shows with Peaked Popularity:
+  - **時間的女兒: 八卦歷史** peaked early (2021-2022) and declined steadily over the years.
+  - **劉軒的How to人生學** and **吃史 Eat History** have their highest engagement in 2021 but declined sharply afterward.  
+- Rapid Stoppers:  
+  - Sreaming for **我在案發現場**, **宮說宮有理 National Palace Museum**, **阿善師鑑識實錄** rapidly stopped in 2023.
+- Consistent Performers:
+  - **愚樂百百百** showed steady, consistent playtime.
+- Inclining Shows:  
+  - **童話裡都是騙人的** demonstrated consistent growth since 2022, with a sharp acceleration into 2024. This show has now outperformed all others and is likely to dominate 2025 if this trajectory continues.
+
 
 # Conclusion
