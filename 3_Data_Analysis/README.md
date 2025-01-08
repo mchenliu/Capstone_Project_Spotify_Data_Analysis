@@ -118,7 +118,7 @@ plt.show()
 
 View my notebook with detailed steps here :point_right: [3_Predict_Future_Show_and_Track.ipynb](/3_Data_Analysis/3_Predict_Future_Show_and_Track.ipynb)  
 **Code Implementation**  
-  
+
 **Results**
 **Insight**
 ### :four:  Based on the past data, who will be the most played artist and podcast for 2025?" :question:  
@@ -176,7 +176,7 @@ plt.show()
 - Rapid Stoppers:  
   - Sreaming for **我在案發現場**, **宮說宮有理 National Palace Museum**, **阿善師鑑識實錄** rapidly stopped in 2023.
 - Consistent Performers:
-  - **愚樂百百百** showed steady, consistent playtime.
+  - **愚樂百昏百** showed steady, consistent playtime.
 - Inclining Shows:  
   - **童話裡都是騙人的** demonstrated consistent growth since 2022, with a sharp acceleration into 2024. This show has now outperformed all others and is likely to dominate 2025 if this trajectory continues.
 
