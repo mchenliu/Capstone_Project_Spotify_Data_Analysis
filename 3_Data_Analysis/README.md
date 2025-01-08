@@ -53,13 +53,13 @@ ax[0].xaxis.set_major_formatter(FuncFormatter(lambda x,_: f'{int(x/1000)}K'))
 
 
 **Artist Insight**  
-- **Hebe Tien**  
+- **Hebe Tien**:  
   Leads in both play count and playtime, showing she is the most versatile artist with frequent and extended engagement.
-- **S.H.E** and **JJ Lin**  
+- **S.H.E** and **JJ Lin**:    
   While S.H.E has a higher play count, JJ Lin surpasses in total playtime. This could be because I tend to listen to JJ Lin's entire albums, whereas with S.H.E, I selectively play specific tracks.
-- **許嵩** and **G.E.M.**
+- **許嵩** and **G.E.M.**:  
   These two artists show longer playtime relative to their play count, likely indicating entire albums were played rather than selective tracks.
-- **Jay Chou**, **Sodagreen**, and **Joker Xue**
+- **Jay Chou**, **Sodagreen**, and **Joker Xue**:  
   These artists rank lower but appear on both charts, showing steady and loyal engagement.
 
 **Podcast Results**  
@@ -70,9 +70,9 @@ ax[0].xaxis.set_major_formatter(FuncFormatter(lambda x,_: f'{int(x/1000)}K'))
  
 
 **Podcast Insight**  
-- **童話裡都是騙人的** and **時間的女兒**  
+- **童話裡都是騙人的** and **時間的女兒**:  
   These two shows are clearly the most popular, excelling in both frequency and total play time.
-- **我在案發現場** and **善嵐慶女**  
+- **我在案發現場** and **善嵐慶女**:  
   These two shows are likely to have longer episodes or more replay value, leading to higher play times despite moderate play counts.
 
 
