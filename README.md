@@ -41,7 +41,7 @@ Below are my findings through this project:
 
 :three:  Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:  
 
-:four:  Based on past data, who will be the most played artist and podcast for 2025?" :question:  
+:four:  Based on the past data, who will be the most played artist and podcast for 2025?" :question:  
   - 🎨 Artists:
     - **OneRepublic** has shown consistent growth since 2022. By 2024, they surpassed all other artists to become the most played. Based on this trajectory, OneRepublic is likely to maintain this momentum and emerge as the most played artist in 2025.  
   - 🎙️ Podcasts:

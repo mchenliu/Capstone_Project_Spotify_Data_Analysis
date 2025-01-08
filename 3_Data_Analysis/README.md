@@ -6,7 +6,7 @@
     - [:one: Who are the top 10 most played artists and podcast shows? 🎶](#one-who-are-the-top-10-most-played-artists-and-podcast-shows-)
     - [:two: How diverse are the genres of music artists? 🌟](#two-how-diverse-are-the-genres-of-music-artists-)
     - [:three: Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:](#three-based-on-the-past-data-will-podcasts-occupy-most-listening-time-or-music-tracks-headphones)
-    - [:four:  Based on past data, who will be the most played artist and podcast for 2025?" :question:](#four--based-on-past-data-who-will-be-the-most-played-artist-and-podcast-for-2025-question)
+    - [:four:  Based on the past data, who will be the most played artist and podcast for 2025?" :question:](#four--based-on-the-past-data-who-will-be-the-most-played-artist-and-podcast-for-2025-question)
 - [Conclusion](#conclusion)
 
 # Introducation
@@ -104,6 +104,7 @@ plt.show()
 ```  
 **Results**  
 ![genre_pie](/Images/genre_pie.png)  
+*Top 10 genres*
 
 **Insight**  
 - **Pop** Domination:
@@ -115,10 +116,12 @@ plt.show()
 
 ### :three: Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:  
 
-View my notebook with detailed steps here :point_right: [4_Predict_Future_Most_Played.ipynb](/3_Data_Analysis/4_Predict_Future_Most_Played.ipynb)  
+View my notebook with detailed steps here :point_right: [3_Predict_Future_Show_and_Track.ipynb](/3_Data_Analysis/3_Predict_Future_Show_and_Track.ipynb)  
+**Code Implementation**  
+  
 **Results**
 **Insight**
-### :four:  Based on past data, who will be the most played artist and podcast for 2025?" :question:  
+### :four:  Based on the past data, who will be the most played artist and podcast for 2025?" :question:  
 
 To predict most played artist for 2025, I calculated total play time for all artists in each year. Then picked out the top 10 artists based on the total play time across all years and plot them as a line chart. Vise versa for the podcast dataset.
 
