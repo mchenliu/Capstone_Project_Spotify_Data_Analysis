@@ -60,7 +60,7 @@ ax[0].xaxis.set_major_formatter(FuncFormatter(lambda x,_: f'{int(x/1000)}K'))
 - **許嵩** and **G.E.M.**:  
   These two artists show longer playtime relative to their play count, likely indicating entire albums were played rather than selective tracks.
 - **Jay Chou**, **Sodagreen**, and **Joker Xue**:  
-  These artists rank lower but appear on both charts, showing steady and loyal engagement.
+  These artists rank lower but appear on both charts, showing steady and consist engagement.
 
 **Podcast Results**  
 

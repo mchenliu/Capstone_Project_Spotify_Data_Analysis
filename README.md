@@ -1,37 +1,42 @@
-# :construction: PROJECT UNDER CONSTRUCTION :construction:
 # Table of Contents
-- [:construction: PROJECT UNDER CONSTRUCTION :construction:](#construction-project-under-construction-construction)
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
-  - [Tools Used](#tools-used)
-  - [Questions to Answer](#questions-to-answer)
-  - [Conclusion](#conclusion)
+- [Tools Used](#tools-used)
+- [My Findings](#my-findings)
 
 # Introduction
 :mega: In this project, I analyzed my Spotify streaming history, covering both music tracks and podcast shows from 2018 to 2024. The goal is to uncover insights into my listening habits and predict future listening trends. This project is split into five parts:
 1. [Data Collection and Preparation](/1_Data_Collection_and_Preparation/)
 2. [Exploratary Data Analysis](/2_Exploratary_Data_Analysis/)
 3. [Data Analysis](/3_Data_Analysis/)
-4. [Visualization](/4_Visualization/)
-5. [Problems](/5_Problems/)
+4. [Problems](/4_Problems/)
 
-## Tools Used
+# Tools Used
 - :snake: Python: The backbone of my project, used to perform all tasks. Key libraries include:
   - Pandas: Used for data cleaning and manipulation.
   - Spotipy: Used to fetch artist genres.
   - dotenv: Used to securely manage my Spotify API keys.
-  - matplotlib
-  - seaborn
+  - Matplotlib
+  - Seaborn
 - :notebook: Jupyter Notebooks: Used to run my Python scripts and seemlessly integrate notes and analysis.
 - :crystal_ball: ChatGPT & search engine: 
 - :computer: Visual Studio Code: My pirmary IDE for executing Python scripts.
 - :octopus: Git & Github: My go-to for version control and tracking my project progress.
 
-## Questions to Answer
-Below are the questions I want to answer in my project:  
-1.  Who are the top 10 most played artists and podcast shows? 🎶
-2.  How diverse are the genres of music artists? 🌟
-3.  Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:
-4.  Based on past data, who will be the most played artist and podcast for 2025?" :question:  
-
-## Conclusion
+# My Findings
+Below are my findings through this project:  
+:one:  Who are the top 10 most played artists and podcast shows? 🎶  
+    - Artists:
+      - **Hebe Tien** leads in both play count and playtime.
+      - **S.H.E** and **JJ Lin** follow closely, with S.H.E leading in play count while JJ Lin surpasses in total playtime
+      - **Jay Chou**, **Sodagreen**, and **Joker Xue** secure lower ranks but demonstrate consistent and steady engagement.  
+    - Podcasts:
+      - **童話裡都是騙人的** and **時間的女兒** are the most popular, excelling in both frequency and total play time.
+      - **我在案發現場** and **善嵐慶女** follow, with moderate play count and high play times.  
+  
+:two:  How diverse are the genres of music artists? 🌟
+:three:  Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:
+:four:  Based on past data, who will be the most played artist and podcast for 2025?" :question:  
+    - Artists:
+      - **OneRepublic** has shown consistent growth since 2022. By 2024, they surpassed all other artists to become the most played. Based on this trajectory, OneRepublic is likely to maintain this momentum and emerge as the most played artist in 2025.  
+    - Podcasts
