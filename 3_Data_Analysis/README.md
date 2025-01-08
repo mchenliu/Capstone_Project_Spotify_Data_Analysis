@@ -5,12 +5,6 @@
   - [Tools Used](#tools-used)
 - [Analysis](#analysis)
     - [What are the 20 most played tracks and artists? 🎶](#what-are-the-20-most-played-tracks-and-artists-)
-    - [How do listening habits vary by time of day? 🕒](#how-do-listening-habits-vary-by-time-of-day-)
-    - [How diverse are the genres of music artists? 🌟](#how-diverse-are-the-genres-of-music-artists-)
-    - [Which tracks were frequently skipped?　⏭️](#which-tracks-were-frequently-skipped️)
-    - [What are the top podcast episodes 🎙️](#what-are-the-top-podcast-episodes-️)
-    - [Based on the past data, will podcasts occupy most listening time or tracks? :headphones:](#based-on-the-past-data-will-podcasts-occupy-most-listening-time-or-tracks-headphones)
-    - [Based on the past data, who are the most played artists and tracks for 2025?" :question:](#based-on-the-past-data-who-are-the-most-played-artists-and-tracks-for-2025-question)
 - [Conclusion](#conclusion)
 
 # Introducation
@@ -113,10 +107,5 @@ print(top_artists_by_minutes.to_string(index=False))
 |Taylor Swift  |     3,679.96|
 |Charlie Puth |      3,542.84|
 
-### How do listening habits vary by time of day? 🕒
-### How diverse are the genres of music artists? 🌟
-###  Which tracks were frequently skipped?　⏭️
-### What are the top podcast episodes 🎙️  
-###  Based on the past data, will podcasts occupy most listening time or tracks? :headphones:
-###  Based on the past data, who are the most played artists and tracks for 2025?" :question:  
+
 # Conclusion
