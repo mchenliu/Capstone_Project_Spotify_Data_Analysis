@@ -25,12 +25,20 @@ View my notebook with detailed steps here :point_right: [1_Top_10_Most_Played.ip
 **Code Implementation**
 
 ``` python
+# group by artist_name and sum the minutes played
+artist_played_hours=(
+    music_tracks_df.groupby('artist_name')['minutes_played']
+    .sum()
+    .sort_values(ascending=False)
+    /60 #convert to hours
+)
+
 sns.barplot(
     x=top_artists.values,
     y=top_artists.index,
     ax=ax[0],
     palette=sns.color_palette('Blues_r',len(top_artists)),
-    hue=top_artists.index # #assign y variable to hue
+    hue=top_artists.index #assign y variable to hue
 )
 ax[0].set_title('Top 10 Most Played Artists by Count')
 ax[0].set_ylabel('')
@@ -38,32 +46,35 @@ ax[0].set_xlabel('Play Counts')
 ax[0].xaxis.set_major_formatter(FuncFormatter(lambda x,_: f'{int(x/1000)}K'))
 ```
 
-**Result**  
+**Artist Results**  
 
 ![top_10_artists](/Images/top_10_artist_bar.png)  
 *Top 10 most played artists by play count and by play time*  
 
 
-**Insight**  
-- **Hebe Tien**:
+**Artist Insight**  
+- **Hebe Tien**  
   Leads in both play count and playtime, showing she is the most versatile artist with frequent and extended engagement.
-- **S.H.E** and **JJ Lin**:
-  While S.H.E has a higher play count, JJ Lin has a higher total playtime. This might due to JJ Lin's songs.
-
+- **S.H.E** and **JJ Lin**  
+  While S.H.E has a higher play count, JJ Lin surpasses in total playtime. This could be because I tend to listen to JJ Lin's entire albums, whereas with S.H.E, I selectively play specific tracks.
 - **許嵩** and **G.E.M.**
-  Artists like 許嵩 and G.E.M. show longer playtime relative to their play  count, likely indicating longer average track durations.
-
+  These two artists show longer playtime relative to their play count, likely indicating entire albums were played rather than selective tracks.
 - **Jay Chou**, **Sodagreen**, and **Joker Xue**
   These artists rank lower but appear on both charts, showing steady and loyal engagement.
 
-**Result**  
+**Podcast Results**  
 
 ![top_10_shows](/Images/top_10_podcast_bar.png)  
 *Top 10 most played podcast shows by play count and by play time*  
 
  
 
-**Insight**  
+**Podcast Insight**  
+- **童話裡都是騙人的** and **時間的女兒**  
+  These two shows are clearly the most popular, excelling in both frequency and total play time.
+- **我在案發現場** and **善嵐慶女**  
+  These two shows are likely to have longer episodes or more replay value, leading to higher play times despite moderate play counts.
+
 
 ### :two: How diverse are the genres of music artists? 🌟  
 View my notebook with detailed steps here :point_right: [2_Genre_Analysis.ipynb](/3_Data_Analysis/2_Genre_Analysis.ipynb)  
