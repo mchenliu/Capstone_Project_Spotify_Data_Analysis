@@ -164,7 +164,8 @@ ax[0].yaxis.set_major_formatter(FuncFormatter(lambda y,_: f'{int(y/60)}'))
 
 :one: **General EDA:**  
 
-View my notebook with detailed steps here :point_right: [3_Genre_General_EDA.ipynb](/2_Exploratory_Data_Analysis/3_Genre_General_EDA.ipynb)    
+View my notebook with detailed steps here :point_right: [3_Genre_General_EDA.ipynb](/2_Exploratory_Data_Analysis/3_Genre_General_EDA.ipynb)  
+ 
 
 - **Inspected Data:** Looked at the first few rows, column names and data types.
 ``` python
@@ -200,7 +201,8 @@ ax[1].set_xlabel('Number of Artists',fontsize=12)
 labels = top_genre.index
 sizes=top_genre.values
 ```
-![top_genres](/Images/top_genres.png)
+![top_genres](/Images/top_genres.png)  
+*Top 10 genres* 
 
 # Conclusion
 In this section, I conducted EDA on in-depth EDA on the cleaned stremaing history and genre datasets. Key insights include:
