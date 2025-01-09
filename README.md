@@ -5,11 +5,10 @@
 - [My Findings](#my-findings)
 
 # Introduction
-:mega: In this project, I analyzed my Spotify streaming history, covering both music tracks and podcast shows from 2018 to 2024. The goal is to uncover insights into my listening habits and predict future listening trends. This project is split into four parts:
+:mega: In this project, I analyzed my Spotify streaming history, covering both music tracks and podcast shows from 2018 to 2024. The goal is to uncover insights into my listening habits and predict future listening trends. This project is split into three parts:
 1. [Data Collection and Preparation](/1_Data_Collection_and_Preparation/)
 2. [Exploratary Data Analysis](/2_Exploratory_Data_Analysis/)
 3. [Data Analysis](/3_Data_Analysis/)
-4. [Problems](/4_Problems/)
 
 # Tools Used
 - :snake: Python: The backbone of my project, used to perform all tasks. Key libraries include:

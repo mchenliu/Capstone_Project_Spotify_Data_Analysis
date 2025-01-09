@@ -10,7 +10,9 @@
 - [Conclusion](#conclusion)
 
 # Introducation
-Part 2 [Exploratory_Data_Analysis](/2_Exploratory_Data_Analysis/)
+
+This is the final section of the project. Here, I conducted an in-depth analysis of the cleaned data from Part 1 [Data_Collection_and_Preparation](/1_Data_Collection_and_Preparation/) to address the four key questions outlined below.
+
 # Questions to Answer
 Below are the questions I want to answer in my project:  
 1.  Who are the top 10 most played artists and podcast shows? 🏆
@@ -95,6 +97,7 @@ plt.tight_layout()
 plt.show()
 ```  
 **🌈 Genre Results**  
+
 ![genre_pie](/Images/genre_pie.png)  
 *Top 10 genres*
 
@@ -107,8 +110,10 @@ plt.show()
   - While smaller genres like **Rock**, **Indie**, and **EDM** have less representation, their inclusion highlights the diversity in my musical tastes.  
 
 ### :three: Based on the past data, will podcasts occupy most listening time or music tracks? 🕒  
+I addressed this question by calculating the average hours played per year for both tracks and podcasts. The results were visualized in a line chart, enhanced with labels for each marker to improve clarity and detail.
 
 View my notebook with detailed steps here :point_right: [3_Predict_Future_Show_and_Track.ipynb](/3_Data_Analysis/3_Predict_Future_Show_and_Track.ipynb)  
+
 **Code Implementation**  
 
 ```python
@@ -180,7 +185,8 @@ plt.title('Top 10 Most Played Artists Over Years', fontsize=16)
 plt.tight_layout()
 plt.show()
 ```
-**🎨 Artist Results**   
+**🎨 Artist Results**  
+ 
 ![top_10_artists_over_time](/Images/top_10_artist_over_time.png)  
 *Top 10 most played artists over years*   
 
@@ -216,3 +222,4 @@ plt.show()
 
 
 # Conclusion
+In this section, I analyzed the cleaned data to answer four key questions, uncovering valuable insights into my streaming behavior. The analysis revealed that my top ten most played artists include **Hebe Tien** and **JJ Lin**, while my most played podcasts feature **童話裡都是騙人的** and **時間的女兒: 八卦歷史**. Although **Mandopop** is my favorite genre, my musical preferences are diverse, spanning various styles. The analysis also highlights a significant shift in my listening habits over time, with **podcasts** demonstrating **consistent growth** and surpassing music tracks as the dominant category. Predictions indicate that **One Republic** and **童話裡都是騙人的** are likely to be the most played artist and podcast in 2025, providing a deeper understanding of my evolving streaming patterns.
