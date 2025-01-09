@@ -15,10 +15,9 @@
   - Pandas: Used for data cleaning and manipulation.
   - Spotipy: Used to fetch artist genres.
   - dotenv: Used to securely manage my Spotify API keys.
-  - Matplotlib
-  - Seaborn
+  - Matplotlib & Seaborn: Used to visualize data.
 - :notebook: Jupyter Notebooks: Used to run my Python scripts and seemlessly integrate notes and analysis.
-- :crystal_ball: ChatGPT & search engine: 
+- :crystal_ball: ChatGPT & Google search engine: Used as copilots, providing valuable assistance in debugging Python scripts and resolving issues encountered throughout the project.
 - :computer: Visual Studio Code: My pirmary IDE for executing Python scripts.
 - :octopus: Git & Github: My go-to for version control and tracking my project progress.
 
