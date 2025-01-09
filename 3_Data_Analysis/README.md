@@ -3,9 +3,9 @@
 - [Introducation](#introducation)
 - [Questions to Answer](#questions-to-answer)
 - [Analysis](#analysis)
-    - [:one: Who are the top 10 most played artists and podcast shows? 🎶](#one-who-are-the-top-10-most-played-artists-and-podcast-shows-)
+    - [:one: Who are the top 10 most played artists and podcast shows? 🏆](#one-who-are-the-top-10-most-played-artists-and-podcast-shows-)
     - [:two: How diverse are the genres of music artists? 🌟](#two-how-diverse-are-the-genres-of-music-artists-)
-    - [:three: Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:](#three-based-on-the-past-data-will-podcasts-occupy-most-listening-time-or-music-tracks-headphones)
+    - [:three: Based on the past data, will podcasts occupy most listening time or music tracks? 🕒](#three-based-on-the-past-data-will-podcasts-occupy-most-listening-time-or-music-tracks-)
     - [:four:  Based on the past data, who will be the most played artist and podcast for 2025?" :question:](#four--based-on-the-past-data-who-will-be-the-most-played-artist-and-podcast-for-2025-question)
 - [Conclusion](#conclusion)
 
@@ -13,13 +13,14 @@
 Part 2 [Exploratory_Data_Analysis](/2_Exploratory_Data_Analysis/)
 # Questions to Answer
 Below are the questions I want to answer in my project:  
-1.  Who are the top 10 most played artists and podcast shows? 🎶
+1.  Who are the top 10 most played artists and podcast shows? 🏆
 2.  How diverse are the genres of music artists? 🌟
-3.  Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:
+3.  Based on the past data, will podcasts occupy most listening time or music tracks? 🕒
 4.  Based on past data, who will be the most played artist and podcast for 2025?" :question:  
 
 # Analysis
-### :one: Who are the top 10 most played artists and podcast shows? 🎶
+### :one: Who are the top 10 most played artists and podcast shows? 🏆
+I used two approaches to answer this question. The first approach identifies the top artists and podcasts based on the highest play counts, which I determined using the `value_counts` method. The second approach focuses on total playtime by grouping the data by `artist_name` and `show_name`, summing the `minutes_played` for each group, and sorting the results in descending order to find the top ten entries.  
 
 View my notebook with detailed steps here :point_right: [1_Top_10_Most_Played.ipynb](/3_Data_Analysis/1_Top_10_Most_Played.ipynb) 
 
@@ -29,11 +30,8 @@ View my notebook with detailed steps here :point_right: [1_Top_10_Most_Played.ip
 # group by artist_name and sum the minutes played
 artist_played_hours=(
     music_tracks_df.groupby('artist_name')['minutes_played']
-    .sum()
-    .sort_values(ascending=False)
-    /60 #convert to hours
+    .sum().sort_values(ascending=False)/60 
 )
-
 sns.barplot(
     x=top_artists.values,
     y=top_artists.index,
@@ -47,13 +45,13 @@ ax[0].set_xlabel('Play Counts')
 ax[0].xaxis.set_major_formatter(FuncFormatter(lambda x,_: f'{int(x/1000)}K'))
 ```
 
-**Artist Results**  
+**🎨 Artist Results**  
 
 ![top_10_artists](/Images/top_10_artist_bar.png)  
 *Top 10 most played artists by play count and by play time*  
 
 
-**Artist Insight**  
+**🎨 Artist Insights**  
 - **Hebe Tien**:  
   Leads in both play count and playtime, showing she is the most versatile artist with frequent and extended engagement.
 - **S.H.E** and **JJ Lin**:    
@@ -63,14 +61,14 @@ ax[0].xaxis.set_major_formatter(FuncFormatter(lambda x,_: f'{int(x/1000)}K'))
 - **Jay Chou**, **Sodagreen**, and **Joker Xue**:  
   These artists rank lower but appear on both charts, showing steady and consist engagement.
 
-**Podcast Results**  
+**🎙️ Podcast Results**  
 
 ![top_10_shows](/Images/top_10_podcast_bar.png)  
 *Top 10 most played podcast shows by play count and by play time*  
 
  
 
-**Podcast Insight**  
+**🎙️ Podcast Insights**  
 - **童話裡都是騙人的** and **時間的女兒**:  
   These two shows are clearly the most popular, excelling in both frequency and total play time.
 - **我在案發現場** and **善嵐慶女**:  
@@ -89,25 +87,18 @@ genre_count_sorted = genre_count.sort_values(ascending=False).head(10)
 # create pie chart with matplotlib
 labels = top_genre.index
 sizes=top_genre.values
-plt.pie(
-    sizes,
-    labels=labels,
-    #format percentage with 1 decimal place
-    autopct='%1.1f%%',
-    # rotate the first slice to start at 120 degree
-    startangle=120,
+plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=120,
     colors=sns.color_palette('Blues_r',n_colors=len(labels)),
-    pctdistance=0.8 #pull percentage labels away from centre
-)
+    pctdistance=0.8)
 plt.title('Genre Distribuion', fontsize=14)
 plt.tight_layout()
 plt.show()
 ```  
-**Results**  
+**🌈 Genre Results**  
 ![genre_pie](/Images/genre_pie.png)  
 *Top 10 genres*
 
-**Insight**  
+**🌈 Genre Insights**  
 - **Pop** Domination:
   - Pop genres account for over 50% of the total distribution, with **Mandopop** leading at 27.2%, highlighting my strong preference for these genres.
 - **Hip Hop** and **Rap**'s Rising Appeal:
@@ -115,13 +106,54 @@ plt.show()
 - Diversity:
   - While smaller genres like **Rock**, **Indie**, and **EDM** have less representation, their inclusion highlights the diversity in my musical tastes.  
 
-### :three: Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:  
+### :three: Based on the past data, will podcasts occupy most listening time or music tracks? 🕒  
 
 View my notebook with detailed steps here :point_right: [3_Predict_Future_Show_and_Track.ipynb](/3_Data_Analysis/3_Predict_Future_Show_and_Track.ipynb)  
 **Code Implementation**  
 
-**Results**
-**Insight**
+```python
+plt.figure(figsize=(12,8))
+# assign the axis to ax
+ax= sns.lineplot(data=melted_data, x='year', y='Average Hours', hue='Category', marker='o')
+# ensure year label is unique integer
+plt.xticks(ticks=melted_data['year'].unique(),   labels=melted_data['year'].unique().astype(int))
+# rename legend labels
+legend_labels = {
+    'avg_track_hours': 'Average Track Hours',
+    'avg_podcast_hours': 'Average Podcast Hours'
+}
+#retrieve the current handles and labels from the plot
+handles, labels=ax.get_legend_handles_labels()
+#update the legend labels
+updated_labels=[legend_labels[label] for label in labels]
+# Add labels to each marker
+for line_category in melted_data['Category'].unique():
+    category_data = melted_data[melted_data['Category'] == line_category]
+    for x, y in zip(category_data['year'], category_data['Average Hours']):
+        plt.text(x, y, f'{y:.1f}',  # Format the label to 1 decimal place
+            fontsize=10, ha='left', va='bottom')
+# apply the updated labels to the legend
+plt.legend(handles=handles, labels=updated_labels, title='Category',
+loc='lower right')
+```  
+
+**Results**  
+
+![average_per_day](/Images/average_per_day.png)  
+
+**Insights**  
+- Trend Shift:
+  - Tracks dominated in 2020 but experienced a steady decline over the years.
+  - Podcasts, on the other hand, showed consistent growth and surpassed track streaming in 2021.
+- Crossing Point:
+  - 2021 was a pivotal year when podcasts overtook tracks in daily average hours, indicating my change streaming preference.
+- Podcasts' Steady Growth:
+  - Podcasts showed a clear upward trend, reaching their peak engagement of 6.0 hours per day in 2024.
+- Tracks' Decline:
+  - Tracks dropped sharply after 2020, this is due to my shift in streaming habit.
+- 2025 Prediction:
+  - If the current trends persist, **podcasts** are likely to continue grow, reaching even higher average hours per day. Tracks may stabilize at lower levels or continue their gradual decline.  
+
 ### :four:  Based on the past data, who will be the most played artist and podcast for 2025?" :question:  
 
 To predict most played artist for 2025, I calculated total play time for all artists in each year. Then picked out the top 10 artists based on the total play time across all years and plot them as a line chart. Vise versa for the podcast dataset.
@@ -147,13 +179,13 @@ plt.title('Top 10 Most Played Artists Over Years', fontsize=16)
 plt.tight_layout()
 plt.show()
 ```
-**Results**  
+**🎨 Artist Results**   
 ![top_10_artists_over_time](/Images/top_10_artist_over_time.png)  
 *Top 10 most played artists over years*   
 
 
 
-**Insight**  
+**🎨 Artist Insights**  
 - Artists with Peaked Popularity:
   - **JJ Lin** peaked significantly in 2020 and declined sharply afterward.
   - Artists like **Hebe Tien** and **S.H.E** also peaked early (2019-2020) and declined gradually.
@@ -164,12 +196,12 @@ plt.show()
 - Inclining Artists:
   - **OneRepublic** has shown consistent growth since 2022, with a steady upward trend that accelerated significantly in 2023. By 2024, they surpassed all other artists to become the most played. Based on this trajectory, OneRepublic is likely to maintain this momentum and emerge as the most played artist in 2025.  
 
-**Results** 
+**🎙️ Podcast Results** 
 
 ![top_10_shows_over_time](/Images/top_10_podcast_over_time.png)  
 *Top 10 most played podcast shows over years*   
 
-**Insight**  
+**🎙️ Podcast Insights**    
 
 - Shows with Peaked Popularity:
   - **時間的女兒: 八卦歷史** peaked early (2021-2022) and declined steadily over the years.

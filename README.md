@@ -25,7 +25,7 @@
 
 # My Findings
 Below are my findings through this project:  
-:one:  Who are the top 10 most played artists and podcast shows? 🎶
+:one:  Who are the top 10 most played artists and podcast shows? 🏆
   - 🎨 Artists:
     - **Hebe Tien** leads in both play count and playtime.
     - **S.H.E** and **JJ Lin** follow closely, with S.H.E leading in play count while JJ Lin surpasses in total playtime. 
@@ -38,7 +38,8 @@ Below are my findings through this project:
 - **Hip Hop** and **Rap** each hold over 10%, showcasing my appreciation for contemporary rhythmic styles.
 - My interest in **Rock**, **Indie**, and **EDM** further highlights the diversity in my musical tastes. 
 
-:three:  Based on the past data, will podcasts occupy most listening time or music tracks? :headphones:  
+:three:  Based on the past data, will podcasts occupy most listening time or music tracks? 🕒  
+- **Podcasts** are likely to continue grow, reaching even higher average hours per day. Tracks may stabilize at lower levels or continue their gradual decline.  
 
 :four:  Based on the past data, who will be the most played artist and podcast for 2025?" :question:  
   - 🎨 Artists:
