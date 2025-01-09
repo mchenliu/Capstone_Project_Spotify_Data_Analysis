@@ -32,17 +32,35 @@ Below are my findings through this project:
   - 🎙️ Podcasts:
       - **童話裡都是騙人的** and **時間的女兒** are the most streamed show, excelling in both frequency and total play time.
       - **我在案發現場** and **善嵐慶女** follow, with moderate play count and high play times.  
-  
+
+![top_10_artists](/Images/top_10_artist_bar.png)  
+*Top 10 most played artists by play count and by play time*   
+
+![top_10_shows](/Images/top_10_podcast_bar.png)  
+*Top 10 most played podcast shows by play count and by play time*  
+
 :two:  How diverse are the genres of music artists? 🌟  
 - **Mandopop** dominates at 27.2%, reflecting my strong preference for pop music.
 - **Hip Hop** and **Rap** each hold over 10%, showcasing my appreciation for contemporary rhythmic styles.
-- My interest in **Rock**, **Indie**, and **EDM** further highlights the diversity in my musical tastes. 
+- My interest in **Rock**, **Indie**, and **EDM** further highlights the diversity in my musical tastes.  
+
+![genre_pie](/Images/genre_pie.png)  
+*Top 10 genres*  
 
 :three:  Based on the past data, will podcasts occupy most listening time or music tracks? 🕒  
 - **Podcasts** are likely to continue grow, reaching even higher average hours per day. Tracks may stabilize at lower levels or continue their gradual decline.  
+
+![average_per_day](/Images/average_per_day.png)  
+*Average Tracks and Podcast Streaming Hours Per Day*  
 
 :four:  Based on the past data, who will be the most played artist and podcast for 2025?" :question:  
   - 🎨 Artists:
     - **OneRepublic** has shown consistent growth since 2022. By 2024, they surpassed all other artists to become the most played. Based on this trajectory, OneRepublic is likely to maintain this momentum and emerge as the most played artist in 2025.  
   - 🎙️ Podcasts:
-    - **童話裡都是騙人的** demonstrated consistent growth since 2022, with a sharp acceleration into 2024. This show has now outperformed all others and is likely to dominate 2025 if this trajectory continues.
+    - **童話裡都是騙人的** demonstrated consistent growth since 2022, with a sharp acceleration into 2024. This show has now outperformed all others and is likely to dominate 2025 if this trajectory continues.  
+
+![top_10_artists_over_time](/Images/top_10_artist_over_time.png)  
+*Top 10 most played artists over years*  
+
+![top_10_shows_over_time](/Images/top_10_podcast_over_time.png)  
+*Top 10 most played podcast shows over years*

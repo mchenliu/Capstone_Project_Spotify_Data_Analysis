@@ -140,6 +140,7 @@ loc='lower right')
 **Results**  
 
 ![average_per_day](/Images/average_per_day.png)  
+*Average Tracks and Podcast Streaming Hours Per Day*  
 
 **Insights**  
 - Trend Shift:
