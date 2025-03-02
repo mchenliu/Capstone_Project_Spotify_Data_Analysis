@@ -10,7 +10,7 @@
 2. [Exploratary Data Analysis](/2_Exploratory_Data_Analysis/)
 3. [Data Analysis](/3_Data_Analysis/)
 
-I have also created Tableau dashboards with this data set. View the full project here (/https://github.com/mchenliu/Tableau_Project_Spotify_Streaming_Dashboard)  
+I have also created Tableau dashboards with this data set. View the full project [here](https://github.com/mchenliu/Tableau_Project_Spotify_Streaming_Dashboard)  
 
 # Tools Used
 - :snake: Python: The backbone of my project, used to perform all tasks. Key libraries include:
