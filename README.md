@@ -10,6 +10,8 @@
 2. [Exploratary Data Analysis](/2_Exploratory_Data_Analysis/)
 3. [Data Analysis](/3_Data_Analysis/)
 
+I have also created Tableau dashboards with this data set. View the full project here(/)  
+
 # Tools Used
 - :snake: Python: The backbone of my project, used to perform all tasks. Key libraries include:
   - Pandas: Used for data cleaning and manipulation.
